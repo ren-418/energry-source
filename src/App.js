@@ -30,6 +30,8 @@ function App() {
           <button className="btn btn-outline-secondary mt-4" style={{
               color: "white"
             }}>LEARN MORE</button>
+        <div style={{color:"white", marginLeft:"50px", marginBottom: "150px"}}>
+          <h1 style={{whiteSpace:"pre-wrap"}}>Energy. <br />Solutions. <br />Simplified.</h1>
         </div>
       </div>
       <Home />

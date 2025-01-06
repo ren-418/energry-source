@@ -10,17 +10,17 @@ a {
     .tablenetheader {
        display: none;
     }
-    /* .header-titles {
+    .header-titles {
         display:block !important;
         position: fixed;
-        background: #000;
+        /* background: #000; */
         width: 100%;
         z-index: 500;
         margin: 0;
     }
     .header-titles > img {
         justify-items: center;
-    } */
+    }
 }
 
 .site-header.header-absolute {
@@ -419,11 +419,21 @@ ul.nav.wp-menu>li.menu-item-has-children>a {
 }
 
 ul.nav.wp-menu>li.menu-item-has-children>a:after {
-    content: "\e64b";
+    content: "";
     position: absolute;
     right: 0;
     font-family: themify;
     font-size: 10px;
+}
+
+.arrow_down {
+    font-size: 12px;
+    color: white;
+    margin-left: 8px;
+}
+
+.arrow_down:hover {
+    color: #549F57;
 }
 
 ul.mobile-menu li.menu-item-has-children>span.down-arrow:after,
@@ -1060,6 +1070,10 @@ ul.wp-menu ul.sub-menu li.menu-item.current-menu-ancestor.menu-item-has-children
 }
 
 .header-navbar a:hover {
+    color: #549F57
+}
+
+.header-navbar a:hover .arrow_down {
     color: #549F57
 }
 

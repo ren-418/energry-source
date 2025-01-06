@@ -56,7 +56,7 @@ const Header = () => {
                                                 </li>
                                                 <li id="menu-item-77639"
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-77639">
-                                                    <a href="#">About</a>
+                                                    <a href="#" >About <i className="bi bi-chevron-down arrow_down"></i> </a>
                                                     <ul className="sub-menu">
                                                         <li id="menu-item-77700"
                                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77700">
@@ -71,7 +71,7 @@ const Header = () => {
                                                 </li>
                                                 <li id="menu-item-77709"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-77709">
-                                                    <a href="https://www.millstreetenergy.com/?page_id=77059">SOLUTIONS</a>
+                                                    <a href="https://www.millstreetenergy.com/?page_id=77059">SOLUTIONS <i className="bi bi-chevron-down arrow_down"></i> </a>
                                                     <ul className="sub-menu">
                                                         <li id="menu-item-77643"
                                                             className="menu-item menu-item-type-post_type menu-item-object-cea-service menu-item-77643">
@@ -102,7 +102,7 @@ const Header = () => {
                                                 </li>
                                                 <li id="menu-item-77710"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-77710">
-                                                    <a href="https://www.millstreetenergy.com/?page_id=76985">SECTORS</a>
+                                                    <a href="https://www.millstreetenergy.com/?page_id=76985">SECTORS <i className="bi bi-chevron-down arrow_down"></i> </a>
                                                     <ul className="sub-menu">
                                                         <li id="menu-item-77711"
                                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-77711">
@@ -130,13 +130,13 @@ const Header = () => {
                 </div>
             </div>           
 
-            {/* <div className="header-titles" style={{display:"none"}}>
+            <div className="header-titles" style={{display:"none"}}>
                 <h1 className="site-logo"><a href="https://www.millstreetenergy.com/"
                     className="default-logo test"><img
                         src="/Mill-Street-Energy-Logo-Black-Text.png"
                         alt="Mill Street Energy (MSE)" /></a><span
                             className="screen-reader-text">Mill Street Energy (MSE)</span></h1>
-            </div>                                  */}
+            </div>                                 
         </header>
     );
 };
