@@ -9,27 +9,6 @@ function App() {
     <div>
       <div className="App">
         <Header />
-        <div className="home-contents">
-          <div
-            style={{
-              color: "white"
-            }}
-          >
-            <h1 style={{ whiteSpace: "pre-wrap", fontSize:'76px' }}>
-              Energy. <br />
-              Solutions. <br />Simplified.
-            </h1>
-          </div>
-          <div style={{
-              color: "white",
-              fontSize:'25px'
-            }}>
-            Navigating your site’s energy use is complicated. We keep it simple
-            for you and bring solutions into view.
-          </div>
-          <button className="btn btn-outline-secondary mt-4" style={{
-              color: "white"
-            }}>LEARN MORE</button>
         <div style={{color:"white", marginLeft:"50px", marginBottom: "150px"}}>
           <h1 style={{whiteSpace:"pre-wrap"}}>Energy. <br />Solutions. <br />Simplified.</h1>
         </div>
