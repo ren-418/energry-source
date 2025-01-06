@@ -22,7 +22,7 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div style={styles.contact}>
-          <p style={styles.phone}>678-490-7555</p>
+          <p style={styles.phone}>888-490-7555</p>
           <a href="mailto:info@energysource.com" style={styles.email}>
             info@energysource.com
           </a>

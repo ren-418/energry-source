@@ -1,8 +1,9 @@
 import React from "react";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   return (
-    <div style={styles.container}>
+    <div className="contactContainer">
       {/* Left Section: Title and Description */}
       <div style={styles.leftSection}>
         <h2 style={styles.heading}>Get started today.</h2>
@@ -52,14 +53,15 @@ const ContactForm = () => {
 
 // Inline Styles
 const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-    padding: "40px",
-    backgroundColor: "#333", // Dark background
-    color: "#fff",
-  },
+//   container: {
+//     display: "flex",
+//     justifyContent: "space-between",
+//     alignItems: "flex-start",
+//     padding: "40px 300px",
+//     backgroundColor: "#333", // Dark background
+//     color: "#fff",
+//     marginTop: "150px",
+//   },
   leftSection: {
     flex: 1,
     marginRight: "20px",

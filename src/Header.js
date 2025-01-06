@@ -135,34 +135,6 @@ const Header = () => {
                                     </nav>
                                 </li>
                             </ul>
-                            <ul className="nav navbar-ul pull-right justify-content-end right-element-exist">
-                                <li> <a className="full-bar-search-toggle" onClick={toggleSearch} href="#"><i className="bi bi-search"></i></a>
-                                </li>
-                                {/* <li><a href="https://wordpress.zozothemes.com/ecohorbor/campaigns/environmental-sources/donate/"
-                                    className="cea-button-link cea-button">
-                                    <span className="cea-button-text">Donate Now <i
-                                        className="bi bi-arrow-right"></i></span>
-
-                                </a></li> */}
-                            </ul>
-                        </div>
-                        <div className={`full-bar-search-wrap ${isSearchOpen ? "active" : ""}`}>
-                            <form role="search" className="form-inline search-form" action="https://www.millstreetenergy.com/">
-                                <div className="input-group">
-                                    <input
-                                        className="form-control"
-                                        type="text"
-                                        placeholder="Search"
-                                        name="s"
-                                    />
-                                    <span className="input-group-btn">
-                                        <button className="btn btn-outline-success" type="submit">
-                                            <span className="bi bi-search"></span>
-                                        </button>
-                                    </span>
-                                </div>
-                            </form>
-                            <a href="#" class="close full-bar-search-toggle"></a>
                         </div>
                     </div>
                 </div>
