@@ -1,27 +1,28 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.container}>
         {/* Social Media Section */}
-        <div style={styles.socialMedia}>
+        <div className="socialMedia">
           <p style={styles.followUs}>Follow us.</p>
           <div style={styles.icons}>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon">
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="icon">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="icon">
               <i className="bi bi-instagram"></i>
             </a>
           </div>
         </div>
 
         {/* Contact Section */}
-        <div style={styles.contact}>
+        <div className="contact">
           <p style={styles.phone}>888-490-7555</p>
           <a href="mailto:info@energysource.com" style={styles.email}>
             info@energysource.com
@@ -48,11 +49,11 @@ const styles = {
     width: "100%",
     maxWidth: "1200px",
   },
-  socialMedia: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-  },
+//   socialMedia: {
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "flex-start",
+//   },
   followUs: {
     fontWeight: "bold",
     marginBottom: "10px",
@@ -61,21 +62,7 @@ const styles = {
     display: "flex",
     gap: "10px",
   },
-  icon: {
-    width: "40px",
-    height: "40px",
-    backgroundColor: "#000",
-    color: "#fff",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: "50%",
-    fontSize: "1.2rem",
-    textDecoration: "none",
-  },
-  contact: {
-    textAlign: "right",
-  },
+  
   phone: {
     fontWeight: "bold",
     marginBottom: "5px",

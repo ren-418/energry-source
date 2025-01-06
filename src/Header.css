@@ -6,6 +6,23 @@ a {
     height: 101px;
 }
 
+@media (max-width: 750px) { 
+    .tablenetheader {
+       display: none;
+    }
+    /* .header-titles {
+        display:block !important;
+        position: fixed;
+        background: #000;
+        width: 100%;
+        z-index: 500;
+        margin: 0;
+    }
+    .header-titles > img {
+        justify-items: center;
+    } */
+}
+
 .site-header.header-absolute {
     /* position: absolute; */
     left: 0;

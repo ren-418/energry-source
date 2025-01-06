@@ -9,6 +9,9 @@ function App() {
     <div>
       <div className="App">
         <Header />
+        <div style={{color:"white", marginLeft:"50px", marginBottom: "150px"}}>
+          <h1 style={{whiteSpace:"pre-wrap"}}>Energy. <br />Solutions. <br /> Simplified.</h1>
+        </div>
       </div>
       <Home />
       <ContactForm />
