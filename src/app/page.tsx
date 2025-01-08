@@ -12,15 +12,23 @@ export default function Home() {
       <Header />
       <div className="w-full h-full flex flex-col">
         <div className="">
-          <Image alt="home image" src={Home_back} className="absolute top-0 left-0 z-[-1] w-full h-[773px]" style={{ objectFit: "cover" }} />
+          <Image
+            alt="home image"
+            src={Home_back}
+            className="absolute top-0 left-0 z-[-1] w-full h-[773px]"
+            style={{ objectFit: "cover" }}
+          />
           <div className="padding-control flex flex-col py-10 gap-8 lg:py-20 md:gap-0">
             <h1 className="font-poppins text-5xl text-white leading-[70px] text-bold md:text-7xl md:leading-[90px]">
-              Energy.<br />
-              Solutions.<br />
+              Energy.
+              <br />
+              Solutions.
+              <br />
               Simplified.
             </h1>
             <p className="font-poppins text-xl text-white leading-[40px] md:text-2xl md:leading-[50px]">
-              Navigating your site&apos;s energy use is complicated.<br />
+              Navigating your site&apos;s energy use is complicated.
+              <br />
               We keep it simple for you and bring solutions into view.
             </p>
             <div className="pt-[35px]">
@@ -43,8 +51,8 @@ export default function Home() {
               benefit from cost savings, and become champions of sustainability.
             </h4>
             <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg">
-              One team. One goal. Great impacts. There&apos;s nothing complicated
-              about it.
+              One team. One goal. Great impacts. There&apos;s nothing
+              complicated about it.
             </span>
           </div>
           <div className="grow flex justify-end mx-[-10%] md:w-[50%] md:mx-[0px]">
@@ -61,10 +69,12 @@ export default function Home() {
         <div className="md:py-[128px] py-[50px] padding-control bg-white flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center w-[100%] lg:w-[80%] xl:w-[60%] items-center gap-[20px] sm:mb-[60px] mb-[20px]">
             <h1 className="font-poppins text-[#022e34] sm:text-4xl text-2xl w-full text-center sm:leading-[60px] leading-[40px]">
-            We deliver an energy management solution tailored for our clients
+              We deliver an energy management solution tailored for our clients
             </h1>
             <p className="font-poppins text-[#4e6064] sm:text-md w-full text-center sm:leading-[30px] leading-[20px]">
-            The Mill Street Energy platform is an efficient, low-maintenance solution designed to help franchisees and multi-unit operators optimize their spending and enhance operational efficiency.
+              The Mill Street Energy platform is an efficient, low-maintenance
+              solution designed to help franchisees and multi-unit operators
+              optimize their spending and enhance operational efficiency.
             </p>
           </div>
           <div className="flex flex-row grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 gap-5">
@@ -248,11 +258,11 @@ export default function Home() {
               We keep an eye on everything so you don&apos;t have to
             </div>
             <div className="font-poppins text-[#022e34] text-base text-center">
-              Don&apos;t want another thing to think about? We get it. Let us obsess
-              over the electric bill for you. Once you&apos;re integrated with our
-              platform, we do the heavy lifting in the background. You&apos;ll only
-              be alerted to suspicious bill activity, device issues, and savings
-              opportunities.
+              Don&apos;t want another thing to think about? We get it. Let us
+              obsess over the electric bill for you. Once you&apos;re integrated
+              with our platform, we do the heavy lifting in the background.
+              You&apos;ll only be alerted to suspicious bill activity, device
+              issues, and savings opportunities.
             </div>
           </div>
         </div>
@@ -282,8 +292,8 @@ export default function Home() {
           <div className="font-poppins text-[#000000] lg:text-2xl text-xl font-bold w-full text-center pt-[30px]">
             At Mill Street Energy, we&apos;re committed to maximizing energy
             efficiency and helping as many properties as possible reduce their
-            carbon footprint. However, we can&apos;t do it alone — and that&apos;s where
-            you come in!
+            carbon footprint. However, we can&apos;t do it alone — and
+            that&apos;s where you come in!
           </div>
           <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]">
             Schedule below to begin the discovery process and learn how we can
@@ -310,7 +320,11 @@ export default function Home() {
           </div>
         </div>
         <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
-          <Image alt="location" src={Map} className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]" />
+          <Image
+            alt="location"
+            src={Map}
+            className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
+          />
           <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
             <div className="text-poppins text-3xl text-[#549F57] font-bold mb-[35.2px]">
               Contact Us
@@ -333,18 +347,26 @@ export default function Home() {
               Get started today.
             </h1>
             <span className="text-poppins text-base text-[#ffffff]">
-              Sign up for a no-cost, no-obligation energy assessment and one of our experts will get back to you within 24 hours.
+              Sign up for a no-cost, no-obligation energy assessment and one of
+              our experts will get back to you within 24 hours.
             </span>
           </div>
           <div className="flex flex-col gap-[25px] w-full">
             <div className="flex flex-col w-full gap-[20px]">
               <div className="flex flex-row gap-[5px] items-center">
-                <span className="text-poppins text-[#ffffff] text-base">Name</span>
-                <span className="text-poppins text-[#ffffff] text-sm">(required)</span>
+                <span className="text-poppins text-[#ffffff] text-base">
+                  Name
+                </span>
+                <span className="text-poppins text-[#ffffff] text-sm">
+                  (required)
+                </span>
               </div>
               <div className="flex flex-row gap-[10px] w-full">
                 <div className="flex flex-col gap-[5px] items-start w-[50%]">
-                  <label htmlFor="firstname" className="text-poppins text-[#ffffff] text-sm">
+                  <label
+                    htmlFor="firstname"
+                    className="text-poppins text-[#ffffff] text-sm"
+                  >
                     First Name
                   </label>
                   <div className="w-full">
@@ -357,7 +379,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-[5px] items-start w-[50%]">
-                  <label htmlFor="lastname" className="text-poppins text-[#ffffff] text-sm">
+                  <label
+                    htmlFor="lastname"
+                    className="text-poppins text-[#ffffff] text-sm"
+                  >
                     Last Name
                   </label>
                   <div className="w-full">
@@ -372,7 +397,10 @@ export default function Home() {
               </div>
               <div className="w-full">
                 <div className="flex flex-col gap-[5px] items-start w-full">
-                  <label htmlFor="email" className="text-poppins text-[#ffffff] text-sm">
+                  <label
+                    htmlFor="email"
+                    className="text-poppins text-[#ffffff] text-sm"
+                  >
                     Email (required)
                   </label>
                   <div className="w-full">
@@ -387,7 +415,10 @@ export default function Home() {
               </div>
               <div className="w-full">
                 <div className="flex flex-col gap-[5px] items-start w-full">
-                  <label htmlFor="message" className="text-poppins text-[#ffffff] text-sm">
+                  <label
+                    htmlFor="message"
+                    className="text-poppins text-[#ffffff] text-sm"
+                  >
                     Message (required)
                   </label>
                   <div className="w-full">
@@ -400,9 +431,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-base font-poppins py-[10px] bg-[#549F57] rounded-md w-[110px] text-center text-white mb-[10px]">
-              Send
-            </div>
-
+                Send
+              </div>
             </div>
           </div>
         </div>
