@@ -189,7 +189,7 @@ export default function Header() {
                                 <span className="chevorn-left"></span> Back
                             </div>
 
-                            <ul className={`header-before-event flex flex-col gap-[10px] font-poppins font-bold uppercase justify-center items-center responsive-header-font ${scrolling ? "text-black" : "text-white"}`}>
+                            <ul className={`header-before-event flex flex-col gap-[10px] font-poppins font-bold uppercase justify-center items-center responsive-header-font ${scrolling && !isHamburgerOpen ? "text-black" : "text-white"}`}>
                                 {menuItems
                                     .find((item) => item.key === mobileSubmenu)
                                     ?.submenu?.map((subItem, index) => (
