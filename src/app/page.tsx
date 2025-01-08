@@ -311,7 +311,7 @@ export default function Home() {
             Click here
           </div>
         </div>
-        <div className="p-[30px] flex xl:flex-rol flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
+        <div className="p-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
           <Image alt="location" src={Map} className="xl:w-[70%] w-[90%]" />
           <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
             <div className="text-poppins text-3xl text-[#037047] font-bold mb-[35.2px]">
