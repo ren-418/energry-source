@@ -246,10 +246,10 @@ export default function Home() {
         </div>
         <div className="sm:py-[128px] py-[64px] w-full flex flex-col bg-white padding-control justify-center items-center">
           <div className="flex flex-col gap-[16px] justify-center items-center sm:w-[80%] w-full">
-            <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl">
+            <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center">
               We keep an eye on everything so you don&apos;t have to
             </div>
-            <div className="font-poppins text-[#022e34] text-base">
+            <div className="font-poppins text-[#022e34] text-base text-center">
               Don&apos;t want another thing to think about? We get it. Let us obsess
               over the electric bill for you. Once you&apos;re integrated with our
               platform, we do the heavy lifting in the background. You&apos;ll only
@@ -307,7 +307,7 @@ export default function Home() {
             We work in different states across the nation. Here is a map showing
             the states where we primarily do work.
           </div>
-          <div className="text-base font-poppins py-[12px] px-[24px] bg-[#549F57] rounded-md w-[130px]">
+          <div className="text-base font-poppins py-[12px] px-[24px] bg-[#549F57] rounded-md w-[130px] text-center">
             Click here
           </div>
         </div>
