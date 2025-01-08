@@ -25,15 +25,13 @@ export default function Home() {
             />
           </div>
 
-          <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[10rem] md:gap-[50px] z-10 relative">
-            <h1 className="font-poppins text-5xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px]">
-              How Our World Is Powered
+          <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative">
+            <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px]">
+            Help Change How Our World Is Powered
             </h1>
             <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px]">
-              By bridging the gap between today&apos;s aging infrastructure and
-              tomorrow&apos;s technology,
-              <br /> we&apos;re building a cleaner, more reliable energy space
-              along with lower pricing.
+              We are bridging the gap between today&apos;s aging infrastructure
+              and tomorrow&apos;s technology, helping build a cleaner, more efficient energy space packaged with lower energy pricing.
             </p>
             <div className="md:pt-0 pt-5">
               <a
@@ -109,7 +107,8 @@ export default function Home() {
               </div>
               <div className="text-[#4e6064] font-poppins text-base">
                 Avoid overpaying for electricity with protection from the energy
-                market, billing Mistakes,the rise in energy pricing, and slamming scams.
+                market, billing Mistakes,the rise in energy pricing, and
+                slamming scams.
               </div>
             </div>
             <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px]">
