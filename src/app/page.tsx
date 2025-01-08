@@ -27,11 +27,12 @@ export default function Home() {
 
           <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative sm:items-start items-center">
             <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px] sm:text-start text-center">
-            Help Change How Our World Is Powered
+              Help Change How Our World Is Powered
             </h1>
             <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px] sm:text-start text-center">
               We are bridging the gap between today&apos;s aging infrastructure
-              and tomorrow&apos;s technology, helping build a cleaner, more efficient energy space packaged with lower energy pricing.
+              and tomorrow&apos;s technology, helping build a cleaner, more
+              efficient energy space packaged with lower energy pricing.
             </p>
             <div className="md:pt-0 pt-5">
               <a
