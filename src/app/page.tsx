@@ -6,9 +6,9 @@ import Footer from "@/components/footer";
 import Home_back from "../../public/image/home-background.jpg";
 import Provider from "../../public/image/provider.jpg";
 import Map from "../../public/image/map.png";
-import Blue_dot from "../../public/image/blue-dot-copy.png"
-import Green_dot from "../../public/image/green-dot-copy.png"
-import Grey_dot from "../../public/image/grey-dot-copy.png"
+import Blue_dot from "../../public/image/blue-dot-copy.png";
+import Green_dot from "../../public/image/green-dot-copy.png";
+import Grey_dot from "../../public/image/grey-dot-copy.png";
 export default function Home() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function Home() {
               src={Home_back}
               className=""
               style={{ objectFit: "cover" }}
-              fill 
+              fill
             />
           </div>
 
@@ -30,11 +30,16 @@ export default function Home() {
               How Our World Is Powered
             </h1>
             <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px]">
-              By bridging the gap between today&apos;s aging infrastructure and tomorrow&apos;s technology,
-              <br /> we&apos;re building a cleaner, more reliable energy space along with lower pricing.
+              By bridging the gap between today&apos;s aging infrastructure and
+              tomorrow&apos;s technology,
+              <br /> we&apos;re building a cleaner, more reliable energy space
+              along with lower pricing.
             </p>
             <div className="md:pt-0 pt-5">
-              <a href="/learn-more" className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px] text-center cursor-pointer hover:bg-[#448e49] transition-colors">
+              <a
+                href="/learn-more"
+                className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px] text-center cursor-pointer hover:bg-[#448e49] transition-colors"
+              >
                 Learn More
               </a>
             </div>
@@ -140,7 +145,9 @@ export default function Home() {
                 Reduce usage
               </div>
               <div className="text-[#4e6064] font-poppins text-base">
-              Stay ahead of underperforming equipment with our in-person assessments, tailored to enhance your property&apos;s energy efficiency
+                Stay ahead of underperforming equipment with our in-person
+                assessments, tailored to enhance your property&apos;s energy
+                efficiency
               </div>
             </div>
             <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px]">
@@ -174,7 +181,8 @@ export default function Home() {
                 Save Now
               </div>
               <div className="text-[#4e6064] font-poppins text-base">
-              Save now by replacing old, outdated equipment, leveraging energy pricing, and optimizing for energy efficiency.
+                Save now by replacing old, outdated equipment, leveraging energy
+                pricing, and optimizing for energy efficiency.
               </div>
             </div>
           </div>
@@ -214,7 +222,8 @@ export default function Home() {
                     <span>overpaid</span>
                   </div>
                   <div className="font-poppins text-white text-base">
-                    on an electricity supply rates overpaid due to annual electric rate increases
+                    on an electricity supply rates overpaid due to annual
+                    electric rate increases
                   </div>
                 </div>
               </div>
@@ -233,7 +242,8 @@ export default function Home() {
                     <span>saved</span>
                   </div>
                   <div className="font-poppins text-black text-base">
-                  leverage Mill Street Energy to secure custom energy pricing for your business
+                    leverage Mill Street Energy to secure custom energy pricing
+                    for your business
                   </div>
                 </div>
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] items-start">
@@ -323,24 +333,24 @@ export default function Home() {
           <div className="w-full flex lg:flex-row flex-col gap-[50px] items-center">
             <div className="flex flex-col gap-[10px]">
               <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
-                <Image src={Blue_dot} alt="blue dot" width={50} height={50}/>
+                <Image src={Blue_dot} alt="blue dot" width={50} height={50} />
                 <span>Natural Gas & Electricity Options Available</span>
               </div>
               <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
-                <Image src={Green_dot} alt="green dot" width={50} height={50}/>
+                <Image src={Green_dot} alt="green dot" width={50} height={50} />
                 <span>Natural Gas Options Available</span>
               </div>
               <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
-                <Image src={Grey_dot} alt="grey dot" width={50} height={50}/>
+                <Image src={Grey_dot} alt="grey dot" width={50} height={50} />
                 <span>Limited Availability</span>
               </div>
             </div>
-          <Image
-            alt="location"
-            src={Map}
-            // className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
-            className="lg:w-[60%] w-[100%]  sm:mx-[0px] mx-[-60px]"
-          />
+            <Image
+              alt="location"
+              src={Map}
+              // className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
+              className="lg:w-[60%] w-[100%]  sm:mx-[0px] mx-[-60px]"
+            />
           </div>
           <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
             <div className="text-poppins text-3xl text-[#549F57] font-bold mb-[35.2px]">
