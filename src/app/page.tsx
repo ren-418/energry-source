@@ -178,7 +178,7 @@ export default function Home() {
             </h1>
             <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg">
               Electricity is full of risks and opportunities that can be hard to
-              spot - and expensive if missed.
+              spot- and expensive if missed.
             </p>
           </div>
           <div className="flex flex-rol grid sm:grid-cols-2 grid-cols-1 gap-[1rem]">
