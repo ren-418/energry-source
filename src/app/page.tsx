@@ -15,7 +15,7 @@ export default function Home() {
           <Image
             alt="home image"
             src={Home_back}
-            className="absolute top-0 left-0 z-[-1] w-full h-[773px]"
+            className="absolute top-0 left-0 z-[-1] w-full h-[850px]"
             style={{ objectFit: "cover" }}
           />
           <div className="padding-control flex flex-col py-10 gap-8 lg:py-20 md:gap-0">
@@ -26,10 +26,9 @@ export default function Home() {
               <br />
               Simplified.
             </h1>
-            <p className="font-poppins text-xl text-white leading-[40px] md:text-2xl md:leading-[50px]">
-              Navigating your site&apos;s energy use is complicated.
-              <br />
-              We keep it simple for you and bring solutions into view.
+            <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px]">
+            By bridging the gap between today&apos;s aging infrastructure and tomorrow&apos;s technology,
+            <br/> we&apos;re building a cleaner, more reliable energy space along with lower pricing.
             </p>
             <div className="pt-[35px]">
               <div className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px] text-center">
