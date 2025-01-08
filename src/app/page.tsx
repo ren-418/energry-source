@@ -12,7 +12,7 @@ export default function Home() {
             <Header />
             <div className="w-full h-full flex flex-col">
                 <div className="">
-                    <Image alt="home image" src={Home_back} className="absolute top-0 left-0 z-[-1] w-full h-[773px]" style={{ objectFit: 'cover' }} />
+                    <Image alt="home image" src={Home_back} className="absolute top-0 left-0 z-[-1] w-full h-[773px]" style={{ objectFit: "cover" }} />
                     <div className="padding-control flex flex-col py-10 gap-8 lg:py-20 md:gap-0">
                         <h1 className="font-poppins text-5xl text-white leading-[70px] text-bold md:text-7xl md:leading-[90px]">
                             Energy.<br />
@@ -20,7 +20,7 @@ export default function Home() {
                             Simplified.
                         </h1>
                         <p className="font-poppins text-xl text-white leading-[40px] md:text-2xl md:leading-[50px]">
-                            Navigating your site's energy use is complicated.<br />
+                            Navigating your site&apos;s energy use is complicated.<br />
                             We keep it simple for you and bring solutions into view.
                         </p>
                         <div className="pt-[35px]">
@@ -33,13 +33,13 @@ export default function Home() {
                 <div className="flex flex-col padding-control bg-white pt-[5%] pb-[70px] md:pb-[8.5%] gap-5 md:!pr-0 md:flex-row">
                     <div className="flex flex-col gap-5 w-full justify-center grow md:w-[47%]">
                         <h3 className="font-poppins text-black text-2xl sm:text-3xl whitespace-pre-wrap xl:text-4xl">
-                            We're your comprehensive energy solutions provider.
+                            We&apos;re your comprehensive energy solutions provider.
                         </h3>
                         <h4 className="font-poppins text-[#000000] text-md sm:text-lg ">
                             And since we do it all, our customers enjoy that simplicity every step of the way. Our team can handle your entire project - from strategy and design to approvals and installation. We take pride in guiding businesses on their energy journeys, helping them benefit from cost savings, and become champions of sustainability.
                         </h4>
                         <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg">
-                            One team. One goal. Great impacts. There's nothing complicated about it.
+                            One team. One goal. Great impacts. There&apos;s nothing complicated about it.
                         </span>
                     </div>
                     <div className="grow flex justify-end mx-[-10%] md:w-[50%] md:mx-[0px]">
@@ -177,10 +177,10 @@ export default function Home() {
                 <div className="sm:py-[128px] py-[64px] w-full flex flex-col bg-white padding-control justify-center items-center">
                     <div className="flex flex-col gap-[16px] justify-center items-center sm:w-[80%] w-full">
                         <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl">
-                            We keep an eye on everything so you don't have to
+                            We keep an eye on everything so you don&apos;t have to
                         </div>
                         <div className="font-poppins text-[#022e34] text-base">
-                            Don't want another thing to think about? We get it. Let us obsess over the electric bill for you. Once you're integrated with our platform, we do the heavy lifting in the background. You'll only be alerted to suspicious bill activity, device issues, and savings opportunities.</div>
+                            Don&apos;t want another thing to think about? We get it. Let us obsess over the electric bill for you. Once you&apos;re integrated with our platform, we do the heavy lifting in the background. You&apos;ll only be alerted to suspicious bill activity, device issues, and savings opportunities.</div>
                     </div>
                 </div>
                 <div className="py-[25px] padding-control flex flex-col justify-center items-center bg-white">
@@ -200,10 +200,10 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
-                        We Can't Work Without You!
+                        We Can&apos;t Work Without You!
                     </div>
                     <div className="font-poppins text-[#000000] lg:text-2xl text-xl font-bold w-full text-center pt-[30px]">
-                        At Mill Street Energy, we're committed to maximizing energy efficiency and helping as many properties as possible reduce their carbon footprint. However, we can't do it alone — and that's where you come in!
+                        At Mill Street Energy, we&apos;re committed to maximizing energy efficiency and helping as many properties as possible reduce their carbon footprint. However, we can&apos;t do it alone — and that&apos;s where you come in!
                     </div>
                     <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]">
                         Schedule below to begin the discovery process and learn how we can help!</div>
@@ -226,7 +226,7 @@ export default function Home() {
                         Click here
                     </div>
                 </div>
-                <div className="p-[30px] flex xl:flex-rol flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
+                <div className="p-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
                     <Image alt="location" src={Map} className="xl:w-[70%] w-[90%]"/>
                     <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
                         <div className="text-poppins text-3xl text-[#037047] font-bold mb-[35.2px]">

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Logo from "../../public/image/logo.png";
-import slide from "../../public/slide/slide1.png"
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Header() {
     const [activePage, setActivePage] = useState<string>("home");
@@ -113,9 +113,9 @@ export default function Header() {
         <header className={`transition-all duration-300 ease-in-out z-10  ${scrolling && !isHamburgerOpen? "bg-white shadow-lg fixed top-0 w-full": ""} ${isHamburgerOpen? "w-full h-[100%] bg-[#38383b] flex flex-col gap-[5%] overflow-hidden fixed top-0 text-white": ""}`}>
             <div className={`relative top-0 left-0 px-[5.5%] py-[40px] flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[20px] ${scrolling ? "py-[10px]" : ""}`}>
                 <div>
-                    <a href="/">
+                    <Link href="/">
                         <Image src={Logo} width={160} height={63} alt="logo" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex flex-row gap-[2.7%] justify-end items-center w-full max-[870px]:hidden">
                     <ul className={`header-before-event flex flex-row gap-[35px] font-poppins font-bold uppercase justify-between items-center flex-nowrap ${scrolling && !isHamburgerOpen ? "text-black" : "text-white"}`}>
@@ -126,19 +126,19 @@ export default function Header() {
                                 onClick={() =>item.submenu ? setActive(item.key) : setActive(item.key)}
                                 onMouseEnter={() =>item.submenu ? handleMouseEnter(item.key) : null}
                                 onMouseLeave={() =>item.submenu ? handleMouseLeave() : null}>
-                                <a href={item.link}
+                                <Link href={item.link}
                                     onClick={(e) => {if (item.submenu) e.preventDefault();}}>
                                     {item.name}
-                                </a>
+                                </Link>
                                 <span className="underline-effect" />
                                 {item.submenu && openDropdown === item.key && (
                                     <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
                                         <ul className="py-2">
                                             {item.submenu.map((subItem, index) => (
                                                 <li key={index}>
-                                                    <a href={subItem.link} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">
+                                                    <Link href={subItem.link} className="block px-4 py-2 text-gray-700 hover:bg-gray-200">
                                                         {subItem.name}
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -170,12 +170,12 @@ export default function Header() {
                             {menuItems.map((item) => (
                                 <li key={item.key} className={`cursor-pointer relative hover:text-[#549F57] ${activePage === item.key ? "active" : ""}`}
                                     onClick={() =>item.submenu? openMobileSubmenu(item.key): setActive(item.key)}>
-                                    <a href={item.link}
+                                    <Link href={item.link}
                                         onClick={(e) => {if (item.submenu) e.preventDefault();}}
                                         className="w-full text-center"
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                     <span className="chevron"></span>
                                     <span className="underline-effect" />
                                 </li>
@@ -194,9 +194,9 @@ export default function Header() {
                                     .find((item) => item.key === mobileSubmenu)
                                     ?.submenu?.map((subItem, index) => (
                                         <li key={index} className="cursor-pointer relative hover:text-[#549F57]">
-                                            <a href={subItem.link} className="w-full text-center flex justify-center items-center">
+                                            <Link href={subItem.link} className="w-full text-center flex justify-center items-center">
                                                 {subItem.name}
-                                            </a>
+                                            </Link>
                                             <span className="underline-effect" />
                                         </li>
                                     ))}

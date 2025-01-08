@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -28,7 +29,7 @@ const Carousel = () => {
             >
                 {images.map((src, index) => (
                     <SwiperSlide key={index}>
-                        <img src={src} alt={`Slide ${index + 1}`} className="w-full h-[500px] object-cover" />
+                        <Image src={src} alt={`Slide ${index + 1}`} height={500} width={500} className="w-full h-[500px] object-cover" />
                     </SwiperSlide>
                 ))}
                 <div className="swiper-button-prev-custom">
