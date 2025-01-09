@@ -24,8 +24,6 @@ export default function Home() {
               fill
             />
           </div>
-
-
           <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative sm:items-start items-center">
             <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px] sm:text-start text-center">
               Help Change How Our World Is Powered
