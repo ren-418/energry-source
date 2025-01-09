@@ -6,16 +6,39 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import SlideContent from "./SlideContent";
 
 const Carousel = () => {
-    const images = [
-        "/slide/slide3.png",
-        "/slide/slide1.png",
-        "/slide/slide2.png"
+    const slides = [
+        {
+            src: "/slide/IMG_9032.jpg",
+            alt: "Slide 1",
+            content: <SlideContent title="Heat Pump Technology" description="Step into the future of business operations with our heat pump technology. Experience how satisfying it is to have control over your heating systems and your energy costs, bringing about a healthier bottom line." />,
+        },
+        {
+            src: "/slide/IMG_9028.jpg",
+            alt: "Slide 2",
+            content: <SlideContent title="Efficiency Solutions" description="Find out how effortless upgrading your business operations can be with our all-in—one efficiency solutions. Join us in driving down costs and making energy waste a thing of the past." />,
+        },
+        {
+            src: "/slide/IMG_9027.jpg",
+            alt: "Slide 3",
+            content: <SlideContent title="EV Charging Solutions" description="Stay ahead of the curve with our state-of-the-art EV Charging Solutions. Sow your commitment to progress, and provide an essential service to your clients and team. Plug into the future of your business with us." />,
+        },
+        {
+            src: "/slide/IMG_9008.jpg",
+            alt: "Slide 4",
+            content: <SlideContent title="Electricity Procurement" description="We are a licensed broker of electricity. We can help you negotiate the purchase of electric supply to help your business lower the pricing" />,
+        },
+        {
+            src: "/slide/IMG_9012.jpg",
+            alt: "Slide 5",
+            content: <SlideContent title="Renewables" description="Our team can aid you in structuring a deal that suits your financial needs and meets your renewable standards." />,
+        },
     ];
 
     return (
-        <div className="carousel-container">
+        <div className="carousel-container relative">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation={{
@@ -27,11 +50,25 @@ const Carousel = () => {
                 loop
                 className="mySwiper"
             >
-                {images.map((src, index) => (
-                    <SwiperSlide key={index}>
-                        <Image src={src} alt={`Slide ${index + 1}`} height={500} width={500} className="w-full h-[500px] object-cover" />
+                {slides.map((slide, index) => (
+                    <SwiperSlide key={index} className="relative h-[500px]">
+                        {/* Wrapper div to control Image dimensions */}
+                        <div className="w-full h-full relative" style={{ height: "500px" }}>
+                            <Image
+                                src={slide.src}
+                                alt={slide.alt}
+                                layout="fill"
+                                objectFit="cover"
+                                quality={75}
+                            />
+                        </div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            {slide.content}
+                        </div>
                     </SwiperSlide>
                 ))}
+
+                {/* Navigation Buttons */}
                 <div className="swiper-button-prev-custom">
                     <svg className="caret-left-icon--small" viewBox="0 0 9 16">
                         <polyline fill="none" strokeMiterlimit="10" points="7.3,14.7 2.5,8 7.3,1.2 "></polyline>

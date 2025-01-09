@@ -107,8 +107,7 @@ export default function Home() {
               </div>
               <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Avoid overpaying for electricity with protection from the energy
-                market, billing Mistakes,the rise in energy pricing, and
-                slamming scams.
+                market, billing Mistakes,the rise in energy pricing.
               </div>
             </div>
             <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px] sm:items-start items-center">
