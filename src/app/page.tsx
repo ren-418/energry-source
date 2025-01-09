@@ -25,11 +25,11 @@ export default function Home() {
             />
           </div>
 
-          <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative">
-            <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px]">
+          <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative sm:items-start items-center">
+            <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px] sm:text-start text-center">
             Help Change How Our World Is Powered
             </h1>
-            <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px]">
+            <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px] sm:text-start text-center">
               We are bridging the gap between today&apos;s aging infrastructure
               and tomorrow&apos;s technology, helping build a cleaner, more efficient energy space packaged with lower energy pricing.
             </p>
@@ -45,17 +45,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col padding-control bg-white pt-[50px] pb-[70px] md:pb-[8.5%] gap-5 md:!pr-0 md:flex-row">
           <div className="flex flex-col gap-5 w-full justify-center grow md:w-[47%]">
-            <h3 className="font-poppins text-black text-2xl sm:text-3xl whitespace-pre-wrap xl:text-4xl">
+            <h3 className="font-poppins text-black text-2xl sm:text-3xl whitespace-pre-wrap xl:text-4xl sm:text-start text-center">
               We&apos;re your comprehensive energy solutions provider.
             </h3>
-            <h4 className="font-poppins text-[#000000] text-md sm:text-lg ">
+            <h4 className="font-poppins text-[#000000] text-md sm:text-lg sm:text-start text-center">
               And since we do it all, our customers enjoy that simplicity every
               step of the way. Our team can handle your entire project - from
               strategy and design to approvals and installation. We take pride
               in guiding businesses on their energy journeys, helping them
               benefit from cost savings, and become champions of sustainability.
             </h4>
-            <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg">
+            <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg sm:text-start text-center">
               One team. One goal. Great impacts. There&apos;s nothing
               complicated about it.
             </span>
@@ -83,7 +83,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-row grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 gap-5">
-            <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px]">
+            <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px] sm:items-start items-center">
               <div className="w-[80px] h-[80px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,13 +105,13 @@ export default function Home() {
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
                 Minimize risk
               </div>
-              <div className="text-[#4e6064] font-poppins text-base">
+              <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Avoid overpaying for electricity with protection from the energy
                 market, billing Mistakes,the rise in energy pricing, and
                 slamming scams.
               </div>
             </div>
-            <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px]">
+            <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px] sm:items-start items-center">
               <div className="w-[80px] h-[80px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,13 +143,13 @@ export default function Home() {
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
                 Reduce usage
               </div>
-              <div className="text-[#4e6064] font-poppins text-base">
+              <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Stay ahead of underperforming equipment with our in-person
                 assessments, tailored to enhance your property&apos;s energy
                 efficiency
               </div>
             </div>
-            <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px]">
+            <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px] sm:items-start items-center">
               <div className="w-[80px] h-[80px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@ export default function Home() {
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
                 Save Now
               </div>
-              <div className="text-[#4e6064] font-poppins text-base">
+              <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Save now by replacing old, outdated equipment, leveraging energy
                 pricing, and optimizing for energy efficiency.
               </div>
@@ -202,25 +202,25 @@ export default function Home() {
                 Risks
               </div>
               <div className="flex flex-col gap-[16px]">
-                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] items-start">
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
                   <div className="font-poppins text-[#c2f7ad] text-xs">
                     Coffee Chain
                   </div>
-                  <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl">
+                  <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
                     <span>$120,000</span>
                     <span>overpaid</span>
                   </div>
-                  <div className="font-poppins text-white text-base">
+                  <div className="font-poppins text-white text-base text-center sm:text-start">
                     to a utility for incorrect rate class on their bill
                   </div>
                 </div>
-                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] items-start">
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
                   <div className="font-poppins text-[#c2f7ad] text-xs">QSR</div>
-                  <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl">
+                  <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
                     <span>40%</span>
                     <span>overpaid</span>
                   </div>
-                  <div className="font-poppins text-white text-base">
+                  <div className="font-poppins text-white text-base text-center sm:text-start">
                     on an electricity supply rates overpaid due to annual
                     electric rate increases
                   </div>
@@ -232,28 +232,28 @@ export default function Home() {
                 Opportunities
               </div>
               <div className="flex flex-col gap-[16px]">
-                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] items-start">
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                   <div className="font-poppins text-[#1f7a59] text-xs">
                     FITNESS CLUB
                   </div>
-                  <div className="flex flex-col font-poppins text-[#000000] text-3xl">
+                  <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$26,000</span>
                     <span>saved</span>
                   </div>
-                  <div className="font-poppins text-black text-base">
+                  <div className="font-poppins text-black text-base text-center sm:text-start">
                     leverage Mill Street Energy to secure custom energy pricing
                     for your business
                   </div>
                 </div>
-                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] items-start">
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                   <div className="font-poppins text-[#1f7a59] text-xs">
                     FITNESS CLUB
                   </div>
-                  <div className="flex flex-col font-poppins text-[#000000] text-3xl">
+                  <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$42,000</span>
                     <span>earned</span>
                   </div>
-                  <div className="font-poppins text-black text-base">
+                  <div className="font-poppins text-black text-base text-center sm:text-start">
                     by enrolling and participating in Demand Response programs
                   </div>
                 </div>
@@ -279,7 +279,7 @@ export default function Home() {
           <div className="font-poppins text-black lg:text-5xl text-3xl text-center">
             Simplifying the clean energy transition.
           </div>
-          <div className="flex flex-row grid xl:grid-cols-2 grid-cols-1 gap-[15px] pt-[50px]">
+          <div className="flex flex-row grid xl:grid-cols-2 grid-cols-1 gap-[15px] pt-[50px] sm:text-start text-center">
             <div className="text-[#549f57] font-poppins lg:text-base text-sm lg:pl-[70px] pl-[20px] flex flex-row justify-top">
               <span className="lg:text-5xl text-3xl text-[#549f57] font-poppins">
                 95+
