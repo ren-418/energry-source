@@ -52,10 +52,6 @@ export default function Home() {
             <h4 className="font-poppins text-[#000000] text-md sm:text-lg sm:text-start text-center">
             Whether you&apos;re part of an enterprise, municipality, industrial operation, healthcare provider, or any sector within the commercial or energy industries, leave the heavy lifting to our network. We&apos;ll manage your energy service needs, delivering solutions that free up your resources so you can focus on your business&apos;s core operations and redirect additional revenue back into your business rather than toward high energy costs.
             </h4>
-            <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg sm:text-start text-center">
-              One team. One goal. Great impacts. There&apos;s nothing
-              complicated about it.
-            </span>
           </div>
           <div className="grow flex justify-end mx-[-11%] md:w-[50%] md:mx-[0px]">
             <Image
