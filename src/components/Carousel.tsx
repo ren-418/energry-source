@@ -11,14 +11,14 @@ import SlideContent from "./SlideContent";
 const Carousel = () => {
     const slides = [
         {
-            src: "/slide/IMG_9032.jpg",
+            src: "/slide/IMG_9028.jpg",
             alt: "Slide 1",
-            content: <SlideContent title="Heat Pump Technology" description="Step into the future of business operations with our heat pump technology. Experience how satisfying it is to have control over your heating systems and your energy costs, bringing about a healthier bottom line." />,
+            content: <SlideContent title="Heat Pump Technology" description="Electricity is the future and heat pumps are leading the way, click here to learn about the simple installation and how cost effective these solutions can be." />,
         },
         {
-            src: "/slide/IMG_9028.jpg",
+            src: "/slide/IMG_9032.jpg",
             alt: "Slide 2",
-            content: <SlideContent title="Efficiency Solutions" description="Find out how effortless upgrading your business operations can be with our all-in—one efficiency solutions. Join us in driving down costs and making energy waste a thing of the past." />,
+            content: <SlideContent title="Efficiency Solutions" description="Discover how simple it can be to upgrade your business with energy-efficient solutions that lower both costs and energy use." />,
         },
         {
             src: "/slide/IMG_9027.jpg",
