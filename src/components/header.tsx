@@ -110,7 +110,7 @@ export default function Header() {
     ];
 
     return (
-        <header className={`transition-all duration-300 ease-in-out z-10  ${scrolling && !isHamburgerOpen ? "bg-white shadow-lg fixed top-0 w-full" : ""} ${isHamburgerOpen ? "w-full h-[100%] bg-[#38383b] flex flex-col gap-[5%] overflow-hidden fixed top-0 text-white" : ""}`}>
+        <header className={`transition-all duration-300 ease-in-out z-[30] fixed top-0 w-full  ${scrolling && !isHamburgerOpen ? "bg-white shadow-lg fixed top-0 w-full" : ""} ${isHamburgerOpen ? "w-full h-[100%] bg-[#38383b] flex flex-col gap-[5%] overflow-hidden fixed top-0 text-white" : ""}`}>
             <div className={`relative top-0 left-0 px-[5.5%] py-[40px] flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[20px] ${scrolling ? "py-[10px]" : ""}`}>
                 <div>
                     <Link href="/">

@@ -6,38 +6,41 @@ import Footer from "@/components/footer";
 import Home_back from "../../public/image/home-background.jpg";
 import Provider from "../../public/image/provider.jpg";
 import Map from "../../public/image/map.png";
+import Blue_dot from "../../public/image/blue-dot-copy.png"
+import Green_dot from "../../public/image/green-dot-copy.png"
+import Grey_dot from "../../public/image/grey-dot-copy.png"
 export default function Home() {
   return (
     <>
       <Header />
       <div className="w-full h-full flex flex-col">
-        <div className="">
-          <Image
-            alt="home image"
-            src={Home_back}
-            className="absolute top-0 left-0 z-[-1] w-full h-[850px]"
-            style={{ objectFit: "cover" }}
-          />
-          <div className="padding-control flex flex-col py-10 gap-8 lg:py-20 md:gap-0">
-            <h1 className="font-poppins text-5xl text-white leading-[70px] text-bold md:text-7xl md:leading-[90px]">
-              Energy.
-              <br />
-              Solutions.
-              <br />
-              Simplified.
+        <div className="relative md:min-h-[830px] min-h-[750px]">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <Image
+              alt="Home Background"
+              src={Home_back}
+              className=""
+              style={{ objectFit: "cover" }}
+              fill 
+            />
+          </div>
+
+          <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[10rem] md:gap-[50px] z-10 relative">
+            <h1 className="font-poppins text-5xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px]">
+              How Our World Is Powered
             </h1>
             <p className="font-poppins text-lg text-white leading-[35px] md:text-2xl md:leading-[40px]">
-            By bridging the gap between today&apos;s aging infrastructure and tomorrow&apos;s technology,
-            <br/> we&apos;re building a cleaner, more reliable energy space along with lower pricing.
+              By bridging the gap between today&apos;s aging infrastructure and tomorrow&apos;s technology,
+              <br /> we&apos;re building a cleaner, more reliable energy space along with lower pricing.
             </p>
-            <div className="pt-[35px]">
-              <div className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px] text-center">
+            <div className="md:pt-0 pt-5">
+              <a href="/learn-more" className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px] text-center cursor-pointer hover:bg-[#448e49] transition-colors">
                 Learn More
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <div className="flex flex-col padding-control bg-white pt-[5%] pb-[70px] md:pb-[8.5%] gap-5 md:!pr-0 md:flex-row">
+        <div className="flex flex-col padding-control bg-white pt-[50px] pb-[70px] md:pb-[8.5%] gap-5 md:!pr-0 md:flex-row">
           <div className="flex flex-col gap-5 w-full justify-center grow md:w-[47%]">
             <h3 className="font-poppins text-black text-2xl sm:text-3xl whitespace-pre-wrap xl:text-4xl">
               We&apos;re your comprehensive energy solutions provider.
@@ -137,8 +140,7 @@ export default function Home() {
                 Reduce usage
               </div>
               <div className="text-[#4e6064] font-poppins text-base">
-                Stay ahead of HVAC and thermostat issues thanks to performance
-                reports and auto-resolve features.
+              Stay ahead of underperforming equipment with our in-person assessments, tailored to enhance your property&apos;s energy efficiency
               </div>
             </div>
             <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px]">
@@ -169,11 +171,10 @@ export default function Home() {
                 </svg>
               </div>
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
-                Get paid
+                Save Now
               </div>
               <div className="text-[#4e6064] font-poppins text-base">
-                Make money just for reducing your usage during high-demand
-                times.
+              Save now by replacing old, outdated equipment, leveraging energy pricing, and optimizing for energy efficiency.
               </div>
             </div>
           </div>
@@ -213,7 +214,7 @@ export default function Home() {
                     <span>overpaid</span>
                   </div>
                   <div className="font-poppins text-white text-base">
-                    on an electricity supply rate due to 2 slammed contracts
+                    on an electricity supply rates overpaid due to annual electric rate increases
                   </div>
                 </div>
               </div>
@@ -232,7 +233,7 @@ export default function Home() {
                     <span>saved</span>
                   </div>
                   <div className="font-poppins text-black text-base">
-                    by programming smart thermostats
+                  leverage Mill Street Energy to secure custom energy pricing for your business
                   </div>
                 </div>
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] items-start">
@@ -318,12 +319,29 @@ export default function Home() {
             Click here
           </div>
         </div>
-        <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
+        <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px] bg-[#0f352d] items-center">
+          <div className="w-full flex lg:flex-row flex-col gap-[50px] items-center">
+            <div className="flex flex-col gap-[10px]">
+              <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
+                <Image src={Blue_dot} alt="blue dot" width={50} height={50}/>
+                <span>Natural Gas & Electricity Options Available</span>
+              </div>
+              <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
+                <Image src={Green_dot} alt="green dot" width={50} height={50}/>
+                <span>Natural Gas Options Available</span>
+              </div>
+              <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
+                <Image src={Grey_dot} alt="grey dot" width={50} height={50}/>
+                <span>Limited Availability</span>
+              </div>
+            </div>
           <Image
             alt="location"
             src={Map}
-            className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
+            // className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
+            className="lg:w-[60%] w-[100%]  sm:mx-[0px] mx-[-60px]"
           />
+          </div>
           <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
             <div className="text-poppins text-3xl text-[#549F57] font-bold mb-[35.2px]">
               Contact Us
