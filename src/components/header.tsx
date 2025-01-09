@@ -10,7 +10,7 @@ export default function Header() {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [scrolling, setScrolling] = useState<boolean>(false);
     const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
-    const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null); 
+    const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
 
     const handleMouseEnter = (dropdown: string) => {
         setOpenDropdown(dropdown);
@@ -26,7 +26,7 @@ export default function Header() {
 
     const toggleHamburger = () => {
         setIsHamburgerOpen(!isHamburgerOpen);
-        setMobileSubmenu(null); 
+        setMobileSubmenu(null);
     };
 
     const openMobileSubmenu = (submenu: string) => {
@@ -110,7 +110,7 @@ export default function Header() {
     ];
 
     return (
-        <header className={`transition-all duration-300 ease-in-out z-10  ${scrolling && !isHamburgerOpen? "bg-white shadow-lg fixed top-0 w-full": ""} ${isHamburgerOpen? "w-full h-[100%] bg-[#38383b] flex flex-col gap-[5%] overflow-hidden fixed top-0 text-white": ""}`}>
+        <header className={`transition-all duration-300 ease-in-out z-10  ${scrolling && !isHamburgerOpen ? "bg-white shadow-lg fixed top-0 w-full" : ""} ${isHamburgerOpen ? "w-full h-[100%] bg-[#38383b] flex flex-col gap-[5%] overflow-hidden fixed top-0 text-white" : ""}`}>
             <div className={`relative top-0 left-0 px-[5.5%] py-[40px] flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[20px] ${scrolling ? "py-[10px]" : ""}`}>
                 <div>
                     <Link href="/">
@@ -123,16 +123,16 @@ export default function Header() {
                             <li
                                 key={item.key}
                                 className={`header-list-event cursor-pointer relative hover:text-[#549F57] ${activePage === item.key ? "active" : ""}`}
-                                onClick={() =>item.submenu ? setActive(item.key) : setActive(item.key)}
-                                onMouseEnter={() =>item.submenu ? handleMouseEnter(item.key) : null}
-                                onMouseLeave={() =>item.submenu ? handleMouseLeave() : null}>
+                                onClick={() => setActive(item.key)}
+                                onMouseEnter={() => item.submenu && handleMouseEnter(item.key)}
+                                onMouseLeave={() => item.submenu && handleMouseLeave()}>
                                 <Link href={item.link}
-                                    onClick={(e) => {if (item.submenu) e.preventDefault();}}>
+                                    onClick={(e) => { if (item.submenu) e.preventDefault(); }}>
                                     {item.name}
                                 </Link>
                                 <span className="underline-effect" />
                                 {item.submenu && openDropdown === item.key && (
-                                    <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                                    <div className="absolute left-0 top-full w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
                                         <ul className="py-2">
                                             {item.submenu.map((subItem, index) => (
                                                 <li key={index}>
@@ -145,6 +145,7 @@ export default function Header() {
                                     </div>
                                 )}
                             </li>
+
                         ))}
                     </ul>
                 </div>
@@ -156,9 +157,9 @@ export default function Header() {
                     aria-expanded={isHamburgerOpen}
                 >
                     <div className="w-full h-full relative">
-                        <div className={`top-bun absolute h-1 bg-gray-700 transition-transform duration-300 ${isHamburgerOpen? "top-ham-active": "translate-y-[-5px] rotate-0"}`}></div>
+                        <div className={`top-bun absolute h-1 bg-gray-700 transition-transform duration-300 ${isHamburgerOpen ? "top-ham-active" : "translate-y-[-5px] rotate-0"}`}></div>
                         <div className={`patty absolute h-1 bg-gray-700 transition-opacity duration-300 ${isHamburgerOpen ? "opacity-0" : "opacity-100"}`}></div>
-                        <div className={`bottom-bun absolute h-1 bg-gray-700 transition-transform duration-300 ${isHamburgerOpen? "bot-ham-active": "translate-y-[5px] rotate-0"}`}></div>
+                        <div className={`bottom-bun absolute h-1 bg-gray-700 transition-transform duration-300 ${isHamburgerOpen ? "bot-ham-active" : "translate-y-[5px] rotate-0"}`}></div>
                     </div>
                 </div>
             </div>
@@ -169,9 +170,9 @@ export default function Header() {
                         <ul className={`header-before-event flex flex-col gap-[5px] font-poppins font-bold uppercase justify-center items-center responsive-header-font ${scrolling && !isHamburgerOpen ? "text-black" : "text-white"}`}>
                             {menuItems.map((item) => (
                                 <li key={item.key} className={`cursor-pointer relative hover:text-[#549F57] ${activePage === item.key ? "active" : ""}`}
-                                    onClick={() =>item.submenu? openMobileSubmenu(item.key): setActive(item.key)}>
+                                    onClick={() => item.submenu ? openMobileSubmenu(item.key) : setActive(item.key)}>
                                     <Link href={item.link}
-                                        onClick={(e) => {if (item.submenu) e.preventDefault();}}
+                                        onClick={(e) => { if (item.submenu) e.preventDefault(); }}
                                         className="w-full text-center"
                                     >
                                         {item.name}

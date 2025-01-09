@@ -9,9 +9,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Carousel = () => {
     const images = [
-        "/slide/slide1.png",
-        "/slide/slide2.png",
         "/slide/slide3.png",
+        "/slide/slide1.png",
+        "/slide/slide2.png"
     ];
 
     return (
@@ -23,7 +23,7 @@ const Carousel = () => {
                     prevEl: '.swiper-button-prev-custom',
                 }}
                 pagination={{ clickable: true }}
-                autoplay={{ delay: 3000 }}
+                autoplay={{ delay: 5000 }}
                 loop
                 className="mySwiper"
             >

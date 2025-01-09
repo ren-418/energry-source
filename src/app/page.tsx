@@ -24,7 +24,7 @@ export default function Home() {
               We keep it simple for you and bring solutions into view.
             </p>
             <div className="pt-[35px]">
-              <div className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px]">
+              <div className="text-base font-poppins py-5 px-7 uppercase bg-[#549F57] rounded-md w-[160px] text-center">
                 Learn More
               </div>
             </div>
@@ -61,12 +61,10 @@ export default function Home() {
         <div className="md:py-[128px] py-[50px] padding-control bg-white flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center w-[100%] lg:w-[80%] xl:w-[60%] items-center gap-[20px] sm:mb-[60px] mb-[20px]">
             <h1 className="font-poppins text-[#022e34] sm:text-4xl text-2xl w-full text-center sm:leading-[60px] leading-[40px]">
-              We have an energy management service for our clients as well
+            We deliver an energy management solution tailored for our clients
             </h1>
             <p className="font-poppins text-[#4e6064] sm:text-md w-full text-center sm:leading-[30px] leading-[20px]">
-              The David Energy platform is a low-touch, high-impact solution
-              that ensures franchisees and multi-unit operators are spending
-              wisely and running as efficiently as possible.
+            The Mill Street Energy platform is an efficient, low-maintenance solution designed to help franchisees and multi-unit operators optimize their spending and enhance operational efficiency.
             </p>
           </div>
           <div className="flex flex-row grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 gap-5">
@@ -173,10 +171,10 @@ export default function Home() {
         </div>
         <div className="sm:py-[8rem] py-[64px] flex padding-control xl:flex-row flex-col items-center bg-[#0f352d] justify-between gap-[20px] !pr-[6%]">
           <div className="flex flex-col gap-[16px] xl:w-[45%] w-[100%] justify-center items-center">
-            <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl">
-              Why do I need David Energy?
+            <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-start">
+              Why do I need Mill Street Energy?
             </h1>
-            <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg">
+            <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-start">
               Electricity is full of risks and opportunities that can be hard to
               spot- and expensive if missed.
             </p>
@@ -258,7 +256,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="py-[25px] padding-control flex flex-col justify-center items-center bg-white gap-[40px]">
+        <div className="py-[40px] padding-control flex flex-col justify-center items-center bg-white gap-[40px]">
           <div className="font-poppins text-black lg:text-5xl text-3xl text-center">
             Simplifying the clean energy transition.
           </div>
@@ -296,7 +294,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex padding-control py-[50px] flex-col gap-[10px] bg-[#0f352d] items-center">
-          <div className="text-[#549f57] text-base text-poppins location-before-event rounded-[50px] cursor-poitner p-[10px]">
+          <div className="text-[#549f57] text-base text-poppins location-before-event rounded-[50px] cursor-poitner p-[10px] text-center">
             <i className="bi bi-globe-central-south-asia rotating-icon mr-[10px]"></i>
             What States Do We Work In?
           </div>
@@ -311,21 +309,100 @@ export default function Home() {
             Click here
           </div>
         </div>
-        <div className="p-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
-          <Image alt="location" src={Map} className="xl:w-[70%] w-[90%]" />
+        <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px]  bg-[#0f352d] items-center">
+          <Image alt="location" src={Map} className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]" />
           <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
-            <div className="text-poppins text-3xl text-[#037047] font-bold mb-[35.2px]">
+            <div className="text-poppins text-3xl text-[#549F57] font-bold mb-[35.2px]">
               Contact Us
             </div>
-            <div className="w-full h-[52px]">
+            <div className="w-full h-[52px] location-input">
               <input
                 placeholder="Enter Zip Code*"
                 type="text"
-                className="py-[15px] w-[280px] sm:w-[352px]"
+                className="py-[15px] w-[280px] sm:w-[352px] bg-gray-200 text-gray-600 text-base font-normal border-0 outline-none min-h-[52px] rounded-md py-1.5 px-3 transition-colors duration-150 ease-in-out"
               ></input>
             </div>
-            <div className="text-base font-poppins py-[10px] px-[40px] bg-[#037047] rounded-md w-[110px] mt-[24px]">
+            <div className="text-base font-poppins py-[10px] bg-[#549F57] rounded-md w-[110px] mt-[24px] text-center">
               Next
+            </div>
+          </div>
+        </div>
+        <div className="padding-control py-[30px] flex md:flex-row flex-col bg-[#38383b] gap-[34px]">
+          <div className="flex flex-col gap-[32px] md:w-[55%] w-full text-center md:text-start">
+            <h1 className="text-poppins text-[#ffffff] sm:text-4xl text-3xl">
+              Get started today.
+            </h1>
+            <span className="text-poppins text-base text-[#ffffff]">
+              Sign up for a no-cost, no-obligation energy assessment and one of our experts will get back to you within 24 hours.
+            </span>
+          </div>
+          <div className="flex flex-col gap-[25px] w-full">
+            <div className="flex flex-col w-full gap-[20px]">
+              <div className="flex flex-row gap-[5px] items-center">
+                <span className="text-poppins text-[#ffffff] text-base">Name</span>
+                <span className="text-poppins text-[#ffffff] text-sm">(required)</span>
+              </div>
+              <div className="flex flex-row gap-[10px] w-full">
+                <div className="flex flex-col gap-[5px] items-start w-[50%]">
+                  <label htmlFor="firstname" className="text-poppins text-[#ffffff] text-sm">
+                    First Name
+                  </label>
+                  <div className="w-full">
+                    <input
+                      id="firstname"
+                      type="text"
+                      className="hover:bg-[#acacae] w-full min-h-[50px] px-4 py-2 border border-[#38383b] rounded-none focus:outline-none focus:ring-2 focus:ring-[#a8a6a1] focus:ring-offset-2 focus:ring-offset-white ease-in-out bg-white text-gray-800 placeholder-gray-500"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-[5px] items-start w-[50%]">
+                  <label htmlFor="lastname" className="text-poppins text-[#ffffff] text-sm">
+                    Last Name
+                  </label>
+                  <div className="w-full">
+                    <input
+                      id="lastname"
+                      type="text"
+                      className="hover:bg-[#acacae] w-full min-h-[50px] px-4 py-2 border border-[#38383b] rounded-none focus:outline-none focus:ring-2 focus:ring-[#a8a6a1] focus:ring-offset-2 focus:ring-offset-white ease-in-out bg-white text-gray-800 placeholder-gray-500"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full">
+                <div className="flex flex-col gap-[5px] items-start w-full">
+                  <label htmlFor="email" className="text-poppins text-[#ffffff] text-sm">
+                    Email (required)
+                  </label>
+                  <div className="w-full">
+                    <input
+                      id="email"
+                      type="text"
+                      className="hover:bg-[#acacae] w-full min-h-[50px] px-4 py-2 border border-[#38383b] rounded-none focus:outline-none focus:ring-2 focus:ring-[#a8a6a1] focus:ring-offset-2 focus:ring-offset-white ease-in-out bg-white text-gray-800 placeholder-gray-500"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full">
+                <div className="flex flex-col gap-[5px] items-start w-full">
+                  <label htmlFor="message" className="text-poppins text-[#ffffff] text-sm">
+                    Message (required)
+                  </label>
+                  <div className="w-full">
+                    <textarea
+                      id="message"
+                      className="hover:bg-[#acacae] w-full min-h-[100px] px-4 py-2 border border-[#38383b] rounded-none focus:outline-none focus:ring-2 focus:ring-[#a8a6a1] focus:ring-offset-2 focus:ring-offset-white ease-in-out bg-white text-gray-800 placeholder-gray-500"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="text-base font-poppins py-[10px] bg-[#549F57] rounded-md w-[110px] text-center text-white mb-[10px]">
+              Send
+            </div>
+
             </div>
           </div>
         </div>
