@@ -181,7 +181,7 @@ export default function Home() {
                 Why do I need Mill Street Energy?
               </h1>
               <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
               </p>
             </div>
           <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
@@ -220,7 +220,7 @@ export default function Home() {
                 Why do I need Mill Street Energy?
               </h1>
               <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
               </p>
             </div>
             <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
