@@ -47,10 +47,10 @@ export default function Home() {
         <div className="flex flex-col padding-control bg-white pt-[50px] pb-[70px] md:pb-[8.5%] gap-5 md:!pr-0 md:flex-row">
           <div className="flex flex-col gap-5 w-full justify-center grow md:w-[47%]">
             <h3 className="font-poppins text-black text-2xl sm:text-3xl whitespace-pre-wrap xl:text-4xl sm:text-start text-center">
-            We are your energy management partner.
+              We are your energy management partner.
             </h3>
             <h4 className="font-poppins text-[#000000] text-md sm:text-lg sm:text-start text-center">
-            Whether you&apos;re part of an enterprise, municipality, industrial operation, healthcare provider, or any sector within the commercial or energy industries, leave the heavy lifting to our network. We&apos;ll manage your energy service needs, delivering solutions that free up your resources so you can focus on your business&apos;s core operations and redirect additional revenue back into your business rather than toward high energy costs.
+              Whether you&apos;re part of an enterprise, municipality, industrial operation, healthcare provider, or any sector within the commercial or energy industries, leave the heavy lifting to our network. We&apos;ll manage your energy service needs, delivering solutions that free up your resources so you can focus on your business&apos;s core operations and redirect additional revenue back into your business rather than toward high energy costs.
             </h4>
           </div>
           <div className="grow flex justify-end mx-[-11%] md:w-[50%] md:mx-[0px]">
@@ -70,7 +70,7 @@ export default function Home() {
               We deliver an energy management solution tailored for our clients
             </h1>
             <p className="font-poppins text-[#4e6064] sm:text-md w-full text-center sm:leading-[30px] leading-[20px]">
-            Our Energy Management Platform is designed for clients seeking savings and aiming to reduce high energy expenses. It provides an efficient, low-maintenance solution to optimize energy use, lower costs, and explore alternative options beyond simply paying monthly bill
+              Our Energy Management Platform is designed for clients seeking savings and aiming to reduce high energy expenses. It provides an efficient, low-maintenance solution to optimize energy use, lower costs, and explore alternative options beyond simply paying monthly bill
             </p>
           </div>
           <div className="flex flex-row grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 gap-5">
@@ -176,18 +176,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="sm:py-[8rem] py-[64px] flex padding-control xl:flex-row flex-col items-center bg-[#0f352d] justify-between gap-[20px] !pr-[6%]">
-          <div className="flex flex-col gap-[16px] xl:w-[45%] w-[100%] justify-center items-center">
-            <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-start">
-              Why do I need Mill Street Energy?
-            </h1>
-            <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-start">
-              Electricity is full of risks and opportunities that can be hard to
-              spot- and expensive if missed.
-            </p>
-          </div>
-          <div className="flex flex-rol grid sm:grid-cols-2 grid-cols-1 gap-[1rem]">
-            <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center">
+        <div className="sm:py-[8rem] py-[64px] flex xl:flex-row flex-col items-center bg-[#0f352d] justify-between gap-[20px] xl:!px-[8%] lg:px-[4%] padding-control">
+        <div className="flex flex-col gap-[16px]  justify-center items-center lg:hidden w-[100%]">
+              <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-center">
+                Why do I need Mill Street Energy?
+              </h1>
+              <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
+                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+              </p>
+            </div>
+          <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
+            <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
               <div className="text-center font-poppins text-white text-2xl">
                 Risks
               </div>
@@ -217,14 +216,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center">
+            <div className="lg:flex hidden flex-col gap-[16px] w-[30%] justify-center items-center text-center">
+              <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-center">
+                Why do I need Mill Street Energy?
+              </h1>
+              <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
+                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+              </p>
+            </div>
+            <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
               <div className="text-center font-poppins text-black text-2xl">
                 Opportunities
               </div>
               <div className="flex flex-col gap-[16px]">
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                   <div className="font-poppins text-[#1f7a59] text-xs">
-                    FITNESS CLUB
+                  Community Food Bank
                   </div>
                   <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$26,000</span>
@@ -237,7 +244,7 @@ export default function Home() {
                 </div>
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                   <div className="font-poppins text-[#1f7a59] text-xs">
-                    FITNESS CLUB
+                  Community Food Bank
                   </div>
                   <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$42,000</span>
@@ -251,25 +258,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="sm:py-[128px] py-[64px] w-full flex flex-col bg-white padding-control justify-center items-center">
+        <div className="sm:py-[128px] py-[64px] w-full flex flex-col bg-white padding-control justify-center items-center mt-[-10px]">
           <div className="flex flex-col gap-[16px] justify-center items-center sm:w-[80%] w-full">
             <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center">
               We keep an eye on everything so you don&apos;t have to
             </div>
             <div className="font-poppins text-[#022e34] text-base text-center">
-              Don&apos;t want another thing to think about? We get it. Let us
-              obsess over the electric bill for you. Once you&apos;re integrated
-              with our platform, we do the heavy lifting in the background.
-              You&apos;ll only be alerted to suspicious bill activity, device
-              issues, and savings opportunities.
+              Don&apos;t want another thing to think about? We get it. Once you&apos;re connected to our platform, we handle everything behind the scenes. The only time you&apos;ll hear from us is when we have updates on your savings or opportunities to save even more.
             </div>
           </div>
         </div>
         <div className="py-[40px] padding-control flex flex-col justify-center items-center bg-white gap-[40px]">
-          <div className="font-poppins text-black lg:text-5xl text-3xl text-center">
+          {/* <div className="font-poppins text-black lg:text-5xl text-3xl text-center">
             Simplifying the clean energy transition.
-          </div>
-          <div className="flex flex-row grid xl:grid-cols-2 grid-cols-1 gap-[15px] pt-[50px] sm:text-start text-center">
+          </div> */}
+          <div className="flex flex-row grid xl:grid-cols-2 grid-cols-1 gap-[15px] sm:text-start text-center">
             <div className="text-[#549f57] font-poppins lg:text-base text-sm lg:pl-[70px] pl-[20px] flex flex-row justify-top">
               <span className="lg:text-5xl text-3xl text-[#549f57] font-poppins">
                 95+
