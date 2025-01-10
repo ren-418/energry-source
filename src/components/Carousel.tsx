@@ -11,7 +11,7 @@ import SlideContent from "./SlideContent";
 const Carousel = () => {
     const slides = [
         {
-            src: "/slide/IMG_9032.jpg",
+            src: "/slide/slide13.jpg",
             alt: "Slide 1",
             content: <SlideContent title="Heat Pump Technology" description="Step into the future of business operations with our heat pump technology. Experience how satisfying it is to have control over your heating systems and your energy costs, bringing about a healthier bottom line." />,
         },
@@ -21,17 +21,17 @@ const Carousel = () => {
             content: <SlideContent title="Efficiency Solutions" description="Find out how effortless upgrading your business operations can be with our all-in—one efficiency solutions. Join us in driving down costs and making energy waste a thing of the past." />,
         },
         {
-            src: "/slide/IMG_9027.jpg",
+            src: "/slide/slide12.avif",
             alt: "Slide 3",
             content: <SlideContent title="EV Charging Solutions" description="Stay ahead of the curve with our state-of-the-art EV Charging Solutions. Sow your commitment to progress, and provide an essential service to your clients and team. Plug into the future of your business with us." />,
         },
         {
-            src: "/slide/IMG_9008.jpg",
+            src: "/slide/slide10.png",
             alt: "Slide 4",
             content: <SlideContent title="Electricity Procurement" description="We are a licensed broker of electricity. We can help you negotiate the purchase of electric supply to help your business lower the pricing" />,
         },
         {
-            src: "/slide/IMG_9012.jpg",
+            src: "/slide/slide11.jpg",
             alt: "Slide 5",
             content: <SlideContent title="Renewables" description="Our team can aid you in structuring a deal that suits your financial needs and meets your renewable standards." />,
         },
