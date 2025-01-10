@@ -4,7 +4,7 @@ import Carousel from "@/components/Carousel";
 import Footer from "@/components/footer";
 
 import Home_back from "../../public/image/home-background.jpg";
-import Provider from "../../public/image/provider.jpg";
+import Provider from "../../public/image/provider.webp";
 import Map from "../../public/image/map.png";
 import Blue_dot from "../../public/image/blue-dot-copy.png";
 import Green_dot from "../../public/image/green-dot-copy.png";
@@ -47,25 +47,21 @@ export default function Home() {
         <div className="flex flex-col padding-control bg-white pt-[50px] pb-[70px] md:pb-[8.5%] gap-5 md:!pr-0 md:flex-row">
           <div className="flex flex-col gap-5 w-full justify-center grow md:w-[47%]">
             <h3 className="font-poppins text-black text-2xl sm:text-3xl whitespace-pre-wrap xl:text-4xl sm:text-start text-center">
-              We&apos;re your comprehensive energy solutions provider.
+            We are your energy management partner.
             </h3>
             <h4 className="font-poppins text-[#000000] text-md sm:text-lg sm:text-start text-center">
-              And since we do it all, our customers enjoy that simplicity every
-              step of the way. Our team can handle your entire project - from
-              strategy and design to approvals and installation. We take pride
-              in guiding businesses on their energy journey, helping them
-              benefit from cost savings, and become champions of sustainability.
+            Whether you&apos;re part of an enterprise, municipality, industrial operation, healthcare provider, or any sector within the commercial or energy industries, leave the heavy lifting to our network. We&apos;ll manage your energy service needs, delivering solutions that free up your resources so you can focus on your business&apos;s core operations and redirect additional revenue back into your business rather than toward high energy costs.
             </h4>
             <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg sm:text-start text-center">
               One team. One goal. Great impacts. There&apos;s nothing
               complicated about it.
             </span>
           </div>
-          <div className="grow flex justify-end mx-[-10%] md:w-[50%] md:mx-[0px]">
+          <div className="grow flex justify-end mx-[-11%] md:w-[50%] md:mx-[0px]">
             <Image
               alt="Provider image"
               src={Provider}
-              className="h-[240px] object-cover xl:w-[900px] xl:h-[480px] md:w-full md:h-full"
+              className="h-[240px] object-cover w-[100%] xl:w-[900px] xl:h-[480px] md:w-full md:h-full"
             />
           </div>
         </div>
