@@ -53,7 +53,7 @@ export default function Home() {
               And since we do it all, our customers enjoy that simplicity every
               step of the way. Our team can handle your entire project - from
               strategy and design to approvals and installation. We take pride
-              in guiding businesses on their energy journeys, helping them
+              in guiding businesses on their energy journey, helping them
               benefit from cost savings, and become champions of sustainability.
             </h4>
             <span className="font-poppins text-[#a8a6a1] text-md sm:text-lg sm:text-start text-center">
