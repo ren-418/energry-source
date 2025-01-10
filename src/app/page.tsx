@@ -70,9 +70,7 @@ export default function Home() {
               We deliver an energy management solution tailored for our clients
             </h1>
             <p className="font-poppins text-[#4e6064] sm:text-md w-full text-center sm:leading-[30px] leading-[20px]">
-              The Mill Street Energy platform is an efficient, low-maintenance
-              solution designed to help franchisees and multi-unit operators
-              optimize their spending and enhance operational efficiency.
+            Our Energy Management Platform is designed for clients seeking savings and aiming to reduce high energy expenses. It provides an efficient, low-maintenance solution to optimize energy use, lower costs, and explore alternative options beyond simply paying monthly bill
             </p>
           </div>
           <div className="flex flex-row grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 gap-5">
