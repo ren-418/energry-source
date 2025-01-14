@@ -17,7 +17,7 @@ const Availability: React.FC = () => {
     const isEmailValid = emailRegex.test(email);
 
     const isFormValid = isZipValid && isEmailValid;
-    const toUtility = ():void =>{
+    const toUtility = () =>{
         window.location.href="/utility"
     }
     return (
@@ -66,7 +66,14 @@ const Availability: React.FC = () => {
                                 />
                             </div>
 
-                            <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={()=>{isFormValid?toUtility(): undefined}}>
+                            <div 
+                                className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} 
+                                onClick={() => {
+                                    if (isFormValid) {
+                                        toUtility();
+                                    }
+                                }}
+                            >
                                 <span className={`text-poppins text-base font-[700] uppercase ${isFormValid ? "text-white" : " text-black opacity-40"}`}>
                                     Check My Eligibility
                                 </span>

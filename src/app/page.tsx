@@ -5,18 +5,18 @@ import Header from "../components/header";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/footer";
 import { toast } from "react-toastify";
-import LoaderComponent from "@/components/onLoad";
+// import LoaderComponent from "@/components/onLoad";
 
 import Home_back from "../../public/image/home-background.jpg";
 import Provider from "../../public/image/provider.webp";
-import Map from "../../public/image/map.png";
+// import Map from "../../public/image/map.png";
 import Blue_dot from "../../public/image/blue-dot-copy.png";
 import Green_dot from "../../public/image/green-dot-copy.png";
 import Grey_dot from "../../public/image/grey-dot-copy.png";
 import Location_Map from "@/components/Location_Map";
 export default function Home() {
   const [zipcode, setZipcode] = useState<string>("");
-  const [loading, setLoading] = useState<boolean>(true)
+  // const [loading, setLoading] = useState<boolean>(true)
   function isValidZipCode(zipCode: string): boolean {
     const zipCodePattern = /^\d{5}(-\d{4})?$/;
     const caPattern = /^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$/;
@@ -38,7 +38,7 @@ export default function Home() {
     }
     else {
       console.log(zipcode);
-      window.location.href = "/availability";
+      window.location.href = "/area";
     }
   }
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>): void => {
@@ -219,7 +219,7 @@ export default function Home() {
               Why do I need Mill Street Energy?
             </h1>
             <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-              Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+              Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
             </p>
           </div>
           <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
@@ -258,7 +258,7 @@ export default function Home() {
                 Why do I need Mill Street Energy?
               </h1>
               <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
               </p>
             </div>
             <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">

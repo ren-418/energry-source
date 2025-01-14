@@ -64,7 +64,7 @@ const InputField: React.FC<InputFieldProps> = ({
                         : "border-red-500"
                 }`}
             >
-                <div className="relative w-full px-[16px] py-2">
+                <div className="relative w-full px-[14px] py-2">
                     <input
                         id={id}
                         name={name}
@@ -73,7 +73,7 @@ const InputField: React.FC<InputFieldProps> = ({
                         onChange={handleChange}
                         onFocus={handleFocus}
                         onBlur={handleBlur}
-                        className={`mt-[17px] peer bg-inherit w-full text-black text-sm outline-none transition-all ${
+                        className={`mt-[17px] peer bg-inherit w-full text-black text-md outline-none transition-all ${
                             isValid ? "" : "border-red-500"
                         }`}
                         placeholder=" "
@@ -83,8 +83,8 @@ const InputField: React.FC<InputFieldProps> = ({
                         htmlFor={id}
                         className={`absolute left-[14px] top-[15px] pointer-events-none transition-all ${
                             isFocused || value
-                                ? "text-xs -top-[0px] left-[12px] text-gray-700 bg-white px-1"
-                                : "text-base top-2.5 text-gray-500"
+                                ? `text-xs top-[5px] left-[10px] ${!isValid ? 'text-red-500' : 'text-gray-400'} bg-white px-1`
+                                : `text-base top-2.5 ${!isValid ? 'text-red-500' : 'text-gray-600'}`
                         }`}
                     >
                         {label}

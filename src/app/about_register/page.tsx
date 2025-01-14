@@ -109,7 +109,14 @@ const Availability: React.FC = () => {
                                     By clicking “Agree and Continue” I am agreeing to contract electronically and assenting to Arbor&apos;s <span className="text-[#056100] underline cursor-pointer">Terms of Service,</span> <span className="text-[#056100] underline cursor-pointer">Privacy Policy,</span> and <span className="text-[#056100] underline cursor-pointer">Letter of authorization.</span>
                                 </span>
                             </div>
-                            <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => { isFormValid ? toAboutAddress() : undefined }}>
+                            <div 
+                                className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} 
+                                onClick={() => {
+                                    if (isFormValid) {
+                                        toAboutAddress();
+                                    }
+                                }}
+                            >
                                 <span className={`text-poppins text-base font-[700] uppercase ${isFormValid ? "text-white" : " text-black opacity-40"}`}>
                                     Check My Eligibility
                                 </span>

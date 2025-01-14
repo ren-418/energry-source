@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import InputForm from "@/components/InputForm";
@@ -23,7 +23,7 @@ const Availability: React.FC = () => {
     };
 
 
-    const zipRegex = /^\d{5}$/;
+    const zipRegex = useMemo(() => /^\d{5}$/, []);
 
     useEffect(() => {
         if (selectedOption && city && streetaddress && apt && zipRegex.test(zipcode) && state && selectedSecOption) {
@@ -31,7 +31,7 @@ const Availability: React.FC = () => {
         } else {
             setIsFormValid(false);
         }
-    }, [selectedOption, city, streetaddress, apt, zipcode, state, selectedSecOption]);
+    }, [selectedOption, city, streetaddress, apt, zipcode, state, selectedSecOption, zipRegex]);
 
 
     const returnArea = (): void => {
@@ -184,8 +184,15 @@ const Availability: React.FC = () => {
                                     </div>
                                 </div>
                             }
-                            <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid == true ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => { isFormValid == true ? toAboutAddress() : undefined }}>
-                                <span className={`text-poppins text-base font-[700] uppercase ${isFormValid == true ? "text-white" : " text-black opacity-40"}`}>
+                            <div 
+                                className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid === true ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} 
+                                onClick={() => {
+                                    if (isFormValid) {
+                                        toAboutAddress();
+                                    }
+                                }}
+                            >
+                                <span className={`text-poppins text-base font-[700] uppercase ${isFormValid === true ? "text-white" : " text-black opacity-40"}`}>
                                     Continue
                                 </span>
                             </div>

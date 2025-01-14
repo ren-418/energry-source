@@ -22,7 +22,7 @@ export default function Enroll() {
                                 </div>
                                 <div className="flex flex-col gap-[12px] justify-center items-center">
                                     <h3 className="text-poppins text-2xl text-black font-bold text-center">
-                                        We're working on it.
+                                        We&apos;re working on it.
                                     </h3>
                                     <span className="text-poppins text-lg text-black font-[700]">
                                         Searching for available rates in your area.

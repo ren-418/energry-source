@@ -21,9 +21,6 @@ const InputForm: React.FC<InputFormProps> = ({
 
 }) => {
     const [isFocused, setIsFocused] = useState(false);
-    const [isValid, setIsValid] = useState(true);
-
-
 
     const handleFocus = () => {
         setIsFocused(true);
@@ -46,11 +43,7 @@ const InputForm: React.FC<InputFormProps> = ({
         <div className="flex flex-col gap-1 w-full">
             <div
                 className={`flex justify-end w-full rounded-lg border h-[54px] bg-white relative transition-colors ${
-                    isValid
-                        ? isFocused
-                            ? "border-black"
-                            : "border-[#dbdfe6]"
-                        : "border-red-500"
+                    isFocused ? "border-black" : "border-[#dbdfe6]"
                 }`}
             >
                 <div className="relative w-full px-[16px] py-2">
@@ -62,9 +55,7 @@ const InputForm: React.FC<InputFormProps> = ({
                         onChange={handleChange}
                         onFocus={handleFocus}
                         onBlur={handleBlur}
-                        className={`mt-[17px] peer bg-inherit w-full text-black text-sm outline-none transition-all ${
-                            isValid ? "" : "border-red-500"
-                        }`}
+                        className={`mt-[17px] peer bg-inherit w-full text-black text-sm outline-none transition-all`}
                         placeholder=""
                     />
 

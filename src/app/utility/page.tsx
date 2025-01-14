@@ -7,7 +7,7 @@ import Eversource from "../../../public/image/eversource.png"
 import UI_image from "../../../public/image/united.png"
 
 const Availability: React.FC = () => {
-    const [showUI, setShowUI] = useState<Boolean>(false)
+    const [showUI, setShowUI] = useState<boolean>(false)
     const UIchange = (): void => {
         setShowUI((prevShowUI) => !prevShowUI);
     }
@@ -45,7 +45,7 @@ const Availability: React.FC = () => {
                                             Select your electric utility
                                         </h3>
                                         <span className="text-poppins text-base text-black">
-                                            Select your utility so we can check if you're overpaying for energy.
+                                            Select your utility so we can check if you&apos;re overpaying for energy.
                                         </span>
                                     </div>
                                     <div className="">
