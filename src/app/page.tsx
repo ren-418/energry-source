@@ -268,7 +268,7 @@ export default function Home() {
               <div className="flex flex-col gap-[16px]">
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                   <div className="font-poppins text-[#1f7a59] text-xs">
-                    Community Food Bank
+                  Community Food Storage Center
                   </div>
                   <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$26,000</span>
