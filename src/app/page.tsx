@@ -235,6 +235,7 @@ export default function Home() {
                   <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$26,000</span>
                     <span>saved</span>
+                    
                   </div>
                   <div className="font-poppins text-black text-base text-center sm:text-start">
                     leverage Mill Street Energy to secure custom energy pricing
