@@ -1,7 +1,11 @@
+"use client"
+import { useState } from "react";
 import Image from "next/image";
 import Header from "../components/header";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/footer";
+import { toast } from "react-toastify";
+import LoaderComponent from "@/components/onLoad";
 
 import Home_back from "../../public/image/home-background.jpg";
 import Provider from "../../public/image/provider.webp";
@@ -9,7 +13,39 @@ import Map from "../../public/image/map.png";
 import Blue_dot from "../../public/image/blue-dot-copy.png";
 import Green_dot from "../../public/image/green-dot-copy.png";
 import Grey_dot from "../../public/image/grey-dot-copy.png";
+import Location_Map from "@/components/Location_Map";
 export default function Home() {
+  const [zipcode, setZipcode] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(true)
+  function isValidZipCode(zipCode: string): boolean {
+    const zipCodePattern = /^\d{5}(-\d{4})?$/;
+    const caPattern = /^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$/;
+    const usPattern = /^\d{5}(-\d{4})?$/;
+
+    return usPattern.test(zipCode) || caPattern.test(zipCode) || zipCodePattern.test(zipCode);
+  }
+
+  const goToAvailibility = (): void => {
+    if (!isValidZipCode(zipcode)) {
+      toast.warning("Please input correct information", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
+    else {
+      console.log(zipcode);
+      window.location.href = "/availability";
+    }
+  }
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (event.key === 'Enter') {
+      goToAvailibility();
+    }
+  };
   return (
     <>
       <Header />
@@ -24,6 +60,8 @@ export default function Home() {
               fill
             />
           </div>
+
+
           <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative sm:items-start items-center">
             <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px] sm:text-start text-center">
               Help Change How Our World Is Powered
@@ -176,14 +214,14 @@ export default function Home() {
           </div>
         </div>
         <div className="sm:py-[8rem] py-[64px] flex xl:flex-row flex-col items-center bg-[#0f352d] justify-between gap-[20px] xl:!px-[8%] lg:px-[4%] padding-control">
-        <div className="flex flex-col gap-[16px]  justify-center items-center lg:hidden w-[100%]">
-              <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-center">
-                Why do I need Mill Street Energy?
-              </h1>
-              <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
-              </p>
-            </div>
+          <div className="flex flex-col gap-[16px]  justify-center items-center lg:hidden w-[100%]">
+            <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-center">
+              Why do I need Mill Street Energy?
+            </h1>
+            <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
+              Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
+            </p>
+          </div>
           <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
             <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
               <div className="text-center font-poppins text-white text-2xl">
@@ -191,7 +229,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-[16px]">
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
-                  <div className="font-poppins text-[#c2f7ad] text-xs uppercase">
+                  <div className="font-poppins text-[#c2f7ad] text-xs">
                     Coffee Chain
                   </div>
                   <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
@@ -203,7 +241,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
-                  <div className="font-poppins text-[#c2f7ad] text-xs uppercase">Local Town Restaurant</div>
+                  <div className="font-poppins text-[#c2f7ad] text-xs">QSR</div>
                   <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
                     <span>40%</span>
                     <span>overpaid</span>
@@ -220,7 +258,7 @@ export default function Home() {
                 Why do I need Mill Street Energy?
               </h1>
               <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
+                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they're not always easy to spot. Missing out on these opportunities can be costly.
               </p>
             </div>
             <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
@@ -229,8 +267,8 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-[16px]">
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
-                  <div className="font-poppins text-[#1f7a59] text-xs uppercase">
-                  Community Food Storage Center
+                  <div className="font-poppins text-[#1f7a59] text-xs">
+                    Community Food Bank
                   </div>
                   <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$26,000</span>
@@ -243,8 +281,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
-                  <div className="font-poppins text-[#1f7a59] text-xs uppercase">
-                  Fitness Center
+                  <div className="font-poppins text-[#1f7a59] text-xs">
+                    Community Food Bank
                   </div>
                   <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                     <span>$42,000</span>
@@ -337,12 +375,13 @@ export default function Home() {
                 <span>Limited Availability</span>
               </div>
             </div>
-            <Image
+            {/* <Image
               alt="location"
               src={Map}
               // className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
               className="lg:w-[60%] w-[100%]  sm:mx-[0px] mx-[-60px]"
-            />
+            /> */}
+            <Location_Map />
           </div>
           <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
             <div className="text-poppins text-3xl text-[#549F57] font-bold mb-[35.2px]">
@@ -353,9 +392,12 @@ export default function Home() {
                 placeholder="Enter Zip Code*"
                 type="text"
                 className="py-[15px] w-[280px] sm:w-[352px] bg-gray-200 text-gray-600 text-base font-normal border-0 outline-none min-h-[52px] rounded-md py-1.5 px-3 transition-colors duration-150 ease-in-out"
+                value={zipcode}
+                onChange={(e) => setZipcode(e.target.value)}
+                onKeyDown={handleKeyPress}
               ></input>
             </div>
-            <div className="text-base font-poppins py-[10px] bg-[#549F57] rounded-md w-[110px] mt-[24px] text-center">
+            <div className="text-base font-poppins py-[10px] bg-[#549F57] rounded-md w-[110px] mt-[24px] text-center cursor-pointer" onClick={goToAvailibility}>
               Next
             </div>
           </div>
@@ -457,6 +499,8 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      {/* {loading && <LoaderComponent />}   */}
+
     </>
   );
 }
