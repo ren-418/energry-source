@@ -38,7 +38,7 @@ export default function Home() {
     }
     else {
       console.log(zipcode);
-      window.location.href = "/area";
+      window.location.href = "/availability";
     }
   }
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>): void => {
