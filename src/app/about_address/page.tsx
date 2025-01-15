@@ -1,10 +1,13 @@
 "use client";
-import React, { useEffect, useState, useMemo } from "react";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import React, { useEffect, useState } from "react";
+// import Header from "@/components/header";
+// import Footer from "@/components/footer";
 import InputForm from "@/components/InputForm";
 import InputField from "@/components/InputField";
 import RadioButton from "@/components/RadioButton";
+
+const zipRegex = /^\d{5}$/;
+
 const Availability: React.FC = () => {
     const [streetaddress, setStreetAddress] = useState("");
     const [apt, setApt] = useState("");
@@ -22,9 +25,6 @@ const Availability: React.FC = () => {
         setSelectedSecOption(value);
     };
 
-
-    const zipRegex = useMemo(() => /^\d{5}$/, []);
-
     useEffect(() => {
         if (selectedOption && city && streetaddress && apt && zipRegex.test(zipcode) && state && selectedSecOption) {
             setIsFormValid(true);
@@ -33,18 +33,17 @@ const Availability: React.FC = () => {
         }
     }, [selectedOption, city, streetaddress, apt, zipcode, state, selectedSecOption, zipRegex]);
 
-
     const returnArea = (): void => {
         window.location.href = "/area "
     }
     const toAboutAddress = (): void => {};
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             < div className="relative bg-white w-full sm:h-[100vh] h-[900px]" >
                 <div className="absolute inset-0 bg-black opacity-60" > </div>
-                < div className="relative flex justify-center items-center w-full h-full pt-[50px]" >
-                    <div className="flex flex-col w-[420px] h-[750px] px-[16px] pt-[32px] pb-[16px] rounded-lg bg-[#f5f5f7] z-10" >
+                < div className="relative flex justify-center items-center w-full h-full" >
+                    <div className="flex flex-col w-[400px] h-[750px] px-[16px] pt-[32px] pb-[16px] rounded-lg bg-[#f5f5f7] z-10" >
                         <div className="w-full mt-[-20px] bg-[#f5f5f7]">
                             <div className="rounded-[50px] w-[24px] h-[24px] bg-none hover:bg-[#6e7385] hover:opacity-60 transition-2s cursor-pointer flex justify-center items-center" onClick={returnArea}>
                                 <svg className="w-[18px] h-[18px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WestIcon"><path d="m9 19 1.41-1.41L5.83 13H22v-2H5.83l4.59-4.59L9 5l-7 7 7 7z"></path></svg>
@@ -184,15 +183,8 @@ const Availability: React.FC = () => {
                                     </div>
                                 </div>
                             }
-                            <div 
-                                className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid === true ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} 
-                                onClick={() => {
-                                    if (isFormValid) {
-                                        toAboutAddress();
-                                    }
-                                }}
-                            >
-                                <span className={`text-poppins text-base font-[700] uppercase ${isFormValid === true ? "text-white" : " text-black opacity-40"}`}>
+                            <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid == true ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => isFormValid == true && toAboutAddress()}>
+                                <span className={`text-poppins text-base font-[700] uppercase ${isFormValid == true ? "text-white" : " text-black opacity-40"}`}>
                                     Continue
                                 </span>
                             </div>
@@ -200,7 +192,7 @@ const Availability: React.FC = () => {
                     </div>
                 </div>
             </div>
-            < Footer />
+            {/* < Footer /> */}
         </>
     );
 };

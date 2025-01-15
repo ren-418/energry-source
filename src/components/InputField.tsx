@@ -83,7 +83,7 @@ const InputField: React.FC<InputFieldProps> = ({
                         htmlFor={id}
                         className={`absolute left-[14px] top-[15px] pointer-events-none transition-all ${
                             isFocused || value
-                                ? `text-xs top-[5px] left-[10px] ${!isValid ? 'text-red-500' : 'text-gray-400'} bg-white px-1`
+                                ? `text-xs top-[5px] left-[10px] ${!isValid ? 'text-red-500' : 'text-gray-400'} bg-white`
                                 : `text-base top-2.5 ${!isValid ? 'text-red-500' : 'text-gray-600'}`
                         }`}
                     >

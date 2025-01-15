@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+// import Header from "@/components/header";
+// import Footer from "@/components/footer";
 import Image from "next/image";
 import Eversource from "../../../public/image/eversource.png"
 import UI_image from "../../../public/image/united.png"
@@ -26,11 +26,11 @@ const Availability: React.FC = () => {
     }
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div className="relative bg-white w-full  sm:h-[100vh] h-[900px]">
                 <div className="absolute inset-0 bg-black opacity-60"></div>
-                <div className="relative flex justify-center items-center w-full h-full pt-[50px]">
-                    <div className="flex flex-col w-[420px] h-[750px] px-[16px] py-[32px] rounded-lg bg-[#f5f5f7] z-10">
+                <div className="relative flex justify-center items-center w-full h-full">
+                    <div className="flex flex-col w-[400px] h-[750px] px-[16px] py-[32px] rounded-lg bg-[#f5f5f7] z-10">
 
                         <div className="w-full bg-[#f5f5f7] flex flex-col justify-between gap-[15px] z-30 h-full">
                             <div className="flex flex-col gap-[15px]">
@@ -103,7 +103,7 @@ const Availability: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
