@@ -1,36 +1,29 @@
-import { useState, useEffect } from "react";
+// components/InputField.tsx
+import { useState } from "react";
 
-interface InputFieldProps {
+interface InputFormProps {
     id: string;
     name: string;
     type: string;
     label: string;
     value: string;
     onChange: (value: string) => void;
-    validationRegex: RegExp;
-    errorMessage: string;
+
 }
 
-const InputField: React.FC<InputFieldProps> = ({
+const InputForm: React.FC<InputFormProps> = ({
     id,
     name,
     type,
     label,
     value,
     onChange,
-    validationRegex,
-    errorMessage,
+
 }) => {
     const [isFocused, setIsFocused] = useState(false);
-    const [isValid, setIsValid] = useState(true);
+    const isValid = true;
 
-    useEffect(() => {
-        if (value === "") {
-            setIsValid(true);
-        } else {
-            validate(value);
-        }
-    }, [value]);
+
 
     const handleFocus = () => {
         setIsFocused(true);
@@ -38,19 +31,16 @@ const InputField: React.FC<InputFieldProps> = ({
 
     const handleBlur = () => {
         setIsFocused(false);
-        validate(value);
+        // validate(value);
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange(e.target.value);
-        if (!isValid) {
-            validate(e.target.value);
-        }
+        // if (!isValid) {
+        //     validate(e.target.value);
+        // }
     };
 
-    const validate = (val: string) => {
-        setIsValid(validationRegex.test(val));
-    };
 
     return (
         <div className="flex flex-col gap-1 w-full">
@@ -63,7 +53,7 @@ const InputField: React.FC<InputFieldProps> = ({
                         : "border-red-500"
                 }`}
             >
-                <div className="relative w-full px-[14px] py-2">
+                <div className="relative w-full px-[16px] py-2">
                     <input
                         id={id}
                         name={name}
@@ -75,9 +65,8 @@ const InputField: React.FC<InputFieldProps> = ({
                         className={`mt-[17px] peer bg-inherit w-full text-black text-md outline-none transition-all ${
                             isValid ? "" : "border-red-500"
                         }`}
-                        placeholder=" "
+                        placeholder=""
                     />
-
                     <label
                         htmlFor={id}
                         className={`absolute left-[14px] top-[15px] pointer-events-none transition-all ${
@@ -90,13 +79,9 @@ const InputField: React.FC<InputFieldProps> = ({
                     </label>
                 </div>
             </div>
-            {!isValid && (
-                <span className="text-red-500 text-xs px-3 text-poppins">
-                    {errorMessage}
-                </span>
-            )}
+
         </div>
     );
 };
 
-export default InputField;
+export default InputForm;
