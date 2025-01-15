@@ -43,8 +43,8 @@ const InputInfo: React.FC<InputInfoProps> = ({ show, handleNext, firstName, last
                     }
                 }
             >
-                <div className="max-w-[720px] w-full flex flex-col gap-[32px]">
-                    <div className="text-[22px] text-gray-900">
+                <div className="max-w-[720px] w-full flex flex-col gap-[10px] md:gap-[32px] px-4 pt-[120px]">
+                    <div className="text-[14px] md:text-[22px] text-gray-900">
                         We are currently not available in your area, but we are working on being there soon. Sign up for our waitlist to be notified when we are available.This question is required.*
                     </div>
                     <div className="flex flex-col gap-[30px]">
@@ -79,7 +79,7 @@ const InputInfo: React.FC<InputInfoProps> = ({ show, handleNext, firstName, last
                             onChange={setEmail}
                         />
                     </div>
-                    <div className="w-full flex justify-start items-center">
+                    <div className="w-full text-[14px] md:text-[20px] flex justify-start items-center">
                         <Button text="OK" onClick={() => handleOK()} />
                     </div>
                 </div>

@@ -34,8 +34,8 @@ const InputZipcode: React.FC<InputZipcodeProps> = ({ show, handleNext, zipcode, 
                     }
                 }
             >
-                <div className="max-w-[720px] w-full flex flex-col gap-[32px]">
-                    <div className="text-[24px] text-gray-900">
+                <div className="max-w-[720px] w-full flex flex-col gap-[32px] px-4">
+                    <div className="text-[14px] md:text-[24px] text-gray-900">
                         What is your zip code?*
                     </div>
                     <div className="w-full flex flex-col gap-[50px]">
@@ -50,7 +50,7 @@ const InputZipcode: React.FC<InputZipcodeProps> = ({ show, handleNext, zipcode, 
                             onChange={setZipcode}
                         />
                     </div>
-                    <div className="w-full flex justify-start items-center">
+                    <div className=" w-full flex justify-start items-center">
                         <Button text="Submit" onClick={handleOK} />
                     </div>
                 </div>

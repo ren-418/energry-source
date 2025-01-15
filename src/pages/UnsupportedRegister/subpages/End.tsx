@@ -5,7 +5,7 @@ interface EndProps {
 const End: React.FC<EndProps> = ({ show }) => {
     return (
         <div 
-            className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#b5e7d6] overflow-hidden duration-300"
+            className="w-[100vw] h-[100vh] flex justify-center items-center bg-[#b5e7d6] overflow-hidden duration-300 p-4"
             style={
                 show ? {
                     maxHeight: '100vh',
@@ -16,7 +16,7 @@ const End: React.FC<EndProps> = ({ show }) => {
                 }
             }
         >
-            <p className="text-[36px] text-gray-900">
+            <p className=" text-[18px] md:text-[36px] text-gray-900">
                 Thank you! We will be in touch soon.
             </p>
         </div>

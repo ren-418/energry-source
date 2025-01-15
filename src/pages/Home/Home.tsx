@@ -38,7 +38,7 @@ export default function Home() {
         }
         else {
             console.log(zipcode);
-            window.location.href = "/area";
+            window.location.href = "/register";
         }
     }
     const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>): void => {
@@ -50,13 +50,12 @@ export default function Home() {
         <>
             <Header />
             <div className="w-full h-full flex flex-col">
-                <div className="relative md:min-h-[830px] min-h-[750px]">
+                <div className="relative md:min-h-[830px] min-h-[750px] overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-full">
                         <img
                             alt="Home Background"
                             src={Home_back}
-                            className=""
-                            style={{ objectFit: "cover" }}
+                            className="h-full w-full object-fit"
                         />
                     </div>
 
