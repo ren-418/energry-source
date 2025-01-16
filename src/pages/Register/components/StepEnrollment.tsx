@@ -13,13 +13,13 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
 
     return (
         <>
-            <div className="w-full bg-[#f5f5f7] flex flex-col justify-between gap-[25px] z-30 h-full">
-                <div className="w-full mt-[-20px] bg-[#f5f5f7]">
+            <div className="w-full bg-[#f5f5f7] flex flex-col justify-between gap-[15px] z-30 h-full overflow-auto">
+                <div className="w-full bg-[#f5f5f7]">
                     <div className="rounded-[50px] w-[24px] h-[24px] bg-none hover:bg-[#6e7385] hover:opacity-60 transition-2s cursor-pointer flex justify-center items-center" onClick={() => handlePreviousStep()}>
                         <svg className="w-[18px] h-[18px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WestIcon"><path d="m9 19 1.41-1.41L5.83 13H22v-2H5.83l4.59-4.59L9 5l-7 7 7 7z"></path></svg>
                     </div>
                 </div>
-                <div className="flex flex-col gap-[20px] w-full">
+                <div className="flex flex-col gap-[15px] w-full">
                     <div className="flex flex-col gap-[12px]">
                         <div className="w-full flex justify-center items-center">
                             <img src={Globe_image} alt="globe image" className="h-[90px] w-[160px]" />
@@ -38,8 +38,8 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                             </span>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-[16px]">
-                        <div className="flex flex-row gap-[25px]">
+                    <div className="flex flex-col gap-[15px]">
+                        <div className="flex flex-row gap-[15px]">
                             <div className="">
                                 <img src={Monitor_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
                             </div>
@@ -52,7 +52,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                                 </span>
                             </div>
                         </div>
-                        <div className="flex flex-row gap-[25px]">
+                        <div className="flex flex-row gap-[15px]">
                             <div className="">
                                 <img src={Compare_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
                             </div>
@@ -66,7 +66,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                                 </span>
                             </div>
                         </div>
-                        <div className="flex flex-row gap-[25px]">
+                        <div className="flex flex-row gap-[15px]">
                             <div className="">
                                 <img src={Save_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
                             </div>
@@ -79,7 +79,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                                 </span>
                             </div>
                         </div>
-                        <div className="flex flex-row gap-[25px]">
+                        <div className="flex flex-row gap-[15px]">
                             <div className="">
                                 <img src={Uploadbill_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
                             </div>
@@ -94,7 +94,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                         </div>
                     </div>
                 </div>
-                <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] bg-[#0e0f19]`} onClick={() => handleNextStep()}>
+                <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg bg-[#0e0f19]`} onClick={() => handleNextStep()}>
                     <span className={`text-poppins text-base font-[700] uppercase text-white`}>
                         Help Me Save
                     </span>

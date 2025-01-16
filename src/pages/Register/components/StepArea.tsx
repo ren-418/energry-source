@@ -1,16 +1,18 @@
 import Bulb from "../../../assets/images/bulb.png";
 import InputField from "../../../components/InputField";
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 interface Step1Props {
     zipcode: string;
-    setZipcode: (zipcode: string) => void;
+    setZipcode: Dispatch<SetStateAction<string>>;
+    email: string;
+    setEmail: Dispatch<SetStateAction<string>>;
     handleNextStep: () => void;
 }
 
-const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, handleNextStep }) => {
+const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, email, setEmail, handleNextStep }) => {
 
-    const [email, setEmail] = useState("");
+    // const [email, setEmail] = useState("");
 
     const zipRegex = /^\d{5}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -22,8 +24,8 @@ const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, handleNextStep })
 
     return (
         <>
-            <div className="w-full bg-[#f5f5f7] flex flex-col gap-[30px] z-30">
-                <div className="w-full flex justify-center items-center">
+            <div className="w-full bg-[#f5f5f7] flex flex-col gap-[30px] z-30 overflow-auto">
+                <div className="w-full flex justify-center items-center mt-4">
                     <img src={Bulb} alt="Bulb Icon" className="h-[185px]" />
                 </div>
 

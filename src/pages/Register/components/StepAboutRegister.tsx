@@ -1,28 +1,40 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
+import { useNavigate } from "react-router-dom";
 import InputForm from "../../../components/InputForm";
 import InputField from "../../../components/InputField";
 
-interface StepAboutRegisterProps {  
+interface StepAboutRegisterProps {
     handleNextStep: () => void;
     handlePreviousStep: () => void;
+    firstname: string;
+    setFirstName: Dispatch<SetStateAction<string>>;
+    lastname: string;
+    setLastName: Dispatch<SetStateAction<string>>;
+    email: string;
+    setEmail: Dispatch<SetStateAction<string>>;
+    phonenumber: string;
+    setPhoneNumber: Dispatch<SetStateAction<string>>;
 }
 
-const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handleNextStep, handlePreviousStep }) => {
-
-    const [firstname, setFirstName] = useState("");
-    const [lastname, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phonenumber, setPhoneNumber] = useState("");
+const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousStep, firstname, setFirstName, lastname, setLastName, email, setEmail, phonenumber, setPhoneNumber }) => {
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     const isEmailValid = emailRegex.test(email);
-
     const isFormValid = isEmailValid && firstname && lastname && phonenumber;
 
+    const navigate = useNavigate();
+
+    const handleSubmit = () => {
+        if (isFormValid) {
+            navigate("/");
+        } else {
+            console.log("Form is invalid");
+        }
+    }
+
     return (
-        <div>
-            <div className="w-full mt-[-20px] bg-[#f5f5f7]">
+        <div className="overflow-auto">
+            <div className="w-full bg-[#f5f5f7]">
                 <div className="rounded-[50px] w-[24px] h-[24px] bg-none hover:bg-[#6e7385] hover:opacity-60 transition-2s cursor-pointer flex justify-center items-center" onClick={() => handlePreviousStep()}>
                     <svg className="w-[18px] h-[18px]" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="WestIcon"><path d="m9 19 1.41-1.41L5.83 13H22v-2H5.83l4.59-4.59L9 5l-7 7 7 7z"></path></svg>
                 </div>
@@ -81,7 +93,7 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handleNextStep, h
                         By clicking “Agree and Continue” I am agreeing to contract electronically and assenting to Arbor&apos;s <span className="text-[#056100] underline cursor-pointer">Terms of Service,</span> <span className="text-[#056100] underline cursor-pointer">Privacy Policy,</span> and <span className="text-[#056100] underline cursor-pointer">Letter of authorization.</span>
                     </span>
                 </div>
-                <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => isFormValid && handleNextStep()}>
+                <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => handleSubmit()}>
                     <span className={`text-poppins text-base font-[700] uppercase ${isFormValid ? "text-white" : " text-black opacity-40"}`}>
                         Check My Eligibility
                     </span>
