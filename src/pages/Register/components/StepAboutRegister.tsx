@@ -87,10 +87,10 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                         For your security, we&apos;ll email or text you a code whenever you want to access your account.
                     </span>
                     <span className="text-xs text-poppins text-[#0e0f19] text-center font-bold">
-                        We Care About Your Privacy.
+                    Mill Street Energy
                     </span>
                     <span className="text-xs text-poppins text-[#6e7385] text-center leading-[20px]">
-                        By clicking “Agree and Continue” I am agreeing to contract electronically and assenting to Arbor&apos;s <span className="text-[#056100] underline cursor-pointer">Terms of Service,</span> <span className="text-[#056100] underline cursor-pointer">Privacy Policy,</span> and <span className="text-[#056100] underline cursor-pointer">Letter of authorization.</span>
+                        By clicking “Agree and Continue” I am agreeing to contract electronically and assenting to Mill Street Energy&apos;s <span className="text-[#056100] underline cursor-pointer">Terms of Service,</span> <span className="text-[#056100] underline cursor-pointer">Privacy Policy,</span> and <span className="text-[#056100] underline cursor-pointer">Letter of authorization.</span>
                     </span>
                 </div>
                 <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => handleSubmit()}>

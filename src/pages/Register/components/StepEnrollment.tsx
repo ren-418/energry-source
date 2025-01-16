@@ -7,9 +7,13 @@ import Uploadbill_image from "../../../assets/images/upload-bill.webp";
 interface StepEnrollmentProps {
     handleNextStep: () => void;
     handlePreviousStep: () => void;
+    selectedUtility: string;
 }
 
-const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handlePreviousStep }) => {
+
+const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handlePreviousStep, selectedUtility }) => {
+
+
 
     return (
         <>
@@ -48,10 +52,12 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                                     We monitor the market
                                 </span>
                                 <span className="text-[#404350] text-sm text-poppins">
-                                    We scan the market to find better rates for Eversource customers.
+                                    We scan the market to find better rates for {selectedUtility} customers.
                                 </span>
                             </div>
+
                         </div>
+
                         <div className="flex flex-row gap-[15px]">
                             <div className="">
                                 <img src={Compare_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
@@ -62,7 +68,6 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                                 </span>
                                 <span className="text-[#404350] text-sm text-poppins">
                                     You can choose from our top pick or we can automatically do it for you.
-
                                 </span>
                             </div>
                         </div>
@@ -75,10 +80,12 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                                     You save
                                 </span>
                                 <span className="text-[#404350] text-sm text-poppins">
-                                    Start saving with no commitment or change to your Eversource service.
+                                    Start saving with no commitment or change to your {selectedUtility} service.
                                 </span>
                             </div>
+
                         </div>
+
                         <div className="flex flex-row gap-[15px]">
                             <div className="">
                                 <img src={Uploadbill_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />

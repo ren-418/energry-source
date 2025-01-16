@@ -13,7 +13,10 @@ const Register: React.FC = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
 
+    const [selectedUtility, setSelectedUtility] = useState('');
+
     const [currentStep, setCurrentStep] = useState<'area' | 'utility' | 'enrollment' | 'aboutRegister' | 'unsupported'>('area');
+
 
     const handleNextStep = () => {
         setCurrentStep(prevStep => (prevStep === 'area' ? 'utility' : prevStep === 'utility' ? 'enrollment' : 'aboutRegister'));
@@ -29,8 +32,8 @@ const Register: React.FC = () => {
             <div className="w-full h-full bg-black/80 flex justify-center items-center">
                 <div className="flex flex-col w-full md:w-[400px] h-full md:h-[750px] px-[16px] py-[16px] md:rounded-lg bg-[#f5f5f7] z-10 overflow-auto">
                     {currentStep === 'area' && <StepArea zipcode={zipcode} setZipcode={setZipcode} email={email} setEmail={setEmail} handleNextStep={handleNextStep} />}
-                    {currentStep === 'utility' && <StepUtility handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} setCurrentStep={setCurrentStep} />}
-                    {currentStep === 'enrollment' && <StepEnrollment handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+                    {currentStep === 'utility' && <StepUtility handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} setCurrentStep={setCurrentStep} setSelectedUtility={setSelectedUtility} zipcode={zipcode} />}
+                    {currentStep === 'enrollment' && <StepEnrollment handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} selectedUtility={selectedUtility} />}
                     {currentStep === 'aboutRegister' && <StepAboutRegister handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} firstname={fistName} setFirstName={setFirstName} lastname={lastName} setLastName={setLastName} email={email} setEmail={setEmail} phonenumber={phoneNumber} setPhoneNumber={setPhoneNumber} />}
                     {currentStep === 'unsupported' && <StepUnsupported setCurrentStep={setCurrentStep} />}
                 </div>
