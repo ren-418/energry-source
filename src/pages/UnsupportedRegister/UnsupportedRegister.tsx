@@ -23,7 +23,6 @@ const UnsupportedRegister: React.FC = () => {
                 <div className="fixed w-full  bg-white flex justify-start items-center !bg-[#b5e7d6] h-[80px] md:h-[100px] z-10 py-[10px]">
                     <img src={ImgLogo} alt="logo" className="h-[40px] md:h-[63px] ml-[15px] mt-[15px]" />
                 </div>
-                
                 <div className="w-full h-full flex flex-col justify-center items-center">
                     <InputInfo show={currentPage === 'inputInfo'} handleNext={handleNext} firstName={firstName} lastName={lastName} email={email} setFirstName={setFirstName} setLastName={setLastName} setEmail={setEmail} />
                     <InputZipcode show={currentPage === 'inputZipcode'} handleNext={handleNext} zipcode={zipcode} setZipcode={setZipcode} />
