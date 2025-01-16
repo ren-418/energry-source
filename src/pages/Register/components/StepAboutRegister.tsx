@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import { useNavigate } from "react-router-dom";
 import InputForm from "../../../components/InputForm";
 import InputField from "../../../components/InputField";
+import Fileuploader from "../../../components/Fileuploader";
 
 interface StepAboutRegisterProps {
     handleNextStep: () => void;
@@ -14,9 +15,11 @@ interface StepAboutRegisterProps {
     setEmail: Dispatch<SetStateAction<string>>;
     phonenumber: string;
     setPhoneNumber: Dispatch<SetStateAction<string>>;
+    bill: File | null;
+    setBill: Dispatch<SetStateAction<File | null>>;
 }
 
-const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousStep, firstname, setFirstName, lastname, setLastName, email, setEmail, phonenumber, setPhoneNumber }) => {
+const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousStep, firstname, setFirstName, lastname, setLastName, email, setEmail, phonenumber, setPhoneNumber, bill, setBill }) => {
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isEmailValid = emailRegex.test(email);
@@ -40,13 +43,13 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                 </div>
             </div>
             <div className="flex flex-col gap-[12px]">
-                <h3 className="text-[#0e0f19] text-poppins text-2xl pt-[20px] font-[700]">
+                <h3 className="text-[#0e0f19] text-poppins text-2xl pt-[15px] font-[700]">
                     Create your account
                 </h3>
-                <span className="text-[#0e0f19] text-poppins text-base pt-[8px] pb-[16px]">
+                <span className="text-[#0e0f19] text-poppins text-base py-[8px]">
                     Sign up and start saving money on your utility bill. We&apos;ll never sell your personal info.
                 </span>
-                <div className="flex flex-col gap-[12px]">
+                <div className="flex flex-col gap-[8px]">
                     <InputForm
                         id="firstname"
                         name="firstname"
@@ -81,13 +84,22 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                         value={phonenumber}
                         onChange={setPhoneNumber}
                     />
+                    <Fileuploader
+                        id="phonenumber"
+                        name="upload bill"
+                        type="file"
+                        label="Upload bill"
+                        value={bill}
+                        onChange={setBill}
+                        errorMessage="Please select a valid image file."
+                    />
                 </div>
                 <div className="flex flex-col gap-[13px]">
-                    <span className="text-base text-poppins text-base text-[#404350]">
+                    <span className="text-poppins text-sm text-[#404350]">
                         For your security, we&apos;ll email or text you a code whenever you want to access your account.
                     </span>
                     <span className="text-xs text-poppins text-[#0e0f19] text-center font-bold">
-                    Mill Street Energy
+                        Mill Street Energy
                     </span>
                     <span className="text-xs text-poppins text-[#6e7385] text-center leading-[20px]">
                         By clicking “Agree and Continue” I am agreeing to contract electronically and assenting to Mill Street Energy&apos;s <span className="text-[#056100] underline cursor-pointer">Terms of Service,</span> <span className="text-[#056100] underline cursor-pointer">Privacy Policy,</span> and <span className="text-[#056100] underline cursor-pointer">Letter of authorization.</span>

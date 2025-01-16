@@ -12,6 +12,7 @@ const Register: React.FC = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [bill, setBill] = useState<File | null>(null);
 
     const [selectedUtility, setSelectedUtility] = useState('');
 
@@ -34,7 +35,7 @@ const Register: React.FC = () => {
                     {currentStep === 'area' && <StepArea zipcode={zipcode} setZipcode={setZipcode} email={email} setEmail={setEmail} handleNextStep={handleNextStep} />}
                     {currentStep === 'utility' && <StepUtility handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} setCurrentStep={setCurrentStep} setSelectedUtility={setSelectedUtility} zipcode={zipcode} />}
                     {currentStep === 'enrollment' && <StepEnrollment handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} selectedUtility={selectedUtility} />}
-                    {currentStep === 'aboutRegister' && <StepAboutRegister handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} firstname={fistName} setFirstName={setFirstName} lastname={lastName} setLastName={setLastName} email={email} setEmail={setEmail} phonenumber={phoneNumber} setPhoneNumber={setPhoneNumber} />}
+                    {currentStep === 'aboutRegister' && <StepAboutRegister handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} firstname={fistName} setFirstName={setFirstName} lastname={lastName} setLastName={setLastName} email={email} setEmail={setEmail} phonenumber={phoneNumber} setPhoneNumber={setPhoneNumber} bill={bill} setBill={setBill} />}
                     {currentStep === 'unsupported' && <StepUnsupported setCurrentStep={setCurrentStep} />}
                 </div>
             </div>

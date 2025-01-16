@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 interface InputFieldProps {
     id: string;
@@ -6,7 +6,7 @@ interface InputFieldProps {
     type: string;
     label: string;
     value: string;
-    onChange: (value: string) => void;
+    onChange: Dispatch<SetStateAction<string>>;
     validationRegex: RegExp;
     errorMessage: string;
 }
