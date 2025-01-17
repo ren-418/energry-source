@@ -403,7 +403,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="padding-control py-[30px] flex md:flex-row flex-col bg-[#38383b] gap-[34px]">
+                <div className="padding-control py-[30px] flex md:flex-row flex-col bg-[#38383b] gap-[34px] hidden">
                     <div className="flex flex-col gap-[32px] md:w-[55%] w-full text-center md:text-start">
                         <h1 className="text-poppins text-[#ffffff] sm:text-4xl text-3xl">
                             Get started today.
