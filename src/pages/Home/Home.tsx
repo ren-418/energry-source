@@ -132,8 +132,7 @@ export default function Home() {
                                 Minimize risk
                             </div>
                             <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
-                                Avoid overpaying for electricity with protection from the energy
-                                market, billing Mistakes,the rise in energy pricing.
+                                Avoid paying more than necessary for electricity with protection from the energy market, billing mistakes and the consistent rise in energy pricing.
                             </div>
                         </div>
                         <div className="sm:py-[40px] sm:px-[24px] p-[24px] rounded-lg bg-white border border-[#1f7a5933] flex flex-col sm:gap-[30px] gap-[10px] sm:items-start items-center">
@@ -231,11 +230,11 @@ export default function Home() {
                                         Coffee Chain
                                     </div>
                                     <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
-                                        <span>$120,000</span>
-                                        <span>overpaid</span>
+                                        <span>$65,000</span>
+                                        <span>Overpaid</span>
                                     </div>
                                     <div className="font-poppins text-white text-base text-center sm:text-start">
-                                        to a utility for incorrect rate class on their bill
+                                        on electricity due to an incorrect rate class on their bill
                                     </div>
                                 </div>
                                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
@@ -266,7 +265,8 @@ export default function Home() {
                             <div className="flex flex-col gap-[16px]">
                                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                                     <div className="font-poppins text-[#1f7a59] text-xs">
-                                        Community Food Storage Center
+                                        {/* Community Food Storage Center */}
+                                        Local Business
                                     </div>
                                     <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                                         <span>$26,000</span>
@@ -280,7 +280,7 @@ export default function Home() {
                                 </div>
                                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                                     <div className="font-poppins text-[#1f7a59] text-xs">
-                                        Community Food Bank
+                                        Community Boys & Girls Club
                                     </div>
                                     <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                                         <span>$42,000</span>
