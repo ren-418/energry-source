@@ -5,8 +5,8 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import SlideContent from "./SlideContent";
 
-import slide1 from "../../../assets/slide/slide13.jpg";
-import slide2 from "../../../assets/slide/IMG_9028.jpg";
+import slide1 from "../../../assets/slide/IMG_9202.webp";
+import slide2 from "../../../assets/slide/IMG_9028.webp";
 import slide3 from "../../../assets/slide/slide12.avif";
 import slide4 from "../../../assets/slide/slide10.png";
 import slide5 from "../../../assets/slide/slide11.jpg";
