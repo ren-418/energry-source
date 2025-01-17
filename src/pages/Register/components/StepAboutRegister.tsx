@@ -1,8 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
-import { useNavigate } from "react-router-dom";
 import InputForm from "../../../components/InputForm";
 import InputField from "../../../components/InputField";
-import Fileuploader from "../../../components/Fileuploader";
+import Fileuploader from "./StepUtility/Fileuploader";
 
 interface StepAboutRegisterProps {
     handleNextStep: () => void;
@@ -25,14 +24,8 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
     const isEmailValid = emailRegex.test(email);
     const isFormValid = isEmailValid && firstname && lastname && phonenumber;
 
-    const navigate = useNavigate();
-
     const handleSubmit = () => {
-        if (isFormValid) {
-            navigate("/");
-        } else {
-            console.log("Form is invalid");
-        }
+        window.location.href = "https://calendar.app.google/zkQmsRiCvuaRiM8Z7";
     }
 
     return (
@@ -49,7 +42,7 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                 <span className="text-[#0e0f19] text-poppins text-base py-[8px]">
                     Sign up and start saving money on your utility bill. We&apos;ll never sell your personal info.
                 </span>
-                <div className="flex flex-col gap-[8px]">
+                <div className="flex flex-col gap-[15px]">
                     <InputForm
                         id="firstname"
                         name="firstname"
@@ -87,17 +80,13 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                     <Fileuploader
                         id="phonenumber"
                         name="upload bill"
-                        type="file"
-                        label="Upload bill"
+                        label="Upload Utility (Image of upload file) Bill Here"
                         value={bill}
                         onChange={setBill}
                         errorMessage="Please select a valid image file."
                     />
                 </div>
                 <div className="flex flex-col gap-[13px]">
-                    <span className="text-poppins text-sm text-[#404350]">
-                        For your security, we&apos;ll email or text you a code whenever you want to access your account.
-                    </span>
                     <span className="text-xs text-poppins text-[#0e0f19] text-center font-bold">
                         Mill Street Energy
                     </span>
@@ -107,7 +96,7 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                 </div>
                 <div className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`} onClick={() => handleSubmit()}>
                     <span className={`text-poppins text-base font-[700] uppercase ${isFormValid ? "text-white" : " text-black opacity-40"}`}>
-                        Check My Eligibility
+                        Agree and continue
                     </span>
                 </div>
             </div>

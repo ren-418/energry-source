@@ -2,7 +2,7 @@ import Globe_image from "../../../assets/images/globe.png";
 import Monitor_image from "../../../assets/images/monitor.png";
 import Compare_image from "../../../assets/images/compare.png";
 import Save_image from "../../../assets/images/save.png";
-import Uploadbill_image from "../../../assets/images/upload-bill.webp";
+import Uploadbill_image from "../../../assets/images/upload-bill-enroll.webp";
 
 interface StepEnrollmentProps {
     handleNextStep: () => void;
@@ -11,9 +11,7 @@ interface StepEnrollmentProps {
 }
 
 
-const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handlePreviousStep, selectedUtility }) => {
-
-
+const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handlePreviousStep, selectedUtility, handleNextStep }) => {
 
     return (
         <>
@@ -45,7 +43,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                     <div className="flex flex-col gap-[15px]">
                         <div className="flex flex-row gap-[15px]">
                             <div className="">
-                                <img src={Monitor_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
+                                <img src={Monitor_image} alt="" className="max-w-[70px] w-[70px]" />
                             </div>
                             <div className="flex flex-col gap-[4px]">
                                 <span className="text-[#0e0f19] text-base text-poppins font-[700]">
@@ -60,7 +58,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
 
                         <div className="flex flex-row gap-[15px]">
                             <div className="">
-                                <img src={Compare_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
+                                <img src={Compare_image} alt="" className="max-w-[70px] w-[70px]" />
                             </div>
                             <div className="flex flex-col gap-[4px]">
                                 <span className="text-[#0e0f19] text-base text-poppins font-[700]">
@@ -73,7 +71,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
                         </div>
                         <div className="flex flex-row gap-[15px]">
                             <div className="">
-                                <img src={Save_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
+                                <img src={Save_image} alt="" className="max-w-[70px] w-[70px]" />
                             </div>
                             <div className="flex flex-col gap-[4px]">
                                 <span className="text-[#0e0f19] text-base text-poppins font-[700]">
@@ -88,7 +86,7 @@ const StepEnrollment: React.FC<StepEnrollmentProps> = ({ handleNextStep, handleP
 
                         <div className="flex flex-row gap-[15px]">
                             <div className="">
-                                <img src={Uploadbill_image} alt="" className="max-w-[70px] w-[70px] max-h-[45px]" />
+                                <img src={Uploadbill_image} alt="" className="max-w-[70px] w-[70px]" />
                             </div>
                             <div className="flex flex-col gap-[4px]">
                                 <span className="text-[#0e0f19] text-base text-poppins font-[700]">
