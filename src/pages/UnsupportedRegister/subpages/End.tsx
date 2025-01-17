@@ -19,6 +19,7 @@ const End: React.FC<EndProps> = ({ show }) => {
             <p className=" text-[18px] md:text-[36px] text-gray-900">
                 Thank you! We will be in touch soon.
             </p>
+            
         </div>
     )
 }
