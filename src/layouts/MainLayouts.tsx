@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom"
-// import Header from "../components/mainlayouts/Header"
-// import Footer from "../components/mainlayouts/Footer"
+import Header from "../components/mainlayouts/Header"
+import Footer from "../components/mainlayouts/Footer"
 
 const MainLayouts: React.FC = () => {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

@@ -1,8 +1,8 @@
 "use client"
 import { useState } from "react";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Carousel from "./components/Carousel";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import { toast } from "react-toastify";
 // import LoaderComponent from "@/components/onLoad";
 
@@ -48,7 +48,7 @@ export default function Home() {
     };
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div className="w-full h-full flex flex-col">
                 <div className="relative md:min-h-[830px] min-h-[750px] overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-full">
@@ -496,7 +496,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
             {/* {loading && <LoaderComponent />}   */}
 
         </>

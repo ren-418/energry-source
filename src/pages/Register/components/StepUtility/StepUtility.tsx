@@ -84,10 +84,12 @@ const StepUtility: React.FC<StepUtilityProps> = ({ handleNextStep, handlePreviou
                     <div className="w-full flex flex-col gap-[32px]">
                         <div className="flex flex-col gap-[12px]">
                             <h3 className="text-poppins text-2xl text-black font-bold">
-                                Select your electric utility
+                                {/* Select your electric utility */}
+                                Choose your current electricity utility company
                             </h3>
                             <span className="text-poppins text-base text-black">
-                                Select your utility so we can check if you&apos;re overpaying for energy.
+                                {/* Select your utility so we can check if you&apos;re overpaying for energy. */}
+                                This will help us to evaluate the surrounding energy suppliers costs and determine if you&apos;re paying more than needed.
                             </span>
                         </div>
                         <div className="">

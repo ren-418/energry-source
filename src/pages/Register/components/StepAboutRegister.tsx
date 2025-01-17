@@ -55,11 +55,13 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
                 <h3 className="text-[#0e0f19] text-poppins text-2xl pt-[15px] font-[700]">
                     Create your account
                 </h3>
-                <span className="text-[#0e0f19] text-poppins text-base py-[8px]">
-                    Sign up and start saving money on your utility bill. We&apos;ll never sell your personal info.
+                <span className="text-[#0e0f19] text-poppins text-sm py-[8px]">
+                    {/* Sign up and start saving money on your utility bill. We&apos;ll never sell your personal info. */}
+                    Sign up with us, and we&apos;ll do the heavy lifting so you can start saving! Rest assured, we keep all personal information secured.
                 </span>
-                <div className="flex flex-col gap-[15px]">
+                <div className="flex flex-col gap-[10px]">
                     <InputForm
+
                         id="firstname"
                         name="firstname"
                         type="text"
