@@ -27,7 +27,7 @@ const Location_Map = () => {
   }, []);
 
   return (
-    <div style={{ width: "100%", overflow: "hidden", }} className="!text-[white] px-[10px] relative">
+    <div style={{ width: "100%", overflow: "hidden", }} className="!text-[white] px-[10px] relative mr-[-48px]">
       <iframe
         ref={iframeRef}
         className="top-0 left-0 w-full h-full"
@@ -40,7 +40,7 @@ const Location_Map = () => {
         style={{ width: "100%", minWidth: "100% !important", border: "none", height: "456px", color: 'red !important' }}
       ></iframe>
       <div className="absolute bottom-0 left-0 w-full h-[30px] bg-[#0f352d] z-10"></div>
-      <div className="absolute top-0 right-0 h-[110px] w-[48px] bg-[#0f352d] z-10"></div>
+      <div className="absolute top-[-2px] right-0 h-[110px] w-[48px] bg-[#0f352d] z-10"></div>
     </div>
 
 

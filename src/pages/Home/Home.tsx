@@ -384,7 +384,7 @@ export default function Home() {
             /> */}      
                         <Location_Map />
                     </div>
-                    <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
+                    <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col z-1">
                         <div className="text-poppins text-3xl text-[#549F57] font-bold mb-[35.2px]">
                             Contact Us
                         </div>
