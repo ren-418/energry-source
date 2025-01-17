@@ -296,10 +296,13 @@ export default function Home() {
                 </div>
                 <div className="sm:py-[128px] py-[64px] w-full flex flex-col bg-white padding-control justify-center items-center mt-[-10px]">
                     <div className="flex flex-col gap-[16px] justify-center items-center sm:w-[80%] w-full">
-                        <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center">
-                            We keep an eye on everything so you don&apos;t have to
+                        {/* <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center"> */}
+                        <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
+                            {/* We keep an eye on everything so you don&apos;t have to */}
+                            Let us deal with the energy monitoring for you
                         </div>
-                        <div className="font-poppins text-[#022e34] text-base text-center">
+                        {/* <div className="font-poppins text-[#022e34] text-lg text-center"> */}
+                        <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
                             Don&apos;t want another thing to think about? We get it. Once you&apos;re connected to our platform, we handle everything behind the scenes. The only time you&apos;ll hear from us is when we have updates on your savings or opportunities to save even more.
                         </div>
                     </div>
@@ -327,15 +330,15 @@ export default function Home() {
                     <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
                         We Can&apos;t Work Without You!
                     </div>
-                    <div className="font-poppins text-[#000000] lg:text-2xl text-xl font-bold w-full text-center pt-[30px]">
+                    <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
                         At Mill Street Energy, we&apos;re committed to maximizing energy
                         efficiency and helping as many properties as possible reduce their
                         carbon footprint. However, we can&apos;t do it alone — and
                         that&apos;s where you come in!
                     </div>
-                    <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]">
-                        Schedule below to begin the discovery process and learn how we can
-                        help!
+                    {/* <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]"> */}
+                    <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
+                        Schedule below to begin the discovery process and learn how we can help!
                     </div>
                     <div className="schedule-btn font-poppins cursor-pointer text-center max-[1024px]:text-3xl max-[1024px]:font-bold">
                         Schedule Your Assessment Here
@@ -359,7 +362,7 @@ export default function Home() {
                 </div>
                 <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px] bg-[#0f352d] items-center">
                     <div className="w-full flex lg:flex-row flex-col gap-[50px] items-center">
-                        <div className="flex flex-col gap-[10px]">
+                        <div className="flex flex-col gap-[10px] z-1 hidden">
                             <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
                                 <img src={Blue_dot} alt="blue dot" width={50} height={50} />
                                 <span>Natural Gas & Electricity Options Available</span>
@@ -378,7 +381,7 @@ export default function Home() {
               src={Map}
               // className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
               className="lg:w-[60%] w-[100%]  sm:mx-[0px] mx-[-60px]"
-            /> */}
+            /> */}      
                         <Location_Map />
                     </div>
                     <div className="p-[20px] rounded-[24px] bg-white h-[223px] flex items-center flex-col">
