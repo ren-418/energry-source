@@ -238,7 +238,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
-                                    <div className="font-poppins text-[#c2f7ad] text-xs">QSR</div>
+                                    <div className="font-poppins text-[#c2f7ad] text-xs">family-owned pizzeria</div>
                                     <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
                                         <span>40%</span>
                                         <span>overpaid</span>
@@ -266,7 +266,7 @@ export default function Home() {
                                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
                                     <div className="font-poppins text-[#1f7a59] text-xs">
                                         {/* Community Food Storage Center */}
-                                        Local Business
+                                        Community Food Storage Center
                                     </div>
                                     <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
                                         <span>$26,000</span>
