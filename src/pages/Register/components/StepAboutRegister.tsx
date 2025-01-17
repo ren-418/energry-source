@@ -1,11 +1,15 @@
 import { Dispatch, SetStateAction } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 import InputForm from "../../../components/InputForm";
 import InputField from "../../../components/InputField";
 import Fileuploader from "./StepUtility/Fileuploader";
-
 import DocPrivacyPolicy from "../../../assets/docs/PRIVACY POLICY MSE.pdf";
 import DocLetterOfAuthorization from "../../../assets/docs/LETTER OF AUTHORIZATION FOR WEBSITE.pdf";
 import DocTermsOfService from "../../../assets/docs/Terms Of Service.pdf";
+
+import config from "../../../config";
+const { backendUrl } = config;
 
 interface StepAboutRegisterProps {
     handleNextStep: () => void;
@@ -28,9 +32,9 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
     const isEmailValid = emailRegex.test(email);
     const isFormValid = isEmailValid && firstname && lastname && phonenumber;
 
-    const handleSubmit = () => {
-        window.location.href = "https://calendar.app.google/zkQmsRiCvuaRiM8Z7";
-    }
+    // const handleSubmit = () => {
+    //     window.location.href = "https://calendar.app.google/zkQmsRiCvuaRiM8Z7";
+    // }
 
     const handlePrivacyPolicy = () => {
         window.open(DocPrivacyPolicy, "_blank");
@@ -43,6 +47,57 @@ const StepAboutRegister: React.FC<StepAboutRegisterProps> = ({ handlePreviousSte
     const handleTermsOfService = () => {
         window.open(DocTermsOfService, "_blank");
     }
+
+    const handleSubmit = async () => {
+        // const data = new FormData();
+        // data.append('email', email);
+        // data.append('firstname', firstname);
+        // data.append('lastname', lastname);
+        // data.append('phonenumber', phonenumber);
+        // if (bill) data.append('bill', bill);
+
+        const data = {
+            email, firstname, lastname, phonenumber
+        }
+
+        try {
+            axios.post(`${backendUrl}/api/auth/register`, data, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then(response => {
+                    toast.success(JSON.stringify(response.data), {
+                        position: "top-right",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                    });
+                })
+                .catch(error => {
+                    toast.error(JSON.stringify(error.response.data.error), {
+                        position: "top-right",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                    });
+                })
+        } catch (error) {
+            console.error('Error submitting data:', error);
+            toast.error(JSON.stringify(error), {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+        }
+    };
 
     return (
         <div className="overflow-auto">

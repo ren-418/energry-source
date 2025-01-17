@@ -1,17 +1,22 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+import config from "../../../config";
 import InputField from "../../../components/InputField";
 import ImgPowerLine from "../../../assets/images/signup/powerline.webp"
+import ElementLoader from "../../../components/loaders/ElementLoader";
+
+
 interface Step1Props {
     zipcode: string;
     setZipcode: Dispatch<SetStateAction<string>>;
     email: string;
     setEmail: Dispatch<SetStateAction<string>>;
     handleNextStep: () => void;
+    setUtilities: Dispatch<SetStateAction<{name: string, logo: string}[]>>;
 }
 
-const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, email, setEmail, handleNextStep }) => {
-
-    // const [email, setEmail] = useState("");
+const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, email, setEmail, handleNextStep, setUtilities }) => {
 
     const zipRegex = /^\d{5}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -19,7 +24,67 @@ const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, email, setEmail, 
     const isZipValid = zipRegex.test(zipcode);
     const isEmailValid = emailRegex.test(email);
 
-    const isFormValid = isZipValid && isEmailValid;
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleSubmit = () => {
+        if (isZipValid) {
+            if (email && !isEmailValid) {
+                toast.warning("Please input valid email address.", {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                });
+            } else {
+                setIsLoading(true);
+                try {
+                    axios.get(`${config.backendUrl}/api/auth/zipcode/${zipcode}`)
+                        .then(response => {
+                            setIsLoading(false);
+                            setUtilities(response.data.utilities);
+                            handleNextStep();
+                        })
+                        .catch(error => {
+                            console.error(error);
+                            toast.error(JSON.stringify(error.response.data.error), {
+                                position: "top-right",
+                                autoClose: 3000,
+                                hideProgressBar: false,
+                                closeOnClick: true,
+                                pauseOnHover: true,
+                                draggable: true,
+                            });
+                            setIsLoading(false);
+                        })
+
+                } catch (error) {
+                    console.error(error);
+                    toast.error(JSON.stringify(error), {
+                        position: "top-right",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                    });
+                    setIsLoading(false);
+                }
+            }
+        } else {
+            toast.warning("Please input valid zipcode.", {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+        }
+    }
+
+    if (isLoading) return <ElementLoader />
 
     return (
         <>
@@ -65,9 +130,9 @@ const StepArea: React.FC<Step1Props> = ({ zipcode, setZipcode, email, setEmail, 
                 </div>
 
                 <div
-                    className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isFormValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`}
+                    className={`flex w-full justify-center items-center cursor-pointer py-[16px] rounded-lg mb-[20px] ${isZipValid ? "bg-[#0e0f19]" : "bg-[#dbdfe6]"}`}
                 >
-                    <span className={`text-poppins text-base font-[700] uppercase ${isFormValid ? "text-white" : " text-black opacity-40"}`} onClick={() => handleNextStep()}>
+                    <span className={`text-poppins text-base font-[700] uppercase ${isZipValid ? "text-white" : " text-black opacity-40"}`} onClick={() => handleSubmit()}>
                         Check My Eligibility
                     </span>
                 </div>
