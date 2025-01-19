@@ -51,7 +51,7 @@ export default function Home() {
         <>
             {/* <Header /> */}
             <div className="w-full h-full flex flex-col">
-                <div className="relative md:min-h-[830px] min-h-[750px] overflow-hidden">
+                <div className="relative min-h-[100vh] overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-full">
                         <img
                             alt="Home Background"
