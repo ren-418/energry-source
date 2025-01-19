@@ -30,21 +30,21 @@ const Aboutus: React.FC = () => {
           </div>
           <div className="text-white flex flex-col gap-6">
             <h2 className="font-semibold text-4xl md:text-5xl text-center">
-              Powering Seamless Savings
+              Let's Change How Our World Is Powered
             </h2>
             <p className="text-center">
-              Click, connect, and start earning $10 a month in bill credits.
-              Available in Texas only.
+              Click, connect with us, and discover just how simple savings can
+              be.
             </p>
           </div>
           <div className="flex w-full justify-center flex-col md:flex-row items-center px-8 flex-wrap">
             <RedirectBox
-              title="Already a Think Customer?"
+              title="Already a Mill Street Energy Client?"
               buttonText="Go to My Account"
               redirectTo="/"
             />
             <RedirectBox
-              title="New to Think Energy?"
+              title="New to Mill Street Energy?"
               buttonText="Select a Plan"
               redirectTo="/"
             />
@@ -62,7 +62,9 @@ const Aboutus: React.FC = () => {
         </section>
 
         <section className="flex flex-col gap-4 md:gap-10 justify-center items-center py-10 md:py-28">
-          <p className="text-center text-lg text-primary">THE BENEFITS</p>
+          <p className="text-center text-lg text-primary">
+            BENEFITS TO USING US
+          </p>
           <h2 className="text-4xl md:text-5xl font-semibold text-center">
             Energy Simplified
           </h2>
@@ -288,44 +290,28 @@ const Aboutus: React.FC = () => {
             <div className="md:grid grid-cols-3 flex flex-col gap-6">
               <div className="flex flex-col gap-6">
                 <FaqCard
-                  title="How does the Think Smart program work?"
-                  desc="Think Smart automatically pre-conditions your home so you are already comfortable before Think Smart adjusts your thermostat during peak demand times. Think Smart keeps Texas-based customers comfortable while crediting you $10 a month. See the Think Smart Thermostat addendum for additional information."
+                  title="Who Is Mill Street Energy?"
+                  desc="Mill Street Energy is an energy management company focused on optimizing energy efficiency. From comprehensive energy assessments to ensuring you’re paying the lowest possible rates for electricity, we conduct a thorough walkthrough to ensure you’re using energy as efficiently as possible."
                 />
                 <FaqCard
-                  title="Who is eligible to enroll?"
-                  desc="Texas-based Think Energy customers with a Wi-Fi-connected Ecobee, Honeywell, or Resideo thermostat."
-                />
-                <FaqCard
-                  title="How do I enroll?"
-                  desc="Log into your Think Energy My Account, go to the Devices section, and follow the instructions to connect your thermostat."
+                  title="What's the benefit of energy assessments for my property if everything seems to be working fine?"
+                  desc="All equipment has a lifespan, and as it ages, it becomes less efficient, using more electricity to achieve the same results. This increases your energy costs, and delaying replacement could lead to equipment failure, disrupting your operations. Our goal is to help you manage both your energy costs and the condition of your equipment, ensuring efficiency and preventing unexpected downtime."
                 />
               </div>
               <div className="flex flex-col gap-6">
                 <FaqCard
-                  title="Can I connect more than one thermostat?"
-                  desc="Yes, it’s important that you add each of your connected smart thermostats in order to receive $10 per month per account."
+                  title="How Does MSE Make Money?"
+                  desc="At Mill Street Energy, we generate revenue by helping our clients save energy and reduce costs. We do this by providing services like installing EV charging stations, setting up commercial solar solutions, energy procurement, and upgrading old equipment with more efficient models. By making energy efficiency simple, we help our customers save money while growing our business."
                 />
                 <FaqCard
-                  title="Will Think Smart turn off my AC or heat?"
-                  desc="No, we’ll only ever adjust your setpoint by a few degrees. In some cases, we’ll even pre-cool or pre-heat your home to ensure your comfort."
-                />
-                <FaqCard
-                  title="How long do events last?"
-                  desc="Most events typically last between 5-30 minutes, though some may extend for a few hours. For longer events, we may cycle between your normal and adjusted setpoints in order to keep you comfortable."
+                  title="Can I go back to my old supply rate after switching?"
+                  desc="Of course! If you decide for any reason that you would like to switch back, yes you can do so, However we make it our goal to ensure you have the lowest available rates through us."
                 />
               </div>
               <div className="flex flex-col gap-6">
                 <FaqCard
-                  title="How will I know when there’s an event?"
-                  desc="Your My Account page and/or thermostat app will track event statuses. Plus, most Wi-Fi-connected thermostats will display the current temperature setting."
-                />
-                <FaqCard
-                  title="How do I override an event?"
-                  desc="Simply adjust your thermostat, and you’ll opt out of the event for the rest of the day."
-                />
-                <FaqCard
-                  title="Are there penalties?"
-                  desc="You won’t be subject to any penalties, but won’t be eligible for a month’s credit if you opt out of more than two events in that particular month. See the Think Smart Thermostat addendum for additional information."
+                  title="What Happens When I Get A New rate?"
+                  desc="Once your new supply rate is submitted, you’ll receive a confirmation email with the details of your rate (price, plan duration, and supplier). The new rate will appear on your bill within 1-2 billing cycles, depending on your utility company’s processing time. Your utility provider remains the same, and there will be no interruption in service. You’ll continue to receive your bill from your utility, with the new supplier rate listed in the supply section."
                 />
               </div>
             </div>
