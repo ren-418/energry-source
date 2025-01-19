@@ -226,7 +226,7 @@ export default function Header() {
         </div>
 
         <div
-          className="relative hidden items-center justify-center w-[35px] h-[35px] max-[870px]:flex cursor-pointer z-50"
+          className="relative hidden items-center justify-center w-[35px] h-[35px] max-[870px]:flex cursor-pointer z-50 mr-4"
           onClick={toggleHamburger}
           aria-label="Toggle menu"
           role="button"
@@ -234,19 +234,19 @@ export default function Header() {
         >
           <div className="w-full h-full relative">
             <div
-              className={`top-bun absolute h-1 bg-gray-700 transition-transform duration-300 ${
+              className={`top-bun absolute h-1 ${!scrolling ? '!bg-white' : '!bg-black'} transition-transform duration-300 ${
                 isHamburgerOpen
                   ? "top-ham-active"
                   : "translate-y-[-5px] rotate-0"
               }`}
             ></div>
             <div
-              className={`patty absolute h-1 bg-gray-700 transition-opacity duration-300 ${
+              className={`patty absolute h-1 ${!scrolling ? '!bg-white' : '!bg-black'} transition-opacity duration-300 ${
                 isHamburgerOpen ? "opacity-0" : "opacity-100"
               }`}
             ></div>
             <div
-              className={`bottom-bun absolute h-1 bg-gray-700 transition-transform duration-300 ${
+              className={`bottom-bun absolute h-1 ${!scrolling ? '!bg-white' : '!bg-black'} transition-transform duration-300 ${
                 isHamburgerOpen
                   ? "bot-ham-active"
                   : "translate-y-[5px] rotate-0"
