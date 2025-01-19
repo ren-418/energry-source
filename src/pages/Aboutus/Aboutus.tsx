@@ -64,7 +64,7 @@ const Aboutus: React.FC = () => {
         <section className="flex flex-col gap-4 md:gap-10 justify-center items-center py-10 md:py-28">
           <p className="text-center text-lg text-primary">THE BENEFITS</p>
           <h2 className="text-4xl md:text-5xl font-semibold text-center">
-					Energy Simplified
+            Energy Simplified
           </h2>
           <div className="flex justify-center max-w-[1250px] flex-wrap mt-6 px-4 md:px-10">
             <BenefitCard
@@ -95,19 +95,19 @@ const Aboutus: React.FC = () => {
           />
           <div className="max-w-[1250px] relative z-[10] px-4 md:px-10">
             <div className="flex flex-col lg:flex-row justify-center gap-4">
-              <div className="flex flex-col w-full md:w-[80%] gap-6 item-center md:items-start">
+              <div className="flex flex-col w-full gap-6 item-center md:items-start">
                 <p className="text-secondary text-xl text-center md:text-start">
                   POWER MEETS PRECISION
                 </p>
                 <h2 className="text-4xl md:text-5xl text-white font-semibold text-center md:text-start">
-                  How it Works
+                  How It Works
                 </h2>
                 <p className="text-white text-lg">
-                  Maximizing the value of our energy usage isn’t just about how
-                  much power we use, but how we use it. It’s about using energy
-                  when it’s cleaner, cheaper, and smarter. Think Smart makes
-                  real-time adjustments that unlock efficiency for us and
-                  savings for you. Here’s how:
+                  Getting the most out of your energy isn’t just about how much
+                  you use—it’s about how and when you use it. By focusing on
+                  cleaner, cheaper, and more efficient energy, MSE makes
+                  real-time adjustments that save you money and boost
+                  efficiency.
                 </p>
                 <div className="flex justify-center py-4 md:py-14">
                   <Button onClick={() => {}} type="filled" title="Enroll Now" />
@@ -118,17 +118,22 @@ const Aboutus: React.FC = () => {
                 <HowitworksCard
                   num={1}
                   title="Smarter Decisions"
-                  desc="Think Smart optimizes your thermostat to prioritize air conditioning when energy is cleaner and less expensive for the grid so that you can use a bit less energy whenever it’s not, without sacrificing comfort."
+                  desc="We keep a close eye on the energy market to make sure you’re always getting the best rates. By letting suppliers compete for your business, we help lower your costs while maximizing efficiency—all without adding extra work to your day."
                 />
                 <HowitworksCard
                   num={2}
-                  title="Comfort Optimization"
-                  desc="Savings are optimized for comfort, so your home is always ready when you need it, without you lifting a finger."
+                  title="In-Person Assessments"
+                  desc="We visit your facility to check out your equipment and make sure everything is running smoothly. If we spot inefficiencies, we’ll recommend fixes or upgrades to help you save energy and cut costs in the long run."
                 />
                 <HowitworksCard
                   num={3}
+                  title="Comfort Optimization"
+                  desc="Your comfort comes first. We tweak your energy use to keep your space perfectly cozy without you having to lift a finger. It’s all about savings that don’t disrupt your routine."
+                />
+                <HowitworksCard
+                  num={4}
                   title="Savings for You"
-                  desc="By using energy more efficiently, we save money on supply costs –  and we share those savings with you through a $10 monthly bill credit.  "
+                  desc="We focus on the big picture, from locking in great energy rates to keeping your HVAC and other equipment running longer. By cutting supply costs and finding special savings programs, we help you save more. Plus, we’ll keep you in the loop with clear reports so you know exactly how much you’re saving and how you’re helping the planet."
                 />
               </div>
             </div>
@@ -142,7 +147,7 @@ const Aboutus: React.FC = () => {
                 HOW TO
               </p>
               <h2 className="text-4xl md:text-5xl font-semibold text-center">
-                Linking Your Devices
+                HOW TO CONNECT YOUR ENERGY USE
               </h2>
             </div>
             <div className="flex flex-col lg:flex-row gap-24 px-4 md:px-10">
@@ -150,28 +155,28 @@ const Aboutus: React.FC = () => {
                 <div>
                   <LinkingStep
                     num={1}
-                    title="Log In"
-                    desc="Access your Think Energy My Account."
+                    title="Get Started"
+                    desc='Click the "Enroll Now" button to access the form and connect with our team.'
                   />
                   <LinkingStep
                     num={2}
-                    title="Navigate to Devices"
-                    desc='Click the "Devices" section in the menu.'
+                    title="Share Your Info"
+                    desc="Fill out the quick form with your contact details or schedule a call using our business calendar."
                   />
                   <LinkingStep
                     num={3}
-                    title="Select Your Thermostat Brand"
-                    desc="Find your Think Smart-compatible thermostat brand."
+                    title="Review Your Setup"
+                    desc="We’ll reach out to discuss your current energy setup and needs, ensuring a smooth connection process."
                   />
                   <LinkingStep
                     num={4}
-                    title="Follow the Prompts"
-                    desc="Enter your thermostat app credentials and confirm the connection."
+                    title="Link Your System"
+                    desc="Follow our easy instructions to link your energy account or devices directly with our platform."
                   />
                   <LinkingStep
                     num={5}
-                    title="Start Saving!"
-                    desc="Receive confirmation and enjoy effortless savings with $10 monthly credits."
+                    title="Enjoy the Benefits"
+                    desc="Start saving immediately with optimized energy use, lower costs, and seamless service!"
                   />
                 </div>
                 <div className="flex flex-col md:flex-row w-full gap-6 justify-center">
@@ -191,47 +196,56 @@ const Aboutus: React.FC = () => {
         </section>
 
         <section className="flex justify-center py-10 md:py-32 bg-indigo-50">
-          <div className="max-w-[1250px] flex flex-col lg:flex-row px-4 md:px-10 gap-10 md:gap-44">
+          <div className="max-w-[1250px] flex flex-col lg:flex-row px-4 md:px-10 gap-4 md:gap-10">
             <div className="flex-1 flex flex-col gap-12">
               <div className="flex flex-col gap-8">
                 <p className="text-lg font-semibold text-primary text-center md:text-start">
                   ALL YOU'LL NEED
                 </p>
                 <h2 className="text-4xl md:text-5xl font-semibold text-center md:text-start">
-                  Where to Get a Smart Thermostat
+                  Where to Get Your Electricity Bill
                 </h2>
                 <p className="text-xl text-gray-600">
-                  To take full advantage of Think Smart, you’ll need a
-                  Wi-Fi-enabled device from Ecobee, Honeywell, or Resideo. You
-                  should be able to find these at your local home center or
-                  appliance store, online, or at discounted costs through
-                  Centerpoint and Oncor if you’re located in their service
-                  areas.
+                  To take full advantage of our energy-saving solutions, you’ll
+                  need a copy of your most recent electricity bill. This
+                  document provides essential insights into your energy usage,
+                  enabling us to create a customized plan to help you save on
+                  costs and reduce your environmental impact.
                 </p>
                 <div className="flex flex-col gap-5">
                   <h4 className="text-xl font-semibold">
-                    A few things to keep in mind while shopping:
+                    A few things to keep in mind when reviewing your bill:
                   </h4>
                   <div className="pl-2 flex flex-col gap-4">
                     <div className="flex text-lg text-gray-600 gap-4">
                       <span>-</span>
                       <p>
-                        Make sure your thermostat is a Wi-Fi-enabled Ecobee,
-                        Honeywell, or Resideo model.
+                        Make sure the bill includes detailed usage information,
+                        such as monthly consumption, demand charges, and rates.
                       </p>
                     </div>
                     <div className="flex text-lg text-gray-600 gap-4">
                       <span>-</span>
                       <p>
-                        Ecobee, Honeywell, and Resideo all have helpful
-                        installation guides.
+                        The more data we can analyze, the more accurate and
+                        effective your energy plan will be.
                       </p>
                     </div>
                     <div className="flex text-lg text-gray-600 gap-4">
                       <span>-</span>
                       <p>
-                        If you need a hand, any electrician or HVAC professional
-                        should be able to complete your installation for you.
+                        If you’re having trouble accessing or understanding your
+                        utility bill, our team is available to assist you in
+                        gathering and interpreting the necessary information.
+                      </p>
+                    </div>
+                    <div className="flex text-lg text-gray-600 gap-4">
+                      <span>-</span>
+                      <p>
+                        By using your electricity bill, we can better identify
+                        ways to lower your energy costs, increase efficiency,
+                        and achieve long-term savings. Let’s take the first step
+                        toward smarter energy management!
                       </p>
                     </div>
                   </div>
@@ -350,9 +364,9 @@ const Aboutus: React.FC = () => {
         </div>
       </div>
 
-			<div>
-				<img src={ImgFooterBg} className="w-full" />
-			</div>
+      <div>
+        <img src={ImgFooterBg} className="w-full" />
+      </div>
     </>
   );
 };
