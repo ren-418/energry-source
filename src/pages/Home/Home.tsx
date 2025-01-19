@@ -71,6 +71,7 @@ export default function Home() {
           </div>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
                         <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
                             <div className="text-center font-poppins text-white text-2xl">
@@ -124,6 +125,8 @@ export default function Home() {
                                         <span>$26,000</span>
                                         <span>saved</span>
 =======
+=======
+>>>>>>> Stashed changes
           <div className="padding-control flex flex-col pb-10 gap-8 lg:pb-20 md:pt-[15rem] pt-[8rem] md:gap-[50px] z-10 relative sm:items-start items-center">
             <h1 className="font-poppins text-4xl text-white leading-[70px] font-bold md:text-7xl md:leading-[90px] sm:text-start text-center">
               Help Change How Our World Is Powered
@@ -299,6 +302,9 @@ export default function Home() {
               out on these opportunities can be costly.
             </p>
           </div>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
           <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
