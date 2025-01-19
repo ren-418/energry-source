@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-import LogoWhite from "../../assets/images/logo-white.webp";
+import LogoWhite from "../../assets/images/logo-white.png";
 
 export default function Header() {
   const location = useLocation();
@@ -156,16 +156,13 @@ export default function Header() {
       }`}
     >
       <div
-        className={`relative top-0 left-0 px-[5.5%] py-[40px] flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[20px] ${
-          scrolling ? "py-[10px]" : ""
-        }`}
+        className={`relative top-0 left-0 px-[5.5%] py-4 flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[10px]`}
       >
         <div>
           <Link to="/">
             <img
               src={scrolling ? Logo : LogoWhite}
-              width={160}
-              height={63}
+              className="h-[80px]"
               alt="logo"
             />
           </Link>

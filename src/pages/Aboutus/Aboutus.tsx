@@ -1,4 +1,4 @@
-import ImgLogo from "../../assets/images/logo-white.webp";
+import ImgLogo from "../../assets/images/logo-white.png";
 import ImgMiddle from "../../assets/images/provider.jpg";
 import ImgBenefit1 from "../../assets/images/benefit-img-1.png";
 import ImgBenefit2 from "../../assets/images/benefit-img-2.png";
@@ -7,7 +7,8 @@ import ImgSection4Bg from "../../assets/images/section4bg.jpg";
 import ImgSection5Bg from "../../assets/images/aboutus-section5bg.png";
 import ImgSection6Bg from "../../assets/images/aboutus-section6bg.jpg";
 
-import ImgFooterBg from "../../assets/images/home-background.jpg";
+import ImgSection1 from "../../assets/images/home-background.jpg";
+import ImgFooterBg from "../../assets/images/aboutus/aboutus-footer.png";
 
 import Button from "./components/Button";
 import RedirectBox from "./components/RedirectBox";
@@ -20,12 +21,12 @@ const Aboutus: React.FC = () => {
   return (
     <>
       <div className="bg-white flex flex-col">
-        <section 
-					style={{backgroundImage: `url(${ImgFooterBg})`}}
-					className="flex flex-col items-center gap-6 pb-8 pt-[120px] pb-[25%]"
-				>
+        <section
+          style={{ backgroundImage: `url(${ImgSection1})` }}
+          className="flex flex-col items-center gap-6 pb-8 pt-[120px] pb-[50%] md:pb-[20%]"
+        >
           <div>
-            <img src={ImgLogo} alt="Logo" className="w-[200px] md:w-[300px]" />
+            <img src={ImgLogo} alt="Logo" className="w-[80px] md:w-[100px]" />
           </div>
           <div className="text-white flex flex-col gap-6">
             <h2 className="font-semibold text-4xl md:text-5xl text-center">
@@ -50,9 +51,9 @@ const Aboutus: React.FC = () => {
           </div>
         </section>
 
-        <section className="relative mt-[-25%] pt-10">
+        <section className="relative mt-[-50%] md:mt-[-20%] pt-10">
           <div className="absolute h-[50%] w-full"></div>
-          <div className="px-4 md:px-[20%]">
+          <div className="px-4 md:px-[28%]">
             <img
               src={ImgMiddle}
               className="rounded-xl overflow-hidden relative z-[10]"
@@ -253,7 +254,7 @@ const Aboutus: React.FC = () => {
 
         <section className="bg-primary py-10 md:py-20">
           <div className="flex flex-col justify-center items-center gap-12">
-            <img src={ImgLogo} className="w-[200px] md:w-[300px]" alt="Logo" />
+            <img src={ImgLogo} className="w-[80px] md:w-[100px]" alt="Logo" />
             <h2 className="text-white text-4xl md:text-5xl font-semibold text-center md:text-start">
               Enroll today to start saving!
             </h2>
@@ -318,33 +319,40 @@ const Aboutus: React.FC = () => {
         </section>
       </div>
 
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${ImgFooterBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-white/10 pt-10 md:pt-24">
-          <h2 className="text-xl md:text-3xl lg:text-6xl text-center font-semibold text-white px-10">
+        <div className="bg-white/10 pt-10 md:pt-16 lg:pt-24">
+          <h2 className="text-xl md:text-4xl lg:text-6xl text-center font-semibold text-white px-10">
             WE BELIEVE IN GIVING BACK
           </h2>
           <div>
-            <div className="p-4 md:p-20 flex">
+            <div className="p-4 md:p-10 lg:p-20 flex">
               <div className="grow bg-white/20 rounded-xl md:rounded-[20px] lg:rounded-[60px] shadow-lg p-4 md:p-10 lg:p-24">
-                <p className="text-white text-base md:text-3xl text-center">
-                  MSE believes strongly in the importance of giving back, and
-                  our partnership with GivePower has become a element of our
-                  culture as an organization. We donate because we believe in
-                  GivePower’s mission – and we take it a step further by sending
-                  our Top Energy Consultants on these trek’s as a reward for
-                  performance.
+                <p className="text-white text-base md:text-xl lg:text-3xl text-center">
+                  At Mill Street Energy, we believe that sustainability extends
+                  beyond energy savings—it’s about creating positive, lasting
+                  impacts on communities. That’s why we’re committed to donating
+                  for every project we complete to support Give Power’s mission
+                  of providing clean drinking water to underserved communities.
+                  Access to clean water is a fundamental human right, and by
+                  contributing to this cause, we’re helping create a healthier
+                  and more equitable world for all. It’s a small step we can
+                  take to power meaningful change beyond energy efficiency.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+			<div>
+				<img src={ImgFooterBg} />
+			</div>
     </>
   );
 };

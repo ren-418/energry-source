@@ -20,7 +20,7 @@ const IndustriesWeWorkWith: React.FC = () => {
             </h2>
           </div>
           <div>
-            <div className="flex flex-wrap gap-8 justify-center">
+            <div className="flex flex-wrap gap-6 justify-center">
               <IndustryCard
                 image={ImgCommercialOffice}
                 title="COMMERCIAL OFFICE"

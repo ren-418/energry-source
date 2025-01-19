@@ -21,17 +21,19 @@ export default function Footer() {
         backgroundImage: `url(${ImgFooter})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        display: showFooter ? 'flex' : 'none'
+        display: showFooter ? "flex" : "none",
       }}
     >
       <div className="text-white w-full flex flex-col justify-center items-center py-8 gap-8 px-10">
         <h3 className="text-2xl font-bold text-center text">
-          Partnerships that work for you!
+          Partnerships That Work for You
         </h3>
         <p className="text-center">
-          MSE works with utilities, government agencies and energy program
-          partners to obtain critical incentives and rebates that significantly
-          reduce our customers energy solution costs
+          Mill Street Energy (MSE) collaborates with utilities, government
+          agencies, and energy program partners to secure valuable incentives
+          and rebates. These opportunities help our clients significantly lower
+          the cost of implementing energy solutions, making efficient energy
+          solutions more accessible and affordable.
         </p>
         <div>
           <Link

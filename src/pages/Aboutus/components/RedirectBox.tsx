@@ -15,7 +15,7 @@ const RedirectBox: React.FC<RedirectBoxProps> = ({ title, buttonText, redirectTo
 
     return (
         <>
-            <div className="border border-gray-500 shadow-lg max-w-[500px] w-full h-[200px] flex flex-col justify-around items-center py-4 my-2 md:m-2">
+            <div className="border bg-primary border-gray-500 shadow-lg max-w-[500px] w-full h-[200px] flex flex-col justify-around items-center py-4 my-2 md:m-2">
                 <h3 className="text-white text-xl font-semibold">{title}</h3>
                 <div
                     className="border-2 border-white rounded-full px-8 py-3 text-white cursor-pointer hover:text-primary hover:bg-white duration-300 text-center"
