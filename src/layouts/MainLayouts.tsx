@@ -6,7 +6,9 @@ const MainLayouts: React.FC = () => {
     return (
         <>
             <Header />
-            <Outlet />
+            <div>
+                <Outlet />
+            </div>
             <Footer />
         </>
     )
