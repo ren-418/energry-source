@@ -1,5 +1,5 @@
 import ImgLogo from "../../assets/images/logo-white.png";
-import ImgMiddle from "../../assets/images/provider.jpg";
+import ImgMiddle from "../../assets/images/aboutus/aboutus-section2.webp";
 import ImgBenefit1 from "../../assets/images/benefit-img-1.png";
 import ImgBenefit2 from "../../assets/images/benefit-img-2.png";
 import ImgBenefit3 from "../../assets/images/benefit-img-3.png";
@@ -23,7 +23,7 @@ const Aboutus: React.FC = () => {
       <div className="bg-white flex flex-col">
         <section
           style={{ backgroundImage: `url(${ImgSection1})` }}
-          className="flex flex-col items-center gap-6 pb-8 pt-[120px] pb-[50%] md:pb-[20%]"
+          className="flex flex-col items-center gap-6 pb-8 pt-[120px] pb-[20%] md:pb-[12%]"
         >
           <div>
             <img src={ImgLogo} alt="Logo" className="w-[80px] md:w-[100px]" />
@@ -51,12 +51,12 @@ const Aboutus: React.FC = () => {
           </div>
         </section>
 
-        <section className="relative mt-[-50%] md:mt-[-20%] pt-10">
+        <section className="relative mt-[-20%] md:mt-[-12%] pt-10">
           <div className="absolute h-[50%] w-full"></div>
-          <div className="px-4 md:px-[28%]">
+          <div className="px-4 md:px-[10%] flex justify-center">
             <img
               src={ImgMiddle}
-              className="rounded-xl overflow-hidden relative z-[10]"
+              className="rounded-xl overflow-hidden relative z-[10] shadow-lg"
             />
           </div>
         </section>
@@ -319,9 +319,9 @@ const Aboutus: React.FC = () => {
         </section>
       </div>
 
-      {/* <div
+      <div
         style={{
-          backgroundImage: `url(${ImgFooterBg})`,
+          backgroundImage: `url(${ImgSection1})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
@@ -348,7 +348,7 @@ const Aboutus: React.FC = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
 			<div>
 				<img src={ImgFooterBg} />

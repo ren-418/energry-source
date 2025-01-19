@@ -160,11 +160,18 @@ export default function Header() {
       >
         <div>
           <Link to="/">
-            <img
-              src={scrolling ? Logo : LogoWhite}
-              className="h-[80px]"
-              alt="logo"
-            />
+            <>
+                <img
+                    src={Logo}
+                    alt="logo"
+                    className={`h-[80px] ${!scrolling && 'hidden'}`}
+                />
+                <img
+                    src={LogoWhite}   
+                    alt="logo"     
+                    className={`h-[80px] ${scrolling && 'hidden'}`}    
+                />
+            </>
           </Link>
         </div>
         <div className="flex flex-row gap-[2.7%] justify-end items-center w-full max-[870px]:hidden">
