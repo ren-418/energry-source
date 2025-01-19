@@ -56,7 +56,7 @@ export default function Home() {
                         <img
                             alt="Home Background"
                             src={Home_back}
-                            className="h-full w-full object-fit"
+                            className="h-full w-full object-cover"
                         />
                     </div>
 

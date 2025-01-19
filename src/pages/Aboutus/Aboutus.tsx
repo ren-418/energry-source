@@ -64,23 +64,23 @@ const Aboutus: React.FC = () => {
         <section className="flex flex-col gap-4 md:gap-10 justify-center items-center py-10 md:py-28">
           <p className="text-center text-lg text-primary">THE BENEFITS</p>
           <h2 className="text-4xl md:text-5xl font-semibold text-center">
-            Effortless Energy Optimization
+					Energy Simplified
           </h2>
           <div className="flex justify-center max-w-[1250px] flex-wrap mt-6 px-4 md:px-10">
             <BenefitCard
               imgUrl={ImgBenefit1}
-              title="Easy Enrollment"
-              description="Quickly connect your smart thermostat through your Think Energy account with a few simple steps, unlocking instant savings."
+              title="Simple Setup, Instant Results"
+              description="Take control of your energy costs in minutes. Just upload your bills through our secure form below, and unlock a personalized analysis of your annual energy usage - your first step towards real savings."
             />
             <BenefitCard
               imgUrl={ImgBenefit2}
-              title="Save Comfortably"
-              description="Think Smart will never adjust your thermostat by more than a few degrees, maintaining your comfort while optimizing energy usage."
+              title="Peace of Mind Savings"
+              description="Rest easy knowing Mill Street Energy always puts you first. We keep you informed every step of the way, sending advance notifications before any adjustments while maximizing your energy savings."
             />
             <BenefitCard
               imgUrl={ImgBenefit3}
-              title="Earn Monthly Bill Credits"
-              description="Enjoy $10 in monthly bill credits just for participating, with no penalties for opting out of occasional events."
+              title="Track Your Success"
+              description="Watch your savings grow month after month with detailed performance updates. See exactly how much you're saving and where your energy dollars are going - all in clear, easy-to-understand reports."
             />
           </div>
           <div className="flex justify-center py-4 md:py-12">
