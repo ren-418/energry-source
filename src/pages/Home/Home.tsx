@@ -246,165 +246,178 @@ export default function Home() {
             </p>
           </div>
 
-                    <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
-                        <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
-                            <div className="text-center font-poppins text-white text-2xl">
-                                Risks
-                            </div>
-                                                        
-                            <div className="flex flex-col gap-[16px]">
-                                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
-                                    <div className="font-poppins text-[#c2f7ad] text-xs">
-                                        Coffee Chain
-                                    </div>
-                                    <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
-                                        <span>$65,000</span>
-                                        <span>Overpaid</span>
-                                    </div>
-                                    <div className="font-poppins text-white text-base text-center sm:text-start">
-                                        on electricity due to an incorrect rate class on their bill
-                                    </div>
-                                </div>
-                                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
-                                    <div className="font-poppins text-[#c2f7ad] text-xs">family-owned pizzeria</div>
-                                    <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
-                                        <span>40%</span>
-                                        <span>overpaid</span>
-                                    </div>
-                                    <div className="font-poppins text-white text-base text-center sm:text-start">
-                                        on an electricity supply rates overpaid due to annual
-                                        electric rate increases
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="lg:flex hidden flex-col gap-[16px] w-[30%] justify-center items-center text-center">
-                            <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-center">
-                                Why do I need Mill Street Energy?
-                            </h1>
-                            <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
-                                Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
-                            </p>
-                        </div>
-                        <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
-                            <div className="text-center font-poppins text-black text-2xl">
-                                Opportunities
-                            </div>
-                            <div className="flex flex-col gap-[16px]">
-                                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
-                                    <div className="font-poppins text-[#1f7a59] text-xs">
-                                        {/* Community Food Storage Center */}
-                                        Community Food Storage Center
-                                    </div>
-                                    <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
-                                        <span>$26,000</span>
-                                        <span>saved</span>
+          <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
+            <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
+              <div className="text-center font-poppins text-white text-2xl">
+                Risks
+              </div>
 
-                                    </div>
-                                    <div className="font-poppins text-black text-base text-center sm:text-start">
-                                        leverage Mill Street Energy to secure custom energy pricing
-                                        for your business
-                                    </div>
-                                </div>
-                                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
-                                    <div className="font-poppins text-[#1f7a59] text-xs">
-                                        Community Boys & Girls Club
-                                    </div>
-                                    <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
-                                        <span>$42,000</span>
-                                        <span>earned</span>
-                                    </div>
-                                    <div className="font-poppins text-black text-base text-center sm:text-start">
-                                        by enrolling and participating in Demand Response programs
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div className="flex flex-col gap-[16px]">
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
+                  <div className="font-poppins text-[#c2f7ad] text-xs">
+                    Coffee Chain
+                  </div>
+                  <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
+                    <span>$65,000</span>
+                    <span>Overpaid</span>
+                  </div>
+                  <div className="font-poppins text-white text-base text-center sm:text-start">
+                    on electricity due to an incorrect rate class on their bill
+                  </div>
                 </div>
-                <div className="sm:py-[128px] py-[64px] w-full flex flex-col bg-white padding-control justify-center items-center mt-[-10px]">
-                    <div className="flex flex-col gap-[16px] justify-center items-center sm:w-[80%] w-full">
-                        {/* <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center"> */}
-                        <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
-                            {/* We keep an eye on everything so you don&apos;t have to */}
-                            Let us deal with the energy monitoring for you
-                        </div>
-                        {/* <div className="font-poppins text-[#022e34] text-lg text-center"> */}
-                        <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
-                            Don&apos;t want another thing to think about? We get it. Once you&apos;re connected to our platform, we handle everything behind the scenes. The only time you&apos;ll hear from us is when we have updates on your savings or opportunities to save even more.
-                        </div>
-                    </div>
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
+                  <div className="font-poppins text-[#c2f7ad] text-xs">
+                    family-owned pizzeria
+                  </div>
+                  <div className="flex flex-col font-poppins text-[#c2f7ad] text-3xl text-center sm:text-start">
+                    <span>40%</span>
+                    <span>overpaid</span>
+                  </div>
+                  <div className="font-poppins text-white text-base text-center sm:text-start">
+                    on an electricity supply rates overpaid due to annual
+                    electric rate increases
+                  </div>
                 </div>
-                <div className="py-[40px] padding-control flex flex-col justify-center items-center bg-white gap-[40px]">
-                    {/* <div className="font-poppins text-black lg:text-5xl text-3xl text-center">
-            Simplifying the clean energy transition.
-          </div> */}
-                    <div className="flex flex-row grid xl:grid-cols-2 grid-cols-1 gap-[15px] sm:text-start text-center">
-                        <div className="text-[#549f57] font-poppins lg:text-base text-sm lg:pl-[70px] pl-[20px] flex flex-row justify-top">
-                            <span className="lg:text-5xl text-3xl text-[#549f57] font-poppins">
-                                95+
-                            </span>
-                            <span className="text-black"> &nbsp;|&nbsp;</span>
-                            <span>Energy Accounts Under Management</span>
-                        </div>
-                        <div className="text-[#549f57] font-poppins lg:text-base text-sm lg:pl-[70px] pl-[20px] flex flex-row justify-top">
-                            <span className="lg:text-5xl text-3xl text-[#549f57] font-poppins">
-                                400K
-                            </span>
-                            <span className="text-black"> &nbsp;|&nbsp;</span>
-                            <span>Cost Savings Achieved by the Energy Management Team</span>
-                        </div>
-                    </div>
-                    <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
-                        We Can&apos;t Work Without You!
-                    </div>
-                    <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
-                        At Mill Street Energy, we&apos;re committed to maximizing energy
-                        efficiency and helping as many properties as possible reduce their
-                        carbon footprint. However, we can&apos;t do it alone — and
-                        that&apos;s where you come in!
-                    </div>
-                    {/* <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]"> */}
-                    <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
-                        Schedule below to begin the discovery process and learn how we can help!
-                    </div>
-                    <div className="schedule-btn font-poppins cursor-pointer text-center max-[1024px]:text-3xl max-[1024px]:font-bold">
-                        Schedule Your Assessment Here
-                    </div>
+              </div>
+            </div>
+            <div className="lg:flex hidden flex-col gap-[16px] w-[30%] justify-center items-center text-center">
+              <h1 className="font-poppins text-[#c2f7ad] sm:text-4xl text-3xl text-center sm:text-center">
+                Why do I need Mill Street Energy?
+              </h1>
+              <p className="font-poppins text-[#FFFFFF] sm:text-xl text-lg text-center sm:text-center">
+                Energy is a big expense for most businesses, and it only gets
+                bigger as they grow. There are plenty of opportunities to reduce
+                energy costs, but they&apos;re not always easy to spot. Missing
+                out on these opportunities can be costly.
+              </p>
+            </div>
+            <div className="flex flex-col bg-[#c2f7ad] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
+              <div className="text-center font-poppins text-black text-2xl">
+                Opportunities
+              </div>
+              <div className="flex flex-col gap-[16px]">
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
+                  <div className="font-poppins text-[#1f7a59] text-xs">
+                    {/* Community Food Storage Center */}
+                    Community Food Storage Center
+                  </div>
+                  <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
+                    <span>$26,000</span>
+                    <span>saved</span>
+                  </div>
+                  <div className="font-poppins text-black text-base text-center sm:text-start">
+                    leverage Mill Street Energy to secure custom energy pricing
+                    for your business
+                  </div>
                 </div>
-                <div className="flex padding-control py-[50px] flex-col gap-[10px] bg-[#0f352d] items-center">
-                    <div className="text-[#549f57] text-base text-poppins location-before-event rounded-[50px] cursor-poitner p-[10px] text-center">
-                        <i className="bi bi-globe-central-south-asia rotating-icon mr-[10px]"></i>
-                        What States Do We Work In?
-                    </div>
-                    <div className="text-white lg:text-5xl text-3xl text-poppins font-bold text-center">
-                        Where Are We Located?
-                    </div>
-                    <div className="text-white text-base text-poppins text-center">
-                        We work in different states across the nation. Here is a map showing
-                        the states where we primarily do work.
-                    </div>
-                    <div className="text-base font-poppins py-[12px] px-[24px] bg-[#549F57] rounded-md w-[130px] text-center">
-                        Click here
-                    </div>
+                <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
+                  <div className="font-poppins text-[#1f7a59] text-xs">
+                    Community Boys & Girls Club
+                  </div>
+                  <div className="flex flex-col font-poppins text-[#000000] text-3xl text-center sm:text-start">
+                    <span>$42,000</span>
+                    <span>earned</span>
+                  </div>
+                  <div className="font-poppins text-black text-base text-center sm:text-start">
+                    by enrolling and participating in Demand Response programs
+                  </div>
                 </div>
-                <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px] bg-[#0f352d] items-center">
-                    <div className="w-full flex lg:flex-row flex-col gap-[50px] items-center">
-                        <div className="flex flex-col gap-[10px] z-1 hidden">
-                            <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
-                                <img src={Blue_dot} alt="blue dot" width={50} height={50} />
-                                <span>Natural Gas & Electricity Options Available</span>
-                            </div>
-                            <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
-                                <img src={Green_dot} alt="green dot" width={50} height={50} />
-                                <span>Natural Gas Options Available</span>
-                            </div>
-                            <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
-                                <img src={Grey_dot} alt="grey dot" width={50} height={50} />
-                                <span>Limited Availability</span>
-                            </div>
-                        </div>
-                        {/* <Image
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="sm:py-20 py-10 w-full flex flex-col bg-white padding-control justify-center items-center mt-[-10px]">
+          <div className="flex flex-col gap-[16px] justify-center items-center sm:w-[80%] w-full">
+            {/* <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center"> */}
+            <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
+              {/* We keep an eye on everything so you don&apos;t have to */}
+              Let us deal with the energy monitoring for you
+            </div>
+            {/* <div className="font-poppins text-[#022e34] text-lg text-center"> */}
+            <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
+              Don&apos;t want another thing to think about? We get it. Once
+              you&apos;re connected to our platform, we handle everything behind
+              the scenes. The only time you&apos;ll hear from us is when we have
+              updates on your savings or opportunities to save even more.
+            </div>
+          </div>
+        </div>
+        <div className="pb-[40px] w-full flex flex-col justify-center items-center bg-white">
+          <div className="max-w-[1250px] flex flex-col gap-10">
+            <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center">
+              Energy Management Benefits
+            </div>
+            <div className="flex flex-wrap gap-6">
+              <BenefitCard
+                imgUrl={ImgAccountManagement}
+                title="Account Management"
+                description="We provide a dedicated account manager so that there is always a name with a face. Around-the-clock support services are available through email and phone calls to assist you in guiding and managing your service"
+              />
+              <BenefitCard
+                imgUrl={ImgSavingEarningMoney}
+                title="Saving Money & Earning Money"
+                description="The Zentility platform empowers users to save money, make money, or achieve both. It's the optimal platform for monetizing energy data"
+              />
+              <BenefitCard
+                imgUrl={ImgMarketingOverview}
+                title="Energy Market Overview"
+                description="Gain immediate access to verified competitive pricing and tailored contracts, as well as national licensing and an extended supplier network to help with Supplier Management"
+              />
+            </div>
+          </div>
+          <div className="py-[40px] w-full padding-control flex flex-col justify-center items-center bg-white gap-10">
+            <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
+              We Can&apos;t Work Without You!
+            </div>
+            <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
+              At Mill Street Energy, we&apos;re committed to maximizing energy
+              efficiency and helping as many properties as possible reduce their
+              carbon footprint. However, we can&apos;t do it alone — and
+              that&apos;s where you come in!
+            </div>
+            {/* <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]"> */}
+            <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
+              Schedule below to begin the discovery process and learn how we can
+              help!
+            </div>
+            <div className="schedule-btn font-poppins cursor-pointer text-center max-[1024px]:text-3xl max-[1024px]:font-bold">
+              Schedule Your Assessment Here
+            </div>
+          </div>
+        </div>
+        <div className="flex padding-control py-[50px] flex-col gap-[10px] bg-[#0f352d] items-center">
+          <div className="text-[#549f57] text-base text-poppins location-before-event rounded-[50px] cursor-poitner p-[10px] text-center">
+            <i className="bi bi-globe-central-south-asia rotating-icon mr-[10px]"></i>
+            What States Do We Work In?
+          </div>
+          <div className="text-white lg:text-5xl text-3xl text-poppins font-bold text-center">
+            Where Are We Located?
+          </div>
+          <div className="text-white text-base text-poppins text-center">
+            We work in different states across the nation. Here is a map showing
+            the states where we primarily do work.
+          </div>
+          <div className="text-base font-poppins py-[12px] px-[24px] bg-[#549F57] rounded-md w-[130px] text-center">
+            Click here
+          </div>
+        </div>
+        <div className="sm:p-[30px] py-[30px] flex xl:flex-row flex-col xl:gap-0 gap-[30px] bg-[#0f352d] items-center">
+          <div className="w-full flex lg:flex-row flex-col gap-[50px] items-center">
+            <div className="flex flex-col gap-[10px] z-1 hidden">
+              <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
+                <img src={Blue_dot} alt="blue dot" width={50} height={50} />
+                <span>Natural Gas & Electricity Options Available</span>
+              </div>
+              <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
+                <img src={Green_dot} alt="green dot" width={50} height={50} />
+                <span>Natural Gas Options Available</span>
+              </div>
+              <div className="flex flex-row gap-[10px] text-base text-[#ffffff] text-poppins justify-start items-center">
+                <img src={Grey_dot} alt="grey dot" width={50} height={50} />
+                <span>Limited Availability</span>
+              </div>
+            </div>
+            {/* <Image
               alt="location"
               src={Map}
               // className="xl:w-[70%] sm:w-[90%] sm:mx-[0px] mx-[-60px] w-[100%]"
