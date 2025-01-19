@@ -1,4 +1,4 @@
-import ImgLogo from "../../assets/images/logo-white.png";
+import ImgLogo from "../../assets/images/aboutus/logo-white.png";
 import ImgMiddle from "../../assets/images/aboutus/aboutus-section2.webp";
 import ImgBenefit1 from "../../assets/images/benefit-img-1.png";
 import ImgBenefit2 from "../../assets/images/benefit-img-2.png";
@@ -26,7 +26,7 @@ const Aboutus: React.FC = () => {
           className="flex flex-col items-center gap-6 pb-8 pt-[120px] pb-[20%] md:pb-[12%]"
         >
           <div>
-            <img src={ImgLogo} alt="Logo" className="w-[80px] md:w-[100px]" />
+            <img src={ImgLogo} alt="Logo" className="w-[60px] md:w-[80px]" />
           </div>
           <div className="text-white flex flex-col gap-6">
             <h2 className="font-semibold text-4xl md:text-5xl text-center">
@@ -351,7 +351,7 @@ const Aboutus: React.FC = () => {
       </div>
 
 			<div>
-				<img src={ImgFooterBg} />
+				<img src={ImgFooterBg} className="w-full" />
 			</div>
     </>
   );

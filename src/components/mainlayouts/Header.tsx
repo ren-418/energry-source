@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-import LogoWhite from "../../assets/images/logo-white.png";
+import LogoWhite from "../../assets/images/logo-white.webp";
 
 export default function Header() {
   const location = useLocation();
@@ -52,9 +52,9 @@ export default function Header() {
         setScrolling(true);
       } else {
         if (currentPath == "/layouts/industries-work-with") {
-            setScrolling(true);
+          setScrolling(true);
         } else {
-            setScrolling(false);
+          setScrolling(false);
         }
       }
     };
@@ -156,22 +156,26 @@ export default function Header() {
       }`}
     >
       <div
-        className={`relative top-0 left-0 px-[5.5%] py-4 flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[10px]`}
+        className={`relative top-0 left-0 px-[5.5%] py-[40px] flex flex-row justify-between w-full items-center underline-bottom-white max-[870px]:py-[20px] ${
+          scrolling ? "py-[10px]" : ""
+        }`}
       >
         <div>
           <Link to="/">
-            <>
-                <img
-                    src={Logo}
-                    alt="logo"
-                    className={`h-[80px] ${!scrolling && 'hidden'}`}
-                />
-                <img
-                    src={LogoWhite}   
-                    alt="logo"     
-                    className={`h-[80px] ${scrolling && 'hidden'}`}    
-                />
-            </>
+            <img
+              src={Logo}
+              width={160}
+              height={63}
+              alt="logo"
+              className={`${!scrolling && "hidden"}`}
+            />
+            <img
+              src={LogoWhite}
+              width={160}
+              height={63}
+              alt="logo"
+              className={`${scrolling && "hidden"}`}
+            />
           </Link>
         </div>
         <div className="flex flex-row gap-[2.7%] justify-end items-center w-full max-[870px]:hidden">
@@ -268,14 +272,13 @@ export default function Header() {
                   }`}
                   onClick={() => {
                     if (item.submenu) {
-                        openMobileSubmenu(item.key); 
-                        toggleHamburger();
+                      openMobileSubmenu(item.key);
+                      toggleHamburger();
                     } else {
-                        setActive(item.key)
-                        toggleHamburger();
+                      setActive(item.key);
+                      toggleHamburger();
                     }
-                    }
-                  }
+                  }}
                 >
                   <Link
                     to={item.link}
