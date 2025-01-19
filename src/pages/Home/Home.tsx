@@ -220,12 +220,13 @@ export default function Home() {
                             Energy is a big expense for most businesses, and it only gets bigger as they grow. There are plenty of opportunities to reduce energy costs, but they&apos;re not always easy to spot. Missing out on these opportunities can be costly.
                         </p>
                     </div>     
-                                   
+
                     <div className="flex md:flex-row gap-[30px] !justify-center w-full flex-col">
                         <div className="flex flex-col bg-[#072223] rounded-[8px] pt-[32px] pb-[16px] px-[16px] gap-[1.5rem] justify-center items-center lg:w-[35%] md:w-[50%] w-[100%]">
                             <div className="text-center font-poppins text-white text-2xl">
                                 Risks
                             </div>
+                            
                             <div className="flex flex-col gap-[16px]">
                                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#203939] sm:items-start items-center">
                                     <div className="font-poppins text-[#c2f7ad] text-xs">
