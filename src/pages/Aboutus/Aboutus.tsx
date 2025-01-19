@@ -4,7 +4,7 @@ import ImgBenefit1 from "../../assets/images/benefit-img-1.png";
 import ImgBenefit2 from "../../assets/images/benefit-img-2.png";
 import ImgBenefit3 from "../../assets/images/benefit-img-3.png";
 import ImgSection4Bg from "../../assets/images/section4bg.jpg";
-import ImgSection5Bg from "../../assets/images/aboutus-section5bg.png";
+import ImgSection5Bg from "../../assets/images/aboutus/use-step.webp";
 import ImgSection6Bg from "../../assets/images/aboutus-section6bg.jpg";
 
 import ImgSection1 from "../../assets/images/home-background.jpg";
@@ -190,7 +190,7 @@ const Aboutus: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 flex items-center">
                 <img src={ImgSection5Bg} className="w-full" />
               </div>
             </div>
