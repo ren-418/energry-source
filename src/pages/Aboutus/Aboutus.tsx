@@ -5,7 +5,7 @@ import ImgBenefit2 from "../../assets/images/benefit-img-2.png";
 import ImgBenefit3 from "../../assets/images/benefit-img-3.png";
 import ImgSection4Bg from "../../assets/images/section4bg.jpg";
 import ImgSection5Bg from "../../assets/images/aboutus/use-step.webp";
-import ImgSection6Bg from "../../assets/images/aboutus-section6bg.jpg";
+import ImgSection6Bg from "../../assets/images/aboutus/utility-bill.png";
 
 import ImgSection1 from "../../assets/images/home-background.jpg";
 import ImgFooterBg from "../../assets/images/aboutus/aboutus-footer.png";
@@ -152,7 +152,7 @@ const Aboutus: React.FC = () => {
                 HOW TO CONNECT YOUR ENERGY USE
               </h2>
             </div>
-            <div className="flex flex-col lg:flex-row gap-24 px-4 md:px-10">
+            <div className="flex flex-col lg:flex-row gap-10 md:gap-24 px-4 md:px-10">
               <div className="flex flex-1 flex-col items-start justify-center gap-9">
                 <div>
                   <LinkingStep
@@ -202,10 +202,10 @@ const Aboutus: React.FC = () => {
             <div className="flex-1 flex flex-col gap-12">
               <div className="flex flex-col gap-8">
                 <p className="text-lg font-semibold text-primary text-center md:text-start">
-                  ALL YOU'LL NEED
+                  ALL YOU NEED TO GET STARTED IS AN
                 </p>
                 <h2 className="text-4xl md:text-5xl font-semibold text-center md:text-start">
-                  Where to Get Your Electricity Bill
+                  Energy Bill
                 </h2>
                 <p className="text-xl text-gray-600">
                   To take full advantage of our energy-saving solutions, you’ll

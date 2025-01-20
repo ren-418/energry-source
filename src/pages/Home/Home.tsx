@@ -226,7 +226,7 @@ export default function Home() {
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
                 Save Now
               </div>
-              
+
               <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Save now by replacing old, outdated equipment, leveraging energy
                 pricing, and optimizing for energy efficiency.
@@ -332,21 +332,22 @@ export default function Home() {
             {/* <div className="font-poppins text-[#022e34] sm:text-5xl text-3xl text-center"> */}
             <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
               {/* We keep an eye on everything so you don&apos;t have to */}
-              Let us deal with the energy monitoring for you
+              Let Us Handle Your Energy Management Needs
             </div>
             {/* <div className="font-poppins text-[#022e34] text-lg text-center"> */}
             <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
-              Don&apos;t want another thing to think about? We get it. Once
-              you&apos;re connected to our platform, we handle everything behind
-              the scenes. The only time you&apos;ll hear from us is when we have
-              updates on your savings or opportunities to save even more.
+              Simplify your life with our comprehensive energy monitoring
+              solution. Once you partner with us, we take care of all the
+              technical details. You'll only hear from our team when there's
+              good news about your savings or when we discover new ways to
+              reduce your costs.
             </div>
           </div>
         </div>
         <div className="pb-[40px] w-full flex flex-col justify-center items-center bg-white">
           <div className="max-w-[1250px] flex flex-col gap-10">
-            <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center">
-              Energy Management Benefits
+            <div className="font-poppins text-[#000000] lg:text-5xl text-3xl w-full text-center">
+              Some Key Benefits of Our Energy Solutions
             </div>
             <div className="flex flex-wrap gap-6">
               <BenefitCard
@@ -368,21 +369,23 @@ export default function Home() {
           </div>
           <div className="py-[40px] w-full padding-control flex flex-col justify-center items-center bg-white gap-10">
             <div className="font-poppins text-[#000000] lg:text-5xl text-3xl font-bold w-full text-center pt-[50px]">
-              We Can&apos;t Work Without You!
+              Your Partnership Matters
             </div>
             <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
-              At Mill Street Energy, we&apos;re committed to maximizing energy
-              efficiency and helping as many properties as possible reduce their
-              carbon footprint. However, we can&apos;t do it alone — and
-              that&apos;s where you come in!
+              We're dedicated to delivering energy efficiency solutions and
+              helping businesses minimize their environmental impact. Our
+              success depends on working together with clients like you -
+              collaborative partnerships are the key to making our world more
+              energy efficient. Ready to explore how we can support your energy
+              goals? Schedule your consultation below.
             </div>
             {/* <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[15px]"> */}
             <div className="font-poppins text-[#000000] lg:text-2xl text-xl w-full text-center pt-[30px]">
-              Schedule below to begin the discovery process and learn how we can
-              help!
+              Ready to explore how we can support your energy goals? Schedule
+              your consultation below.
             </div>
             <div className="schedule-btn font-poppins cursor-pointer text-center max-[1024px]:text-3xl max-[1024px]:font-bold">
-              Schedule Your Assessment Here
+              Book Your Free Consultation Today
             </div>
           </div>
         </div>
