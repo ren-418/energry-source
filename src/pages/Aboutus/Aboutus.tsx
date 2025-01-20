@@ -255,7 +255,7 @@ const Aboutus: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-6 flex-col md:flex-row">
+              <div className="flex gap-6 flex-col md:flex-row hidden">
                 <Button title="Oncor Shop" type="filled" onClick={() => {}} />
                 <Button
                   title="CenterPoint Shop"
