@@ -41,12 +41,12 @@ const Aboutus: React.FC = () => {
             <RedirectBox
               title="Already a Mill Street Energy Client?"
               buttonText="Go to My Account"
-              redirectTo="/"
+              redirectTo="https://calendar.app.google/zkQmsRiCvuaRiM8Z7"
             />
             <RedirectBox
               title="New to Mill Street Energy?"
               buttonText="Select a Plan"
-              redirectTo="/"
+              redirectTo="https://calendar.app.google/zkQmsRiCvuaRiM8Z7"
             />
           </div>
         </section>
