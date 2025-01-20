@@ -225,7 +225,8 @@ export default function Home() {
               </div>
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
                 Save Now
-              </div>              
+              </div>
+
               <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Save now by replacing old, outdated equipment, leveraging energy
                 pricing, and optimizing for energy efficiency.
@@ -352,17 +353,14 @@ export default function Home() {
               <BenefitCard
                 imgUrl={ImgAccountManagement}
                 title="Account Management"
-                description="We provide a dedicated account manager so that there is always a name with a face. Around-the-clock support services are available through email and phone calls to assist you in guiding and managing your service"
               />
               <BenefitCard
                 imgUrl={ImgSavingEarningMoney}
                 title="Saving Money & Earning Money"
-                description="The Zentility platform empowers users to save money, make money, or achieve both. It's the optimal platform for monetizing energy data"
               />
               <BenefitCard
                 imgUrl={ImgMarketingOverview}
                 title="Energy Market Overview"
-                description="Gain immediate access to verified competitive pricing and tailored contracts, as well as national licensing and an extended supplier network to help with Supplier Management"
               />
             </div>
           </div>
