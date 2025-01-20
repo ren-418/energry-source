@@ -398,7 +398,7 @@ export default function Home() {
             We work in different states across the nation. Here is a map showing
             the states where we primarily do work.
           </div>
-          <div className="text-base font-poppins py-[12px] px-[24px] bg-[#549F57] rounded-md w-[130px] text-center">
+          <div className="text-base font-poppins py-[12px] px-[24px] bg-[#549F57] rounded-md w-[130px] text-center cursor-pointer">
             Click here
           </div>
         </div>
