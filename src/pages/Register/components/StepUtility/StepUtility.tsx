@@ -100,9 +100,14 @@ const StepUtility: React.FC<StepUtilityProps> = ({ handleNextStep, handlePreviou
                         </div>
                     </div>
                     <div className="flex flex-col gap-[12px]">
-                        <UtilityCard key={utilities[0].name} utility={utilities[0].name} logo={utilities[0].logo} handleNextStep={handleNextStep} setSelectedUtility={setSelectedUtility} />
+                        {
+                            utilities.length ?
+                            <UtilityCard key={utilities[0].name} utility={utilities[0].name} logo={utilities[0].logo} handleNextStep={handleNextStep} setSelectedUtility={setSelectedUtility} />
+                            : <p>There is no utility</p>
+                        }
+
                         {showUI &&
-                            utilities.map((utility, index) => (
+                            utilities.length && utilities.map((utility, index) => (
                                 index !== 0 &&
                                 <UtilityCard key={utility.name} utility={utility.name} logo={utility.logo} handleNextStep={handleNextStep} setSelectedUtility={setSelectedUtility} />
                             ))
