@@ -226,7 +226,7 @@ export default function Home() {
               <div className="text-[#022e34] font-poppins text-2xl pb-[16px]">
                 Save Now
               </div>
-              
+
               <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Save now by replacing old, outdated equipment, leveraging energy
                 pricing, and optimizing for energy efficiency.
@@ -307,8 +307,8 @@ export default function Home() {
                     <span>saved</span>
                   </div>
                   <div className="font-poppins text-black text-base text-center sm:text-start">
-                    leverage Mill Street Energy to secure custom energy pricing
-                    for your business
+                    Leveraged Mill Street Energy to secure customized energy
+                    pricing for their business
                   </div>
                 </div>
                 <div className="p-[32px] flex flex-col gap-[16px] rounded-[8px] bg-[#fff9] sm:items-start items-center">
@@ -320,7 +320,8 @@ export default function Home() {
                     <span>earned</span>
                   </div>
                   <div className="font-poppins text-black text-base text-center sm:text-start">
-                    by enrolling and participating in Demand Response programs
+                    from commercial solar leases we negotiated on their behalf,
+                    our clients earn this annually
                   </div>
                 </div>
               </div>
@@ -381,7 +382,15 @@ export default function Home() {
               Ready to explore how we can support your energy goals? Schedule
               your consultation below.
             </div>
-            <div className="schedule-btn font-poppins cursor-pointer text-center max-[1024px]:text-3xl max-[1024px]:font-bold">
+            <div
+              className="schedule-btn font-poppins cursor-pointer text-center max-[1024px]:text-3xl max-[1024px]:font-bold"
+              onClick={() =>
+                window.open(
+                  "https://calendar.app.google/zkQmsRiCvuaRiM8Z7",
+                  "_blank"
+                )
+              }
+            >
               Book Your Free Consultation Today
             </div>
           </div>

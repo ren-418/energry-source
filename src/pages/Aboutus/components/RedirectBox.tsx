@@ -1,4 +1,4 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface RedirectBoxProps {
     title: string;
@@ -7,11 +7,14 @@ interface RedirectBoxProps {
 }
 
 const RedirectBox: React.FC<RedirectBoxProps> = ({ title, buttonText, redirectTo }) => {
-    // const naviate = useNavigate();
+    const naviate = useNavigate();
 
     const handleClickButton = () => {
-        // naviate(redirectTo);
-        window.open(redirectTo, '_blank');
+        if (redirectTo.includes('http')) {
+            window.open(redirectTo);
+        } else {
+            naviate(redirectTo);
+        }
     }
 
     return (

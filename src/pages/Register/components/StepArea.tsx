@@ -5,6 +5,7 @@ import config from "../../../config";
 import InputField from "../../../components/InputField";
 import ImgPowerLine from "../../../assets/images/signup/powerline.webp";
 import ElementLoader from "../../../components/loaders/ElementLoader";
+import { useNavigate } from "react-router-dom";
 
 interface Step1Props {
   zipcode: string;
@@ -23,6 +24,7 @@ const StepArea: React.FC<Step1Props> = ({
   handleNextStep,
   setUtilities,
 }) => {
+  const navigate = useNavigate();
   const zipRegex = /^\d{5}$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -53,7 +55,7 @@ const StepArea: React.FC<Step1Props> = ({
                 setUtilities(response.data.utilities);
                 handleNextStep();
               } else {
-                toast.warning('There is no utility', {
+                toast.warning("There is no utility", {
                   position: "top-right",
                   autoClose: 3000,
                   hideProgressBar: false,
@@ -105,11 +107,27 @@ const StepArea: React.FC<Step1Props> = ({
   return (
     <>
       <div className="w-full bg-[#f5f5f7] flex flex-col gap-[30px] z-30 overflow-auto">
-        <div className="w-full flex justify-center items-center mt-4">
+        <div className="w-full bg-[#f5f5f7]">
+          <div
+            className="rounded-[50px] w-[24px] h-[24px] bg-none hover:bg-[#6e7385] hover:opacity-60 transition-2s cursor-pointer flex justify-center items-center"
+            onClick={() => navigate('/')}
+          >
+            <svg
+              className="w-[18px] h-[18px]"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="WestIcon"
+            >
+              <path d="m9 19 1.41-1.41L5.83 13H22v-2H5.83l4.59-4.59L9 5l-7 7 7 7z"></path>
+            </svg>
+          </div>
+        </div>
+        <div className="w-full flex justify-center items-center mt-1">
           <img src={ImgPowerLine} alt="Bulb Icon" className="h-full" />
         </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2">
           <h2 className="text-poppins text-black text-2xl font-bold text-center">
             {/* Are you overpaying for energy? */}
             When was the last time you reviewed your energy costs?
@@ -122,7 +140,7 @@ const StepArea: React.FC<Step1Props> = ({
           </span>
         </div>
 
-        <div className="flex flex-col gap-[16px]">
+        <div className="flex flex-col gap-2">
           <InputField
             id="zipcode"
             name="zipcode"

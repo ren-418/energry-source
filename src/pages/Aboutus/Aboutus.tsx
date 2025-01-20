@@ -16,8 +16,10 @@ import BenefitCard from "./components/BenefitCard";
 import HowitworksCard from "./components/HowtiworksCard";
 import LinkingStep from "./components/LinkingStep";
 import FaqCard from "./components/FaqCard";
+import { useNavigate } from "react-router-dom";
 
 const Aboutus: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-white flex flex-col">
@@ -41,7 +43,7 @@ const Aboutus: React.FC = () => {
             <RedirectBox
               title="Already a Mill Street Energy Client?"
               buttonText="Go to My Account"
-              redirectTo="https://calendar.app.google/zkQmsRiCvuaRiM8Z7"
+              redirectTo="/register"
             />
             <RedirectBox
               title="New to Mill Street Energy?"
@@ -182,7 +184,7 @@ const Aboutus: React.FC = () => {
                   />
                 </div>
                 <div className="flex flex-col md:flex-row w-full gap-6 justify-center">
-                  <Button type="filled" title="My Account" onClick={() => {}} />
+                  <Button type="filled" title="My Account" noToSchedule onClick={() => {navigate('/register')}} />
                   <Button
                     type="bordered"
                     title="Enroll Now"

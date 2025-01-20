@@ -2,10 +2,12 @@ interface ButtonProps {
   title: string;
   type: "filled" | "bordered";
   onClick: () => void;
+  noToSchedule?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, type, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ title, type, onClick, noToSchedule }) => {
   const goToSchedule = () => {
+    if (noToSchedule) return;
     window.open("https://calendar.app.google/zkQmsRiCvuaRiM8Z7", "_blank");
   };
 
