@@ -101,7 +101,7 @@ const Aboutus: React.FC = () => {
             <div className="flex flex-col lg:flex-row justify-center gap-4">
               <div className="flex flex-col w-full gap-6 item-center md:items-start">
                 <p className="text-secondary text-xl text-center md:text-start">
-                  POWER MEETS PRECISION
+                  NEXT STEPS
                 </p>
                 <h2 className="text-4xl md:text-5xl text-white font-semibold text-center md:text-start">
                   How It Works
