@@ -230,6 +230,7 @@ export default function Home() {
                 Save now by replacing old, outdated equipment, leveraging energy
                 pricing, and optimizing for energy efficiency.
               </div>
+              
             </div>
           </div>
         </div>
