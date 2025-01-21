@@ -141,6 +141,18 @@ export default function Header() {
       link: "/layouts/industries-work-with",
       submenu: null,
     },
+    {
+      name: "Connect With Us",
+      key: 'https://calendar.app.google/zkQmsRiCvuaRiM8Z7',
+      link: 'https://calendar.app.google/zkQmsRiCvuaRiM8Z7',
+      submenu: null
+    },
+    {
+      name: 'Start Saving Today',
+      key: '/register',
+      link: '/register',
+      submenu: null
+    }
   ];
 
   return (
