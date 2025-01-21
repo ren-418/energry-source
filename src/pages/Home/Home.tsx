@@ -229,8 +229,7 @@ export default function Home() {
               <div className="text-[#4e6064] font-poppins text-base text-center sm:text-start">
                 Save now by replacing old, outdated equipment, leveraging energy
                 pricing, and optimizing for energy efficiency.
-              </div>
-              
+              </div>              
             </div>
           </div>
         </div>
