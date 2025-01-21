@@ -1,13 +1,17 @@
 import IndustryCard from "./components/IndustryCard";
 
-import ImgCommercialOffice from "../../assets/images/industies-work-with/commercial-office.jpeg";
-import ImgIndustrialWarehouse from "../../assets/images/industies-work-with/industrial-warehouse.jpg";
-import ImgMunicipalState from "../../assets/images/industies-work-with/municipal-state.jpg";
-import ImgEducation from "../../assets/images/industies-work-with/education.jpg";
-import ImgHosptalityRetail from "../../assets/images/industies-work-with/hopitiality-retail.jpg";
-import ImgHealthcare from "../../assets/images/industies-work-with/healthcare.jpg";
-import ImgSportsRecreaction from "../../assets/images/industies-work-with/sports-recreation.jpg";
-import ImgSmallBusiness from "../../assets/images/industies-work-with/small-business.jpg";
+import ImgCommercialAndRetail from '../../assets/images/industries/Commercial and Retail.webp'
+import ImgEducation from '../../assets/images/industries/Education.webp';
+import ImgEnergyIntensive from '../../assets/images/industries/Energy-Intensive Businesses.webp'
+import ImgIndustrialAndManfacturing from '../../assets/images/industries/For Industrial and Manufacturing.webp';
+import ImgGovermentAndPublic from '../../assets/images/industries/Government and Public Sector.webp';
+import ImgHealthcare from '../../assets/images/industries/Healthcare.webp'
+import ImgResidentialCommunities from '../../assets/images/industries/Residential Communities.webp';
+import ImgTechnologyAndDatacenter from '../../assets/images/industries/Technology and Data Centers.webp';
+import ImgTransportationAndLogistics from '../../assets/images/industries/Transportation and Logistics.webp';
+import ImgEntertainment from '../../assets/images/industries/Entertainment.webp';
+import ImgAgriculture from '../../assets/images/industries/Agriculture.webp';
+import ImgNonprofitAndCommunity from '../../assets/images/industries/Nonprofit and Community Organizations.webp'
 
 const IndustriesWeWorkWith: React.FC = () => {
   return (
@@ -22,44 +26,64 @@ const IndustriesWeWorkWith: React.FC = () => {
           <div>
             <div className="flex flex-wrap gap-6 justify-center">
               <IndustryCard
-                image={ImgCommercialOffice}
-                title="COMMERCIAL OFFICE"
-                desc="We design the best solution to exceed each site’s unique energy needs to maximize savings, while improving work environments for your employees and customers."
+                image={ImgTechnologyAndDatacenter}
+                title="For Technology and Data Centers"
+                desc="24/7 operations demand reliable, efficient power solutions that keep your servers running and your costs down. Our advanced energy management systems help you maintain optimal performance while significantly reducing your cooling and infrastructure expenses."
               />
               <IndustryCard
-                image={ImgIndustrialWarehouse}
-                title="INDUSTRIAL &amp; WAREHOUSE"
-                desc="The industrial and warehousing sectors are driven by energy use. We have the expertise that identifies comprehensive solutions to afford you lower operating costs and create a safer and more productive facility."
-              />
-              <IndustryCard
-                image={ImgMunicipalState}
-                title="MUNICIPAL & STATE"
-                desc="We provide tailored solutions that meet your community’s needs, offering budgetary savings on energy bills and a wide range of environmental and socioeconomic benefits."
-              />
-              <IndustryCard
-                image={ImgEducation}
-                title="EDUCATION"
-                desc="We are committed to creating superior learning environments for your students and faculty.  We work to minimize the costs to upgrade your facilities and support your carbon reduction and sustainability goals."
-              />
-              <IndustryCard
-                image={ImgHosptalityRetail}
-                title="HOSPITALITY & RETAIL"
-                desc="A comfortable, well lit, inviting space translates to more customers and more business for you. Our solutions help bring more customers into your space, and keep your operating costs low.  "
+                image={ImgIndustrialAndManfacturing}
+                title="For Industrial and Manufacturing"
+                desc="High-volume production demands reliable, cost-effective energy solutions that keep your operations running smoothly. Our optimization systems help maximize your machinery's efficiency while keeping your energy costs down and productivity up."
               />
               <IndustryCard
                 image={ImgHealthcare}
-                title="HEALTHCARE"
-                desc="A comfortable, well lit, inviting space translates to more customers and more business for you. Our solutions help bring more customers into your space, and keep your operating costs low.  "
+                title="For Healthcare"
+                desc="Round-the-clock patient care requires unwavering energy reliability and precision climate control. Our solutions ensure your facility maintains optimal conditions while reducing operational costs, letting you focus more resources on what matters most - patient care."
               />
               <IndustryCard
-                image={ImgSportsRecreaction}
-                title="SPORTS & RECREATION"
-                desc="Energy costs of sporting and recreational facilities can be extensive. Our comprehensive solutions can transform sports arena, gym, or athletic event space, enhancing the athlete and patron experiences, while impacting your bottom line."
+                image={ImgEducation}
+                title="For Education"
+                desc="Creating an optimal learning environment means having efficient, reliable energy systems across your entire campus. Our solutions help reduce your facility costs and redirect valuable resources back to where they belong - in the classroom."
               />
               <IndustryCard
-                image={ImgSmallBusiness}
-                title="SMALL BUSINESS"
-                desc="We have the deep experience working with small business owners, providing the time, resources and knowledge necessary to significantly reduce your energy use. "
+                image={ImgCommercialAndRetail}
+                title="For Commercial and Retail"
+                desc="Every customer that walks through your door expects a comfortable shopping experience, regardless of the season. Our energy solutions help maintain the perfect environment while significantly reducing your monthly utility expenses."
+              />
+              <IndustryCard
+                image={ImgGovermentAndPublic}
+                title="For Government and Public Sector"
+                desc="Public facilities need smart solutions that maximize every taxpayer dollar. Our energy management systems help reduce your operational costs and increase efficiency, letting you deliver more value to your community."
+              />
+              <IndustryCard
+                image={ImgResidentialCommunities}
+                title="For Residential Communities"
+                desc="Your residents expect comfort and value in their living spaces every day of the year. Our energy solutions help reduce utility costs across your property while maintaining the perfect environment that keeps residents happy and long-term."
+              />
+              <IndustryCard
+                image={ImgTransportationAndLogistics}
+                title="For Transportation and Logistics"
+                desc="Keeping your facilities running 24/7 requires energy solutions that never stop delivering. Our systems help optimize your operations and reduce costs across terminals, warehouses, and loading zones while maintaining peak efficiency."
+              />
+              <IndustryCard
+                image={ImgEnergyIntensive}
+                title="For Entertainment and Recreation"
+                desc="Creating memorable experiences means maintaining perfect comfort for thousands of guests. Our energy solutions help reduce your operational costs while ensuring your venues deliver the ideal environment for every show, game, or attraction."
+              />
+              <IndustryCard
+                image={ImgAgriculture}
+                title="For Agriculture"
+                desc="Your growing operations require precise climate control and reliable power that works as hard as you do. Our solutions help optimize your energy use across irrigation, climate systems, and equipment while keeping your operational costs down."
+              />
+              <IndustryCard
+                image={ImgNonprofitAndCommunity}
+                title="For Nonprofit and Community Organizations"
+                desc="Every dollar saved on energy is another dollar toward your mission. Our solutions help reduce your facility costs and maintain comfortable spaces for your community, letting you focus more resources on the work that matters."
+              />
+              <IndustryCard
+                image={ImgEntertainment}
+                title="For Energy-Intensive Businesses"
+                desc="Continuous operations demand energy solutions that deliver reliability and efficiency at scale. Our systems help optimize your processes and reduce costs across your entire operation while maintaining the consistent power you need."
               />
             </div>
           </div>

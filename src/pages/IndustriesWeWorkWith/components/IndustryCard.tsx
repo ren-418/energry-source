@@ -6,8 +6,8 @@ interface IndustryCardProps {
 
 const IndustryCard: React.FC<IndustryCardProps> = ({ image, title, desc }) => {
   return (
-    <div className="px-6 sm:px-0 w-full sm:w-[375px] max-w-[500px]">
-      <div className="flex flex-col gap-8">
+    <div className="px-6 sm:px-0 w-full sm:w-[375px] max-w-[500px] flex">
+      <div className="flex flex-col gap-8 grow">
         <div className="group relative flex flex-col grow justify-center items-center py-4 gap-2">
           <div className="image-box group-hover:opacity-0 ">
             <img
@@ -17,7 +17,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({ image, title, desc }) => {
             />
           </div>
           <div className="w-full h-full flex justify-center items-center group-hover:opacity-0">
-            <h4 className="font-bold max-w-[220px] text-center transition-colors">
+            <h4 className="font-bold max-w-[220px] text-center transition-colors uppercase">
               {title}
             </h4>
           </div>

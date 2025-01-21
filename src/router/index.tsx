@@ -6,6 +6,7 @@ import Register from "../pages/Register"
 import UnsupportedRegister from "../pages/UnsupportedRegister"
 import Aboutus from "../pages/Aboutus"
 import IndustriesWeWorkWith from "../pages/IndustriesWeWorkWith"
+import Services from '../pages/Services';
 
 const Router: React.FC = () => {
     return (
@@ -18,6 +19,7 @@ const Router: React.FC = () => {
                 <Route path="home" element={<Home />} />
                 <Route path="aboutus" element={<Aboutus />} />
                 <Route path="industries-work-with" element={<IndustriesWeWorkWith />} />
+                <Route path="services" element={<Services />} />
             </Route>
         </Routes>
     )
